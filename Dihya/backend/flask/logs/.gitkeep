@@ -1,0 +1,16 @@
+# Ce fichier .gitkeep permet de versionner le dossier logs/ dans Git.
+
+# Bonnes pratiques Dihya Coding :
+# - Les logs applicatifs doivent être stockés ici, jamais dans un dossier public.
+# - Protéger l'accès à ce dossier en production (permissions restreintes).
+# - Ne jamais stocker de données sensibles ou de secrets dans les logs.
+# - Prévoir une rotation et une purge régulière des fichiers de logs.
+# - Utiliser un format de logs structuré (JSON, timestamp, niveau, etc.) si possible.
+
+# Ce dossier peut contenir :
+# - app.log
+# - error.log
+# - audit.log
+# - etc.
+
+# Équipe Dihya Coding

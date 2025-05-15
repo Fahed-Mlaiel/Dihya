@@ -1,0 +1,31 @@
+# Dockerfile pour le backend Flask de Dihya Coding
+# Respecte sécurité, bonnes pratiques, production-ready
+
+FROM python:3.11-slim
+
+# Sécurité : mise à jour des paquets et création d'un utilisateur non-root
+RUN apt-get update && apt-get upgrade -y && \
+    adduser --disabled-password --gecos '' dihya
+
+WORKDIR /app
+
+# Copie des fichiers requirements et installation des dépendances
+COPY ../../backend/flask/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copie du code source backend Flask
+COPY ../../backend/flask /app
+
+# Variables d'environnement (à adapter si besoin)
+ENV FLASK_APP=run.py
+ENV FLASK_ENV=production
+ENV PYTHONUNBUFFERED=1
+
+# Droits utilisateur non-root
+USER dihya
+
+# Exposition du port Flask
+EXPOSE 5000
+
+# Commande de lancement
+CMD ["python", "run.py"]
