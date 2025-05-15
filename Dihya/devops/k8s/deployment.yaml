@@ -1,0 +1,120 @@
+# Déploiement Kubernetes pour Dihya Coding (backend + frontend)
+# Respecte sécurité, bonnes pratiques, extensibilité
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dihya-backend
+  labels:
+    app: dihya
+    tier: backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dihya
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: dihya
+        tier: backend
+    spec:
+      containers:
+        - name: dihya-backend
+          image: dihya/backend:latest
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - secretRef:
+                name: dihya-backend-secrets
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 20
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dihya-frontend
+  labels:
+    app: dihya
+    tier: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dihya
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: dihya
+        tier: frontend
+    spec:
+      containers:
+        - name: dihya-frontend
+          image: dihya/frontend:latest
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "250m"
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dihya-backend-service
+spec:
+  selector:
+    app: dihya
+    tier: backend
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dihya-frontend-service
+spec:
+  selector:
+    app: dihya
+    tier: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+
+# Pour exposer publiquement, ajouter un Ingress ou changer le type de service en LoadBalancer selon votre cloud.

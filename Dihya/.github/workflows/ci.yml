@@ -1,0 +1,59 @@
+name: CI Backend Dihya Coding
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  backend-flask:
+    runs-on: ubuntu-latest
+    env:
+      FLASK_ENV: testing
+      PYTHONPATH: ${{ github.workspace }}/Dihya/backend/flask/app
+      # Ajoute ici d'autres variables d'environnement nécessaires
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd Dihya/backend/flask
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Lint code (flake8)
+        run: |
+          cd Dihya/backend/flask/app
+          pip install flake8
+          flake8 .
+
+      - name: Run tests (pytest)
+        run: |
+          cd Dihya/backend/flask/app
+          pip install pytest
+          pytest
+
+      - name: Generate API docs (optionnel)
+        run: |
+          echo "Génération de la documentation OpenAPI/Swagger (à compléter selon l'outil choisi)"
+
+      - name: Archive test reports (optionnel)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: Dihya/backend/flask/app/.pytest_cache
+
+      - name: Upload coverage report (optionnel)
+        if: always()
+        run: echo "Ajoute ici l'upload de la couverture de tests si besoin"
+
+# Pour ajouter le build/déploiement frontend, crée un job séparé.

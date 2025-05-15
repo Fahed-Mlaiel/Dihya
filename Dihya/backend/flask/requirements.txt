@@ -1,0 +1,22 @@
+# Dépendances backend Flask pour Dihya Coding
+
+Flask>=2.3
+Flask-Cors>=4.0
+Flask-JWT-Extended>=4.6
+Flask-Mail>=0.9
+Flask-Babel>=3.1
+Werkzeug>=2.3
+python-dotenv>=1.0
+pytest>=8.0
+requests>=2.31
+
+# Pour la validation avancée (optionnel, Marshmallow ou Pydantic)
+marshmallow>=3.20
+
+# Pour le développement et tests
+pytest-flask>=1.3
+
+# Pour la sécurité (rate limiting, optionnel)
+Flask-Limiter>=3.5
+
+# Ajoutez ici d'autres dépendances selon vos besoins

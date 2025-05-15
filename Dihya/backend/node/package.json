@@ -1,0 +1,29 @@
+{
+  "name": "dihya-coding-backend-node",
+  "version": "1.0.0",
+  "description": "Backend Node.js pour la plateforme Dihya Coding – API RESTful, sécurité, modularité, multilingue.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "author": "Dihya Coding Team",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.13",
+    "i18n": "^0.15.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.4.2",
+    "nodemon": "^3.1.0"
+  }
+}

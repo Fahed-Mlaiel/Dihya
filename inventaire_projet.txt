@@ -1,0 +1,385 @@
+Inventaire du projet Dihya (généré le Thu May 15 09:57:51 UTC 2025)
+------------------------------------------------
+.
+├── .gitignore
+├── Dihya
+│   ├── .github
+│   │   └── workflows
+│   │       ├── README.md
+│   │       └── ci.yml
+│   ├── .gitignore
+│   ├── LICENSE
+│   ├── README.md
+│   ├── ai
+│   │   ├── README.md
+│   │   ├── models
+│   │   ├── notebooks
+│   │   └── scripts
+│   ├── assets
+│   │   ├── icons
+│   │   └── images
+│   ├── backend
+│   │   ├── config
+│   │   │   ├── README.md
+│   │   │   ├── __init__.py
+│   │   │   └── secrets_example.md
+│   │   ├── flask
+│   │   │   ├── .env
+│   │   │   ├── .flaskenv
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── README.md
+│   │   │   ├── app
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── ai_fallback
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── models.py
+│   │   │   │   │   ├── quotas
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── __init__.py
+│   │   │   │   │   └── tests
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── __init__.py
+│   │   │   │   │       └── test_models.py
+│   │   │   │   ├── configuration
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── __init__.py
+│   │   │   │   ├── graphql
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── resolvers.py
+│   │   │   │   │   ├── schema.py
+│   │   │   │   │   └── tests
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── __init__.py
+│   │   │   │   │       └── test_resolvers.py
+│   │   │   │   ├── integrations
+│   │   │   │   │   └── webhooks
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── __init__.py
+│   │   │   │   │       ├── crm_webhooks.py
+│   │   │   │   │       └── erp_webhooks.py
+│   │   │   │   ├── metrics
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── performance_metrics.py
+│   │   │   │   │   ├── security_metrics.py
+│   │   │   │   │   ├── tests
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── test_performance_metrics.py
+│   │   │   │   │   │   ├── test_security_metrics.py
+│   │   │   │   │   │   └── test_usage_metrics.py
+│   │   │   │   │   └── usage_metrics.py
+│   │   │   │   ├── models
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── roles
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── __init__.py
+│   │   │   │   │   │   └── permissions.py
+│   │   │   │   │   └── user.py
+│   │   │   │   ├── notifications
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── __init__.py
+│   │   │   │   ├── plugins
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── analytics_plugin.py
+│   │   │   │   │   ├── api.py
+│   │   │   │   │   ├── cms_plugin.py
+│   │   │   │   │   ├── custom_plugin.py
+│   │   │   │   │   ├── templates
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   └── __init__.py
+│   │   │   │   │   └── tests
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── __init__.py
+│   │   │   │   │       └── test_plugins.py
+│   │   │   │   ├── realtime
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── events.py
+│   │   │   │   │   └── server.py
+│   │   │   │   ├── routes
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── auth.py
+│   │   │   │   │   ├── generate.py
+│   │   │   │   │   ├── main.py
+│   │   │   │   │   ├── tests
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── __init__.py
+│   │   │   │   │   │   └── test_generate.py
+│   │   │   │   │   └── user.py
+│   │   │   │   ├── scheduler
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── __init__.py
+│   │   │   │   ├── schemas
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   └── user.py
+│   │   │   │   ├── security
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── acl.py
+│   │   │   │   │   ├── audit.py
+│   │   │   │   │   ├── crypto.py
+│   │   │   │   │   ├── integrity.py
+│   │   │   │   │   ├── secrets.py
+│   │   │   │   │   └── tests
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── test_acl.py
+│   │   │   │   │       ├── test_crypto.py
+│   │   │   │   │       ├── test_integrity.py
+│   │   │   │   │       └── test_secrets.py
+│   │   │   │   ├── services
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── auth_service.py
+│   │   │   │   │   ├── mail.py
+│   │   │   │   │   ├── notifications.py
+│   │   │   │   │   ├── oauth2.py
+│   │   │   │   │   ├── social_auth.py
+│   │   │   │   │   ├── templates
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── __init__.py
+│   │   │   │   │   │   ├── ecommerce.py
+│   │   │   │   │   │   ├── education.py
+│   │   │   │   │   │   └── social.py
+│   │   │   │   │   ├── tests
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── __init__.py
+│   │   │   │   │   │   ├── test_auth_service.py
+│   │   │   │   │   │   ├── test_mail.py
+│   │   │   │   │   │   ├── test_notifications.py
+│   │   │   │   │   │   ├── test_oauth2.py
+│   │   │   │   │   │   ├── test_templates.py
+│   │   │   │   │   │   └── test_user_service.py
+│   │   │   │   │   └── user_service.py
+│   │   │   │   ├── static
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── storage
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── tasks
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── cleanup_tasks.py
+│   │   │   │   │   ├── email_tasks.py
+│   │   │   │   │   ├── generation_tasks.py
+│   │   │   │   │   ├── notification_tasks.py
+│   │   │   │   │   └── tests
+│   │   │   │   │       ├── README.md
+│   │   │   │   │       ├── test_cleanup_tasks.py
+│   │   │   │   │       ├── test_email_tasks.py
+│   │   │   │   │       └── test_notification_tasks.py
+│   │   │   │   ├── tests
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── conftest.py
+│   │   │   │   │   ├── e2e
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── fixtures
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── integration
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   ├── test_auth.py
+│   │   │   │   │   ├── test_main.py
+│   │   │   │   │   ├── test_routes.py
+│   │   │   │   │   └── test_user.py
+│   │   │   │   ├── tmp
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── uploads
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── utils
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── cors.py
+│   │   │   │   │   ├── error_handling.py
+│   │   │   │   │   ├── exceptions.py
+│   │   │   │   │   ├── i18n.py
+│   │   │   │   │   ├── i18n_dynamic.py
+│   │   │   │   │   ├── i18n_dynamic_config.py
+│   │   │   │   │   ├── mailing.py
+│   │   │   │   │   ├── rate_limit.py
+│   │   │   │   │   ├── security.py
+│   │   │   │   │   ├── seo.py
+│   │   │   │   │   ├── tests
+│   │   │   │   │   │   ├── README.md
+│   │   │   │   │   │   ├── __init__.py
+│   │   │   │   │   │   └── test_exceptions.py
+│   │   │   │   │   └── validators.py
+│   │   │   │   └── webhooks
+│   │   │   │       ├── README.md
+│   │   │   │       ├── __init__.py
+│   │   │   │       ├── cicd_webhooks.py
+│   │   │   │       ├── notification_webhooks.py
+│   │   │   │       ├── payment_webhooks.py
+│   │   │   │       └── tests
+│   │   │   │           ├── README.md
+│   │   │   │           ├── test_cicd_webhooks.py
+│   │   │   │           ├── test_notification_webhooks.py
+│   │   │   │           └── test_payment_webhooks.py
+│   │   │   ├── audit
+│   │   │   │   ├── README.md
+│   │   │   │   ├── analyze_audit_log.py
+│   │   │   │   ├── audit.log
+│   │   │   │   └── scripts
+│   │   │   │       ├── README.md
+│   │   │   │       ├── purge_rgpd.py
+│   │   │   │       └── rotate_audit_logs.py
+│   │   │   ├── backup
+│   │   │   │   ├── README.md
+│   │   │   │   └── notion.py
+│   │   │   ├── backup_db.py
+│   │   │   ├── config
+│   │   │   │   └── examples
+│   │   │   │       └── README.md
+│   │   │   ├── demo_decentralise
+│   │   │   │   └── README.md
+│   │   │   ├── docs
+│   │   │   │   ├── README.md
+│   │   │   │   ├── openapi.yaml
+│   │   │   │   ├── scripts
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── generate_api_doc.py
+│   │   │   │   └── user
+│   │   │   │       └── README.md
+│   │   │   ├── generation_logs
+│   │   │   │   ├── README.md
+│   │   │   │   └── __init__.py
+│   │   │   ├── integrations
+│   │   │   │   ├── README.md
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── tests
+│   │   │   │       ├── README.md
+│   │   │   │       └── test_webhooks.py
+│   │   │   ├── logs
+│   │   │   │   ├── .gitkeep
+│   │   │   │   └── scripts
+│   │   │   │       ├── README.md
+│   │   │   │       └── purge_logs.py
+│   │   │   ├── manage.py
+│   │   │   ├── migrations
+│   │   │   │   ├── README
+│   │   │   │   ├── scripts
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── custom
+│   │   │   │   │   │   └── README.md
+│   │   │   │   │   └── example_migration.py
+│   │   │   │   └── upgrade.py
+│   │   │   ├── monitoring
+│   │   │   │   ├── README.md
+│   │   │   │   ├── alerting.py
+│   │   │   │   └── healthcheck.py
+│   │   │   ├── requirements.txt
+│   │   │   ├── restore_db.py
+│   │   │   ├── run.py
+│   │   │   ├── scripts
+│   │   │   │   ├── backup
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── cleaning
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── monitoring
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── ops
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── performance
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── rgpd
+│   │   │   │   │   └── README.md
+│   │   │   │   ├── scan_dependencies.sh
+│   │   │   │   ├── seed
+│   │   │   │   │   └── README.md
+│   │   │   │   └── souverainete
+│   │   │   │       └── README.md
+│   │   │   ├── seed
+│   │   │   │   ├── README.md
+│   │   │   │   └── demo_data.py
+│   │   │   ├── seed.py
+│   │   │   ├── souverainete
+│   │   │   │   ├── README.md
+│   │   │   │   ├── anonymize.py
+│   │   │   │   ├── export.py
+│   │   │   │   └── import.py
+│   │   │   ├── static
+│   │   │   ├── storage
+│   │   │   ├── tests
+│   │   │   │   └── performance
+│   │   │   │       └── README.md
+│   │   │   ├── tmp
+│   │   │   └── uploads
+│   │   ├── i18n
+│   │   │   └── cache
+│   │   └── node
+│   │       ├── .env
+│   │       ├── README.md
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   ├── controllers
+│   │       │   ├── index.js
+│   │       │   ├── middleware
+│   │       │   ├── models
+│   │       │   └── routes
+│   │       └── tests
+│   ├── blockchain
+│   │   ├── contracts
+│   │   │   └── README.md
+│   │   └── scripts
+│   │       └── deploy.js
+│   ├── devops
+│   │   ├── README.md
+│   │   ├── docker
+│   │   │   ├── Dockerfile.backend
+│   │   │   └── Dockerfile.frontend
+│   │   ├── k8s
+│   │   │   └── deployment.yaml
+│   │   └── terraform
+│   │       └── main.tf
+│   ├── docs
+│   │   ├── README.md
+│   │   ├── api.md
+│   │   ├── architecture.md
+│   │   ├── dev_guide.md
+│   │   └── user_guide.md
+│   ├── frontend
+│   │   ├── .env
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── public
+│   │   │   ├── robots.txt
+│   │   │   └── sitemap.xml
+│   │   └── src
+│   │       ├── App.js
+│   │       ├── assets
+│   │       │   ├── icons
+│   │       │   └── images
+│   │       ├── components
+│   │       ├── index.js
+│   │       ├── pages
+│   │       └── styles
+│   │           └── tailwind.config.js
+│   ├── i18n
+│   │   ├── README.md
+│   │   ├── en
+│   │   ├── fr
+│   │   └── other
+│   └── mobile
+│       ├── flutter
+│       │   ├── README.md
+│       │   ├── assets
+│       │   ├── lib
+│       │   │   ├── main.dart
+│       │   │   ├── screens
+│       │   │   └── widgets
+│       │   └── pubspec.yaml
+│       └── react_native
+│           ├── App.js
+│           ├── README.md
+│           ├── assets
+│           ├── package.json
+│           └── src
+│               ├── components
+│               └── screens
+├── LICENSE
+├── README.md
+└── inventaire_projet.txt
+
+130 directories, 250 files
