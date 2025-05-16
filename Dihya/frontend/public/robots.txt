@@ -1,0 +1,20 @@
+# robots.txt pour Dihya Coding
+
+# Bonnes pratiques :
+# - Bloquer l’indexation des environnements de développement et de test
+# - Autoriser l’indexation du site public en production
+# - Protéger les endpoints sensibles (API, admin, etc.)
+# - Documenter chaque règle pour la maintenance
+
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backend/
+Disallow: /docs/
+Allow: /
+
+# Sitemap (à adapter selon l’URL de prod)
+Sitemap: /sitemap.xml
+
+# Fin du fichier robots.txt Dihya Coding

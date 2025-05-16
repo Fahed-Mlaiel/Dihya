@@ -2,6 +2,8 @@
 
 Ce dossier regroupe les services métiers et techniques utilisés par le backend Flask de Dihya Coding.
 
+---
+
 ## Contenu
 
 - **auth_service.py** : Service d'authentification (gestion JWT, login, refresh, logout, sécurité).
@@ -9,6 +11,9 @@ Ce dossier regroupe les services métiers et techniques utilisés par le backend
 - **user_service.py** : Service de gestion des utilisateurs (CRUD, rôles, profil, sécurité).
 - **notifications.py** : Service centralisé d’envoi de notifications (email, webhook, interne).
 - **social_auth.py** : Service d’authentification sociale (OAuth2, Google, GitHub…).
+- **generation_service.py** : Service de génération automatique de projets (analyse, génération, plugins, auditabilité, conformité RGPD).
+
+---
 
 ## Bonnes pratiques
 
@@ -18,7 +23,11 @@ Ce dossier regroupe les services métiers et techniques utilisés par le backend
 - Prévoir des exceptions personnalisées pour la gestion des erreurs métier.
 - Ajouter des tests unitaires pour chaque service critique.
 - Ne jamais exposer de secrets ou de données sensibles dans les logs ou les erreurs.
-- Logger chaque opération critique avec horodatage pour audit et souveraineté.
+- Logger chaque opération critique avec horodatage pour audit, souveraineté et conformité RGPD.
+- Prévoir la purge et l’export des logs pour chaque service sensible (conformité RGPD).
+- Documenter chaque ajout ou modification de service pour faciliter la maintenance et l’auditabilité.
+
+---
 
 ## Exemple d'utilisation
 
@@ -30,14 +39,6 @@ token = generate_token(user)
 
 from app.services.notifications import send_notification
 send_notification("alice@dihya.dev", "Bienvenue sur Dihya !", channel="email")
-```
 
-## Sécurité
-
-- Toujours valider les entrées et sécuriser les accès dans chaque service.
-- Utiliser les variables d’environnement pour les secrets et credentials.
-- Documenter chaque ajout ou modification de service pour faciliter la maintenance.
-
----
-
-**Équipe Dihya Coding**
+from app.services.generation_service import generate_project
+result = generate_project("Créer une boutique e-commerce avec paiement sécurisé.", user_id="user_123")
