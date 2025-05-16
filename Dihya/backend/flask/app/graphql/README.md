@@ -2,25 +2,38 @@
 
 Ce dossier contient les schémas, résolveurs et scripts liés à l’API GraphQL du backend Dihya Coding.
 
+---
+
 ## Objectif
 
 - Offrir une alternative moderne à l’API REST pour la génération, la consultation et la gestion des projets.
 - Permettre des requêtes flexibles et optimisées pour le frontend ou des intégrations tierces.
+- Garantir la sécurité, la conformité RGPD, la traçabilité et la souveraineté des données.
+
+---
 
 ## Bonnes pratiques
 
-- Définir les schémas GraphQL dans des fichiers dédiés et documentés.
-- Sécuriser chaque requête/mutation (authentification, validation des rôles, contrôle d’accès).
-- Logger les requêtes critiques pour audit.
-- Ne jamais exposer de données sensibles ou de secrets via GraphQL.
-- Prévoir des tests unitaires pour chaque résolveur.
-- Documenter chaque type, requête et mutation dans ce dossier.
+- Définir les schémas GraphQL dans des fichiers dédiés et documentés (`schema.py`).
+- Séparer la logique métier dans les résolveurs (`resolvers.py`).
+- Sécuriser chaque requête/mutation : authentification JWT/OAuth2, validation des rôles, contrôle d’accès strict.
+- Valider toutes les entrées côté serveur avant toute mutation ou accès critique.
+- Logger chaque requête/mutation critique pour auditabilité (sans fuite de données sensibles).
+- Ne jamais exposer de données sensibles, secrets, tokens ou mots de passe via GraphQL.
+- Limiter la profondeur des requêtes et la taille des réponses pour éviter les abus (DoS, scraping).
+- Prévoir des tests unitaires et d’intégration pour chaque résolveur et mutation.
+- Documenter chaque type, champ, requête et mutation dans ce dossier via docstrings détaillées.
+- Prévoir la purge et l’export des logs GraphQL pour conformité RGPD.
+
+---
 
 ## Structure recommandée
 
-- `schema.py` : schéma principal GraphQL (types, queries, mutations)
-- `resolvers.py` : fonctions de résolution des queries/mutations (logique métier)
-- `README.md` : documentation et exemples d’utilisation
+- `schema.py` : schéma principal GraphQL (types, queries, mutations, sécurité, documentation)
+- `resolvers.py` : fonctions de résolution des queries/mutations (logique métier, validation, audit)
+- `README.md` : documentation, bonnes pratiques et exemples d’utilisation
+
+---
 
 ## Exemple d’utilisation (Flask + Graphene)
 
@@ -34,25 +47,3 @@ app.add_url_rule(
     "/graphql",
     view_func=GraphQLView.as_view("graphql", schema=schema, graphiql=True)
 )
-```
-
-## Sécurité
-
-- Protéger l’endpoint `/graphql` par authentification JWT ou OAuth2.
-- Limiter la profondeur des requêtes et la taille des réponses pour éviter les abus.
-- Valider toutes les entrées côté serveur avant toute mutation.
-- Logger chaque mutation ou accès critique pour audit et souveraineté.
-
-## Tests
-
-- Prévoir des tests unitaires pour chaque résolveur et mutation.
-- Simuler des scénarios d’accès non autorisé et de validation d’entrée.
-
-## Documentation
-
-- Documenter chaque type, champ, requête et mutation dans `schema.py` et `resolvers.py` via docstrings.
-- Ajouter des exemples de requêtes GraphQL dans ce README si besoin.
-
----
-
-**Équipe Dihya Coding**

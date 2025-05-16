@@ -10,58 +10,122 @@ Bonnes pratiques :
 - Prévoir une validation stricte des entrées et sorties.
 - Modulariser chaque wrapper de modèle pour faciliter l’ajout ou la mise à jour.
 - Documenter chaque modèle supporté et ses limitations.
-
-Exemple d’utilisation :
-    from app.ai_fallback.models import generate_with_fallback
-    code, preview_url = generate_with_fallback("Créer une todo app", "webapp", "react+flask")
+- Respecter la conformité RGPD (logs anonymisés, purge possible).
 """
 
+import os
 from datetime import datetime
+from typing import Tuple, Optional
 
-def log_fallback_call(user, model, status, details=""):
+FALLBACK_LOG_FILE = os.path.join(
+    os.path.dirname(__file__), "../../logs/ai_fallback.log"
+)
+
+def log_fallback_call(user: Optional[str], model: str, status: str, details: str = ""):
     """
     Logge chaque appel à un modèle IA fallback.
+
+    Args:
+        user (str): ID utilisateur ou 'anonymous'.
+        model (str): Nom du modèle utilisé.
+        status (str): "SUCCESS" ou "FAIL".
+        details (str): Détails additionnels (jamais de prompt ni de données sensibles).
     """
-    log_file = "logs/ai_fallback.log"
-    entry = f"{datetime.utcnow().isoformat()} | user={user} | model={model} | status={status} | {details}"
+    entry = (
+        f"{datetime.utcnow().isoformat()} | user={user or 'anonymous'} | "
+        f"model={model} | status={status} | {details}"
+    )
     try:
-        with open(log_file, "a", encoding="utf-8") as f:
+        with open(FALLBACK_LOG_FILE, "a", encoding="utf-8") as f:
             f.write(entry + "\n")
     except Exception:
-        pass
+        pass  # Ne jamais faire échouer la génération pour un problème de log
 
-def generate_with_mixtral(prompt, project_type, stack):
+def validate_prompt(prompt: str) -> bool:
+    """
+    Valide le prompt utilisateur (sécurité, longueur, contenu).
+
+    Args:
+        prompt (str): Prompt utilisateur.
+
+    Returns:
+        bool: True si valide, False sinon.
+    """
+    if not prompt or len(prompt) < 10 or len(prompt) > 2000:
+        return False
+    # Ajouter ici d'autres règles de validation si besoin
+    return True
+
+def generate_with_mixtral(prompt: str, project_type: str, stack: str) -> Tuple[str, str]:
     """
     Génère du code avec Mixtral (exemple fictif).
+
+    Args:
+        prompt (str): Prompt utilisateur validé.
+        project_type (str): Type de projet (webapp, mobile, etc.).
+        stack (str): Stack technique demandée.
+
+    Returns:
+        tuple: (code généré, url de preview)
     """
     # TODO: Intégrer l’appel réel au modèle Mixtral local ou API
     code = f"# Code généré par Mixtral pour {project_type} ({stack})\n# Prompt: {prompt}"
     preview_url = "https://preview.dihya.dev/mixtral_demo"
     return code, preview_url
 
-def generate_with_llama(prompt, project_type, stack):
+def generate_with_llama(prompt: str, project_type: str, stack: str) -> Tuple[str, str]:
     """
     Génère du code avec LLaMA (exemple fictif).
+
+    Args:
+        prompt (str): Prompt utilisateur validé.
+        project_type (str): Type de projet.
+        stack (str): Stack technique.
+
+    Returns:
+        tuple: (code généré, url de preview)
     """
     # TODO: Intégrer l’appel réel au modèle LLaMA local ou API
     code = f"# Code généré par LLaMA pour {project_type} ({stack})\n# Prompt: {prompt}"
     preview_url = "https://preview.dihya.dev/llama_demo"
     return code, preview_url
 
-def generate_with_mistral(prompt, project_type, stack):
+def generate_with_mistral(prompt: str, project_type: str, stack: str) -> Tuple[str, str]:
     """
     Génère du code avec Mistral (exemple fictif).
+
+    Args:
+        prompt (str): Prompt utilisateur validé.
+        project_type (str): Type de projet.
+        stack (str): Stack technique.
+
+    Returns:
+        tuple: (code généré, url de preview)
     """
     # TODO: Intégrer l’appel réel au modèle Mistral local ou API
     code = f"# Code généré par Mistral pour {project_type} ({stack})\n# Prompt: {prompt}"
     preview_url = "https://preview.dihya.dev/mistral_demo"
     return code, preview_url
 
-def generate_with_fallback(prompt, project_type, stack, user="anonymous"):
+def generate_with_fallback(
+    prompt: str, project_type: str, stack: str, user: Optional[str] = "anonymous"
+) -> Tuple[str, str]:
     """
     Orchestration : tente chaque modèle open source jusqu’à succès.
-    :return: (code, preview_url)
+
+    Args:
+        prompt (str): Prompt utilisateur (sera validé).
+        project_type (str): Type de projet.
+        stack (str): Stack technique.
+        user (str, optional): ID utilisateur pour la traçabilité.
+
+    Returns:
+        tuple: (code généré, url de preview)
     """
+    if not validate_prompt(prompt):
+        log_fallback_call(user, "N/A", "FAIL", "Prompt invalide")
+        return "# Erreur : prompt invalide ou trop court.", ""
+
     for model_func, model_name in [
         (generate_with_mixtral, "Mixtral"),
         (generate_with_llama, "LLaMA"),
@@ -74,4 +138,5 @@ def generate_with_fallback(prompt, project_type, stack, user="anonymous"):
         except Exception as e:
             log_fallback_call(user, model_name, "FAIL", str(e))
     # Si aucun modèle ne fonctionne
+    log_fallback_call(user, "ALL", "FAIL", "Aucun modèle fallback disponible")
     return "# Erreur : aucun modèle fallback disponible.", ""

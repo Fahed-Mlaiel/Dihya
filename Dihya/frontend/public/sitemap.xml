@@ -1,0 +1,32 @@
+<!--
+  sitemap.xml pour Dihya Coding
+
+  Bonnes pratiques :
+  - Générer dynamiquement en production si possible
+  - Inclure uniquement les pages publiques et utiles au SEO
+  - Ne jamais exposer de routes sensibles (admin, API, etc.)
+  - Mettre à jour à chaque ajout/suppression de page importante
+  - Documenter la structure pour la maintenance
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d’accueil -->
+  <url>
+    <loc>https://dihya.example.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <!-- Exemple de page publique -->
+  <url>
+    <loc>https://dihya.example.com/about</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dihya.example.com/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Ajouter ici d’autres pages publiques importantes -->
+</urlset>
