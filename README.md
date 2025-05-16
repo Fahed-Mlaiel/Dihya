@@ -35,7 +35,7 @@ Créer la première plateforme No-Code / Low-Code au monde capable de générer 
 3. **Génération frontend (UI/UX)**
    - Utilisation de Tailwind, Material UI
    - Responsive par défaut
-   - Thèmes inspirés de la culture amazighe ou personnalisables
+   - Thèmes inspirés de la culture amazigh ou personnalisables
 
 4. **Génération backend**
    - Flask ou Node.js
