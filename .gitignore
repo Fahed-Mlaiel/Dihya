@@ -173,3 +173,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 backup_dihya_*.tar
+backup_dihya_*.tar
