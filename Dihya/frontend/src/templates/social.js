@@ -157,3 +157,11 @@ export function clearLocalSocialTemplateLogs() {
 }
 
 /* Documentation claire : chaque fonction est commentée pour auditabilité et conformité */
+
+// Ajout de l'export par défaut pour compatibilité avec import Social from './templates/social';
+export default {
+  generateProfilePage,
+  generateFeed,
+  generatePostForm,
+  clearLocalSocialTemplateLogs,
+};

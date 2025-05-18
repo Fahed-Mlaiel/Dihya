@@ -11,7 +11,11 @@
  * @returns {boolean} Succès de la navigation
  */
 export function fallbackNavigate(path, options = {}) {
-  if (!hasConsent()) return false;
+  if (!hasConsent()) {
+    // Permettre la navigation même sans consentement pour la navigation de base
+    window.location.hash = '#' + sanitizePath(path);
+    return false;
+  }
   if (typeof window === 'undefined' || typeof path !== 'string') return false;
   try {
     if (window.location.hash !== '#' + path) {
@@ -33,7 +37,10 @@ export function fallbackNavigate(path, options = {}) {
 export function getCurrentRoute() {
   if (typeof window === 'undefined') return '/';
   const hash = window.location.hash || '';
-  return sanitizePath(hash.replace(/^#/, '') || '/');
+  // Si hash est vide ou juste "#", retourne "/"
+  const route = sanitizePath(hash.replace(/^#/, '') || '/');
+  // Correction : toujours commencer par "/"
+  return route.startsWith('/') ? route : '/' + route;
 }
 
 /**
@@ -45,6 +52,8 @@ export function onRouteChange(callback) {
   window.addEventListener('hashchange', () => {
     callback(getCurrentRoute());
   });
+  // Appel initial pour la route courante
+  callback(getCurrentRoute());
 }
 
 /**
@@ -52,6 +61,8 @@ export function onRouteChange(callback) {
  * @returns {boolean}
  */
 function hasConsent() {
+  // Pour le fallback router, on autorise la navigation même sans consentement
+  // Mais on ne logue que si le consentement est donné
   return typeof window !== 'undefined' && window.localStorage && window.localStorage.getItem('fallback_router_feature_consent');
 }
 

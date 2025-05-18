@@ -6,7 +6,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-// Import des pages métiers (à adapter selon l’architecture)
+// Import des templates métiers (fonctions génératrices HTML)
 import Ecommerce from './templates/ecommerce';
 import Education from './templates/education';
 import Social from './templates/social';
@@ -26,6 +26,7 @@ import { getCurrentRoute, onRouteChange, fallbackNavigate } from './utils/fallba
 function App() {
   const [route, setRoute] = useState(getCurrentRoute());
   const [consent, setConsentState] = useState(hasConsent('app'));
+  const [content, setContent] = useState(null);
 
   useEffect(() => {
     // Écoute les changements de route (fallback)
@@ -36,6 +37,68 @@ function App() {
     // Vérifie le consentement RGPD au chargement
     setConsentState(hasConsent('app'));
   }, []);
+
+  useEffect(() => {
+    // Met à jour le contenu affiché selon la route
+    if (!consent) {
+      setContent(null);
+      return;
+    }
+    switch (route) {
+      case '/ecommerce':
+        setContent(
+          <div
+            dangerouslySetInnerHTML={{
+              __html: Ecommerce.generateProductPage({
+                id: 'p1',
+                name: 'T-shirt Dihya',
+                description: 'T-shirt bio, moderne et confortable.',
+                price: 29.99,
+                image: '/img/tshirt.png'
+              })
+            }}
+          />
+        );
+        break;
+      case '/education':
+        setContent(
+          <div
+            dangerouslySetInnerHTML={{
+              __html: Education.generateCoursePage({
+                id: 'c1',
+                title: 'Introduction au RGPD',
+                description: 'Comprendre la conformité RGPD en développement web.',
+                modules: [],
+                image: '/img/rgpd.png'
+              })
+            }}
+          />
+        );
+        break;
+      case '/social':
+        setContent(
+          <div
+            dangerouslySetInnerHTML={{
+              __html: Social.generateProfilePage({
+                id: 'u1',
+                username: 'dihya_user',
+                bio: 'Développeur passionné par la conformité RGPD.',
+                avatar: '/img/avatar.png',
+                followers: 42
+              })
+            }}
+          />
+        );
+        break;
+      default:
+        setContent(
+          <section>
+            <h1>Bienvenue sur Dihya Coding</h1>
+            <p>Choisissez un module métier dans la navigation.</p>
+          </section>
+        );
+    }
+  }, [route, consent]);
 
   /**
    * Gère la demande de consentement RGPD utilisateur.
@@ -49,31 +112,21 @@ function App() {
    * Purge tous les logs et données sensibles (droit à l’oubli RGPD).
    */
   function handlePurge() {
+    // Purge les logs des templates métiers
+    if (Ecommerce.clearLocalEcommerceTemplateLogs) Ecommerce.clearLocalEcommerceTemplateLogs();
+    if (Education.clearLocalEducationTemplateLogs) Education.clearLocalEducationTemplateLogs();
+    if (Social.clearLocalSocialTemplateLogs) Social.clearLocalSocialTemplateLogs();
+    // Purge les logs utilitaires
     clearLocalDataPurgeLogs();
     clearLocalSecurityUtilsLogs();
-    // Ajouter ici d’autres purges si besoin
     alert('Données locales purgées (RGPD).');
-  }
-
-  /**
-   * Rendu dynamique selon la route.
-   */
-  function renderRoute() {
-    switch (route) {
-      case '/ecommerce':
-        return <Ecommerce />;
-      case '/education':
-        return <Education />;
-      case '/social':
-        return <Social />;
-      default:
-        return (
-          <section>
-            <h1>Bienvenue sur Dihya Coding</h1>
-            <p>Choisissez un module métier dans la navigation.</p>
-          </section>
-        );
-    }
+    setContent(
+      <section>
+        <h1>Bienvenue sur Dihya Coding</h1>
+        <p>Choisissez un module métier dans la navigation.</p>
+      </section>
+    );
+    fallbackNavigate('/');
   }
 
   return (
@@ -101,7 +154,7 @@ function App() {
 
       {consent && (
         <section className="main-content">
-          {renderRoute()}
+          {content}
           <button onClick={handlePurge} className="purge-btn" aria-label="Purger les données locales">
             Purger mes données (RGPD)
           </button>

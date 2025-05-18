@@ -208,3 +208,11 @@ export function clearLocalEducationTemplateLogs() {
 }
 
 /* Documentation claire : chaque fonction est commentée pour auditabilité et conformité */
+
+// Ajout de l'export par défaut pour compatibilité avec import Education from './templates/education';
+export default {
+  generateCoursePage,
+  generateModulePage,
+  generateQuizPage,
+  clearLocalEducationTemplateLogs,
+};

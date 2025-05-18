@@ -173,3 +173,11 @@ export function clearLocalEcommerceTemplateLogs() {
 }
 
 /* Documentation claire : chaque fonction est commentée pour auditabilité et conformité */
+
+// Ajout de l'export par défaut pour compatibilité avec import Ecommerce from './templates/ecommerce';
+export default {
+  generateProductPage,
+  generateCartPage,
+  generateCheckoutPage,
+  clearLocalEcommerceTemplateLogs,
+};

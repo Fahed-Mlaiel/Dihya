@@ -16,6 +16,7 @@ Ce dossier regroupe tous les templates métiers générés par Dihya Coding : 
 
 - `ecommerce.js` : Génération de pages produits, panier, paiement (sécurité, RGPD, logs)
 - `education.js` : Génération de pages cours, modules, quiz (sécurité, RGPD, logs)
+- `social.js` : Génération de profils, posts, fil d’actualité (sécurité, RGPD, logs)
 - `blog.js` : Génération de pages articles, catégories, commentaires (sécurité, RGPD, logs)
 - `landing.js` : Génération de landing pages (SEO, accessibilité, logs)
 - `README.md` : Présentation, bonnes pratiques, exemples
@@ -37,10 +38,11 @@ Ce dossier regroupe tous les templates métiers générés par Dihya Coding : 
 ## 📝 Exemple d’utilisation
 
 ```js
-import { generateProductPage } from './ecommerce';
-import { generateCoursePage } from './education';
+import Ecommerce from './ecommerce';
+import Education from './education';
+import Social from './social';
 
-const productHtml = generateProductPage({
+const productHtml = Ecommerce.generateProductPage({
   id: 'p1',
   name: 'T-shirt Dihya',
   description: 'T-shirt bio, moderne et confortable.',
@@ -48,12 +50,20 @@ const productHtml = generateProductPage({
   image: '/img/tshirt.png'
 });
 
-const courseHtml = generateCoursePage({
+const courseHtml = Education.generateCoursePage({
   id: 'c1',
   title: 'Introduction au RGPD',
   description: 'Comprendre la conformité RGPD en développement web.',
   modules: [],
   image: '/img/rgpd.png'
+});
+
+const profileHtml = Social.generateProfilePage({
+  id: 'u1',
+  username: 'dihya_user',
+  bio: 'Développeur passionné par la conformité RGPD.',
+  avatar: '/img/avatar.png',
+  followers: 42
 });
 ```
 
@@ -63,6 +73,7 @@ const courseHtml = generateCoursePage({
 
 - [ecommerce.js](./ecommerce.js)
 - [education.js](./education.js)
+- [social.js](./social.js)
 - [blog.js](./blog.js)
 - [landing.js](./landing.js)
 - [Sécurité & RGPD](../security/README.md)
