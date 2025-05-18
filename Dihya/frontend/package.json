@@ -1,0 +1,59 @@
+{
+  "name": "dihya-frontend",
+  "version": "1.0.0",
+  "description": "Frontend Dihya Coding – Génération moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.",
+  "author": "Dihya Coding Team",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://dihya.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dihya-coding/dihya-frontend.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint": "eslint ./src --ext .js,.jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "audit": "npm audit",
+    "coverage": "react-scripts test --coverage",
+    "docs": "npx jsdoc -c jsdoc.json"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "prettier": "^3.2.5",
+    "jsdoc": "^4.0.2",
+    "jest": "^29.7.0",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/jest-dom": "^6.4.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "keywords": [
+    "dihya",
+    "frontend",
+    "génération",
+    "sécurité",
+    "rgpd",
+    "auditabilité",
+    "extensible",
+    "robuste",
+    "documentation",
+    "seo"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

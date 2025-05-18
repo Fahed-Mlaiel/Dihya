@@ -1,0 +1,51 @@
+# pubspec.yaml – Dihya Coding mobile (Flutter)
+# Garantit design moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.
+
+name: dihya_coding_mobile
+description: >
+  Application mobile Dihya Coding – Génération moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.
+version: 1.0.0+1
+homepage: https://dihya.app
+publish_to: "none" # Ce projet n'est pas publié publiquement
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  http: ^1.2.1
+  shared_preferences: ^2.2.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+        - asset: assets/fonts/Inter-Italic.ttf
+        - asset: assets/fonts/Inter-Light.ttf
+
+# Sécurité & RGPD :
+#   - Pas de données sensibles dans le code ou les assets.
+#   - Consentement utilisateur requis pour les logs/auditabilité.
+# Auditabilité :
+#   - Ce fichier est commenté pour la traçabilité et la conformité.
+# Extensibilité :
+#   - Ajoutez vos dépendances métiers ou modules Flutter selon vos besoins.
+# Robustesse :
+#   - Compatible avec Flutter 3.3+ et tous les OS mobiles modernes.
+# Documentation claire :
+#   - Chaque section est expliquée pour faciliter la maintenance.

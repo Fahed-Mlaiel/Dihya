@@ -1,0 +1,24 @@
+# CODEOWNERS – Dihya Coding
+# Garantit la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité, la robustesse et la documentation claire.
+# Chaque modification critique doit être validée par les responsables ci-dessous.
+
+# Propriétaires principaux du code (tous les dossiers et fichiers)
+*       @dihya-coding/core-team
+
+# Frontend (React, JS, CSS, tests, SEO, accessibilité)
+frontend/   @dihya-coding/frontend-leads
+
+# Mobile Flutter
+mobile/flutter/   @dihya-coding/mobile-flutter-leads
+
+# Mobile React Native
+mobile/react_native/   @dihya-coding/mobile-rn-leads
+
+# Documentation, guides, cahier des charges
+docs/   @dihya-coding/docs-leads
+
+# Sécurité, RGPD, auditabilité (tous modules)
+src/utils/security.js @dihya-coding/security-leads
+src/utils/rgpd.js     @dihya-coding/security-leads
+
+# Auditabilité : ce fichier est commenté pour conformité et traçabilité

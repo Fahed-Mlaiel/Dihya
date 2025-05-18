@@ -1,0 +1,195 @@
+/**
+ * @file global.css
+ * @description Styles globaux pour Dihya Coding : design moderne, accessibilité, SEO, sécurité, conformité RGPD, extensibilité, robustesse et documentation claire.
+ * Respecte les bonnes pratiques CSS, responsive, dark/light, contrastes, focus, animations accessibles.
+ */
+
+/* Reset CSS moderne */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f9fafb;
+  color: #222;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181a1b;
+    color: #f3f4f6;
+  }
+}
+
+/* Liens accessibles et visibles */
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: #1e40af;
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: #18181b;
+}
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #f3f4f6;
+  }
+}
+
+/* Paragraphes et textes */
+p, ul, ol, li, blockquote {
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+/* Boutons accessibles */
+button, input[type="submit"], .btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 0.375em;
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:focus, .btn:focus {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+button:hover, .btn:hover {
+  background: #1e40af;
+}
+
+/* Formulaires */
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5em;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375em;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #222;
+  transition: border 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+@media (prefers-color-scheme: dark) {
+  input, textarea, select {
+    background: #23272f;
+    color: #f3f4f6;
+    border-color: #374151;
+  }
+}
+
+/* Tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+th, td {
+  padding: 0.75em;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+th {
+  background: #f3f4f6;
+  font-weight: 700;
+}
+@media (prefers-color-scheme: dark) {
+  th {
+    background: #23272f;
+  }
+  th, td {
+    border-color: #374151;
+  }
+}
+
+/* Images responsives */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Accessibilité : focus visible */
+:focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+
+/* Animations accessibles */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Sécurité : pas de overflow caché global, pas de user-select none global */
+
+/* Utilitaires */
+.hidden {
+  display: none !important;
+}
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Documentation claire : commentaires pour chaque section */
+/* Extensible : ajoutez vos composants ou utilitaires ici */

@@ -1,0 +1,47 @@
+# .gitignore – Dihya Coding frontend
+# Garantit la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité, la robustesse et la documentation claire.
+
+# Node modules et dépendances
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers d’environnement (jamais versionner de secrets)
+.env
+.env.local
+.env.*.local
+
+# Fichiers de logs locaux et historiques d’auditabilité
+*.log
+logs/
+*.history
+*.audit
+
+# Fichiers temporaires, caches, outputs de build
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+tmp/
+temp/
+*.tmp
+
+# Fichiers système/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Fichiers générés par l’application (exports, backups, dumps)
+exports/
+backups/
+*.bak
+*.export
+*.dump
+
+# RGPD : ne jamais versionner de données personnelles ou logs utilisateurs
+# Auditabilité : ce fichier est commenté pour conformité et traçabilité
