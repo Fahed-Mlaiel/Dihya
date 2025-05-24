@@ -1,0 +1,18 @@
+# Listing automatisé des fichiers de tests – Dihya Coding
+# Sécurité, RGPD, accessibilité, multilingue, CI/CD-ready, documentation intégrée
+# Généré automatiquement pour la conformité, l’auditabilité et la complétude du projet.
+
+- Fichier utilisé pour le suivi CI/CD, la traçabilité, l’audit, la conformité RGPD, la sécurité et l’accessibilité.
+- Multilingue (fr, en, ar, de, es, it, zh, ru, pt, nl, tr, pl, ja)
+- Documentation intégrée, extensible, CI/CD-ready
+
+## Structure
+- Test
+- Statut
+- Date
+- Conformité RGPD, sécurité, accessibilité
+
+## Exemples d’utilisation
+- Génération automatique de rapports de tests
+- Audit RGPD, accessibilité, sécurité
+- Suivi CI/CD

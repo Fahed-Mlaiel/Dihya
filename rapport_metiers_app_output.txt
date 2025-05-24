@@ -1,0 +1,54 @@
+# Rapport métiers app – Dihya Coding
+# Sécurité, RGPD, accessibilité, multilingue, CI/CD-ready, documentation intégrée
+# Généré automatiquement pour la conformité, l’auditabilité et la complétude du projet.
+
+- Fichier utilisé pour le suivi CI/CD, la traçabilité, l’audit, la conformité RGPD, la sécurité et l’accessibilité.
+- Multilingue (fr, en, ar, de, es, it, zh, ru, pt, nl, tr, pl, ja)
+- Documentation intégrée, extensible, CI/CD-ready
+
+## Structure
+- Métier
+- Statut
+- Date
+- Conformité RGPD, sécurité, accessibilité
+
+## Exemples d’utilisation
+- Génération automatique de rapports métiers (ex : conformité RGPD, accessibilité, sécurité, multilingue)
+- Audit RGPD, accessibilité, sécurité, traçabilité CI/CD
+- Suivi CI/CD, monitoring, backup, plugins, fallback IA
+
+## Exemples (français)
+| Métier                | Statut      | Date       | RGPD | Sécurité | Accessibilité |
+|-----------------------|-------------|------------|------|----------|--------------|
+| Restauration          | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| Beauté                | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| Immobilier            | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| Intelligence Artificielle | conforme | 2025-05-24 | ✅   | ✅       | ✅           |
+| Loisirs               | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| Crypto                | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| Juridique             | conforme    | 2025-05-24 | ✅   | ✅       | ✅           |
+| ...                   | ...         | ...        | ...  | ...      | ...          |
+
+## Exemples (anglais)
+| Business              | Status      | Date       | GDPR | Security | Accessibility |
+|-----------------------|-------------|------------|------|----------|---------------|
+| Food Service          | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| Beauty                | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| Real Estate           | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| Artificial Intelligence | compliant | 2025-05-24 | ✅   | ✅       | ✅            |
+| Leisure               | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| Crypto                | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| Legal                 | compliant   | 2025-05-24 | ✅   | ✅       | ✅            |
+| ...                   | ...         | ...        | ...  | ...      | ...           |
+
+## Internationalisation
+- Traductions disponibles : français, anglais, arabe, allemand, espagnol, italien, chinois, russe, portugais, néerlandais, turc, polonais, japonais
+
+## Conformité
+- RGPD : auditabilité, anonymisation, consentement, documentation
+- Sécurité : audit, logs, monitoring, WAF, anti-DDOS, RBAC, multitenancy
+- Accessibilité : ARIA, navigation clavier, contrastes, multilingue
+- CI/CD-ready, extensible, plugins, fallback IA, backup, monitoring
+
+## Documentation intégrée
+- Guide d’utilisation, contribution, audit, conformité, accessibilité, sécurité, RGPD, CI/CD

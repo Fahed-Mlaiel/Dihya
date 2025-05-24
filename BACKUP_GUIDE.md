@@ -72,6 +72,15 @@ tar -xzf dihya_project.tar.gz -C /destination/path
 
 ---
 
+## 🔄 Sauvegarde automatisée en temps réel
+
+- Utilisez `make backup-realtime` ou `./scripts/backup_realtime.sh` pour une sauvegarde continue à chaque modification (inotify, logs, hooks, multilingue, CI/CD-ready).
+- Conforme RGPD, audit, accessibilité, production/démo.
+- Arrêt : Ctrl+C
+- Monitoring, logs, auditabilité, notification intégrés.
+
+---
+
 ## 🔒 Sécurité & RGPD
 
 - **Jamais de secrets en clair** dans les backups

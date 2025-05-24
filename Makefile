@@ -115,6 +115,17 @@ update:  ## Met à jour toutes les dépendances (frontend/backend/mobile)
 shell:  ## Ouvre un shell dans l’environnement Dihya
     bash
 
+## ----------- BACKUP -----------
+backup:  ## Sauvegarde complète, chiffrée, auditable, automatisée (temps réel)
+	@echo "[FR] Lancement du backup avancé (temps réel)..."
+	@bash scripts/backup.sh
+
+backup-realtime:  ## Backup en temps réel (surveillance continue, inotify)
+	@echo "[FR] Surveillance en temps réel des modifications pour backup..."
+	@while true; do \
+	  inotifywait -r -e modify,create,delete,move /workspaces/Dihya && make backup; \
+	done
+
 ## ----------- MULTILINGUE -----------
 # 🇫🇷 Toutes les commandes sont documentées et multilingues.
 # 🇬🇧 All commands are documented and multilingual.
@@ -126,4 +137,5 @@ shell:  ## Ouvre un shell dans l’environnement Dihya
         mobile-install mobile-build mobile-test \
         docs-build docs-serve policy-check \
         test coverage lint security-scan ci \
-        i18n-check sovereignty-check clean update shell
+        i18n-check sovereignty-check clean update shell \
+        backup backup-realtime

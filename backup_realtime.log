@@ -1,0 +1,7 @@
+nohup: ignoring input
+[FR] Surveillance en temps réel des modifications pour backup...
+Setting up watches.  Beware: since -r was given, this may take a while!
+Watches established.
+/workspaces/Dihya/ MODIFY backup_realtime.log
+[FR] Démarrage de la sauvegarde avancée...
+/workspaces/Dihya/scripts/backup.sh: line 27: /var/log/dihya_backup.log: Permission denied

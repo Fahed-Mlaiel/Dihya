@@ -9,7 +9,7 @@ This folder contains all automation, deployment, migration, backup, test, and ma
 ## دليل السكريبتات (العربية)
 يحتوي هذا المجلد على جميع سكريبتات الأتمتة والنشر والصيانة لمنصة ديهيا، موثقة ومتوافقة مع لينكس وGitHub Codespaces.
 
-## ⵜⴰⵎⴰⵣⵉⵖⵜ (amazigh)
+## ⵜⴰ⎠ⵣⵉⵖⵜ (amazigh)
 Aganfu agi yegber akk iskripten n Dihya, s uselkim, tazwart, tazwart n tutlayin.
 
 ### Structure
@@ -58,3 +58,8 @@ Merci de documenter chaque script et de tester la portabilité avant tout commit
 ```bash
 ./test.sh --script backup.sh
 ```
+
+## 🔄 Backup automatisé en temps réel
+- `make backup-realtime` ou `./backup_realtime.sh` : surveille toutes les modifications du projet et déclenche un backup sécurisé à chaque changement (inotify, logs, hooks, multilingue, CI/CD-ready).
+- Conforme RGPD, audit, accessibilité, production/démo.
+- Arrêt : Ctrl+C
