@@ -1,7 +1,11 @@
-# DevOps – Dihya Coding
+# README – Dihya DevOps
 
-Ce dossier contient la configuration DevOps pour la plateforme Dihya Coding.  
-Il respecte le cahier des charges : sécurité, CI/CD, automatisation, déploiement cloud-agnostique, bonnes pratiques et extensibilité.
+Ce dossier contient les scripts, configurations et guides DevOps pour Dihya : CI/CD, monitoring, backup, sécurité, déploiement multi-cloud, etc.
+
+- Architecture CI/CD, scripts d’automatisation, sécurité, multicloud
+- Exemples d’utilisation, pipelines, tests, contribution
+
+Voir [../../README.md](../../README.md), [../README.md](../README.md)
 
 ---
 
@@ -106,7 +110,7 @@ terraform apply
 
 ## Licence
 
-Projet open-source sous licence AGPL.  
+Projet open-source sous licence AGPL.
 Voir le fichier `LICENSE` à la racine du projet.
 
 ---

@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "nom": {
+      "fr": "DevOps",
+      "en": "DevOps",
+      "ar": "ديفوبس",
+      "tzm": "DevOps"
+    },
+    "role": "devops",
+    "permissions": ["deploy", "monitor", "rollback", "manage-secrets"],
+    "rgpd_consent": true,
+    "accessibility_level": "AA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "nom": {
+      "fr": "Développeur Frontend",
+      "en": "Frontend Developer",
+      "ar": "مطور الواجهة",
+      "tzm": "Frontend"
+    },
+    "role": "frontend",
+    "permissions": ["ui:edit", "i18n:manage", "a11y:test"],
+    "rgpd_consent": true,
+    "accessibility_level": "AAA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:01:00Z"
+  },
+  {
+    "id": 3,
+    "nom": {
+      "fr": "Data Privacy Officer",
+      "en": "Data Privacy Officer",
+      "ar": "مسؤول حماية البيانات",
+      "tzm": "DPO"
+    },
+    "role": "dpo",
+    "permissions": ["rgpd:audit", "dpi:manage", "notify:cnil"],
+    "rgpd_consent": true,
+    "accessibility_level": "AA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:02:00Z"
+  },
+  {
+    "id": 4,
+    "nom": {
+      "fr": "Utilisateur",
+      "en": "User",
+      "ar": "مستخدم",
+      "tzm": "User"
+    },
+    "role": "user",
+    "permissions": ["app:use"],
+    "rgpd_consent": true,
+    "accessibility_level": "AA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:03:00Z"
+  },
+  {
+    "id": 5,
+    "nom": {
+      "fr": "Admin",
+      "en": "Admin",
+      "ar": "مشرف عام",
+      "tzm": "Admin"
+    },
+    "role": "admin",
+    "permissions": ["*"],
+    "rgpd_consent": true,
+    "accessibility_level": "AAA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:04:00Z"
+  },
+  {
+    "id": 6,
+    "nom": {
+      "fr": "QA/Accessibilité",
+      "en": "QA/Accessibility",
+      "ar": "ضمان الجودة/إتاحة",
+      "tzm": "QA"
+    },
+    "role": "qa",
+    "permissions": ["test:run", "a11y:audit", "report:issue"],
+    "rgpd_consent": true,
+    "accessibility_level": "AAA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:05:00Z"
+  },
+  {
+    "id": 7,
+    "nom": {
+      "fr": "Product Owner",
+      "en": "Product Owner",
+      "ar": "مالك المنتج",
+      "tzm": "PO"
+    },
+    "role": "po",
+    "permissions": ["doc:edit", "roadmap:manage", "consent:manage"],
+    "rgpd_consent": true,
+    "accessibility_level": "AA",
+    "sovereignty": true,
+    "created_at": "2025-05-20T10:06:00Z"
+  }
+]

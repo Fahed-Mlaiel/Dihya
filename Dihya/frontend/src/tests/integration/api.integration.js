@@ -1,7 +1,8 @@
 /**
  * @file api.integration.js
- * @description Tests d’intégration pour les appels API de Dihya Coding : vérifie la robustesse, la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité et la documentation claire.
- * Tous les tests respectent le consentement utilisateur, anonymisent les logs et valident les bonnes pratiques.
+ * @description Tests d’intégration pour les appels API de Dihya Coding : robustesse, sécurité, conformité RGPD, auditabilité, extensibilité, documentation claire.
+ * Respecte le cahier des charges Dihya Coding (sécurité, extensibilité, auditabilité, souveraineté, UX, i18n, etc.)
+ * Tous les tests anonymisent les logs, simulent le consentement utilisateur, vérifient la souveraineté et la conformité AGPL.
  */
 
 import axios from 'axios';
@@ -10,7 +11,7 @@ const API_BASE = process.env.API_BASE || 'http://localhost:3000/api';
 
 describe('API Integration – Dihya Coding', () => {
   beforeAll(() => {
-    // Simule le consentement utilisateur pour les tests
+    // Simule le consentement utilisateur pour les tests (RGPD)
     if (typeof window !== 'undefined' && window.localStorage) {
       window.localStorage.setItem('api_integration_feature_consent', '1');
     }
@@ -32,7 +33,6 @@ describe('API Integration – Dihya Coding', () => {
   it('protège les routes privées sans authentification', async () => {
     try {
       await axios.get(`${API_BASE}/user/profile`);
-      // Si pas d’erreur, c’est un problème
       throw new Error('Route privée accessible sans auth');
     } catch (err) {
       expect(err.response.status).toBe(401);
@@ -99,6 +99,46 @@ describe('API Integration – Dihya Coding', () => {
       expect(logsAfter === null || logsAfter === '[]').toBe(true);
     }
   });
+
+  it('supporte l’extensibilité des métiers (template dynamique)', async () => {
+    // Exemple : création d’un template métier "sport"
+    const res = await axios.post(`${API_BASE}/templates`, {
+      name: 'sport',
+      fields: ['nom', 'type', 'date', 'participants'],
+      meta: { description: 'Gestion d’activité sportive' }
+    });
+    expect(res.status).toBe(201);
+    expect(res.data).toHaveProperty('name', 'sport');
+    expect(res.data.fields).toContain('participants');
+  });
+
+  it('gère la robustesse face à des entrées inattendues', async () => {
+    try {
+      await axios.post(`${API_BASE}/auth/register`, {
+        email: '<script>alert(1)</script>@dihya.app',
+        password: 'x',
+        username: 'x'
+      });
+      throw new Error('Inscription acceptée avec entrée malicieuse');
+    } catch (err) {
+      expect([400, 422]).toContain(err.response.status);
+    }
+  });
+
+  it('API multilingue : accepte la langue dans les headers', async () => {
+    const res = await axios.get(`${API_BASE}/status`, {
+      headers: { 'Accept-Language': 'ar' }
+    });
+    expect(res.status).toBe(200);
+    expect(res.data).toHaveProperty('status');
+  });
+
+  it('documentation claire : endpoint /docs accessible', async () => {
+    const res = await axios.get(`${API_BASE}/docs`);
+    expect(res.status).toBe(200);
+    expect(res.data).toHaveProperty('openapi');
+    expect(res.data.openapi).toMatch(/^3\./);
+  });
 });
 
-/* Documentation claire : chaque test est commenté pour auditabilité et conformité */
+/* Documentation claire : chaque test est commenté pour auditabilité, conformité, robustesse, souveraineté */

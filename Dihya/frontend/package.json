@@ -1,9 +1,9 @@
 {
   "name": "dihya-frontend",
   "version": "1.0.0",
-  "description": "Frontend Dihya Coding – Génération moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.",
+  "description": "Dihya Coding Frontend – Générateur No-Code/Low-Code multi-métiers, souverain, sécurisé, multilingue, extensible, conforme RGPD, UI/UX moderne.",
   "author": "Dihya Coding Team",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "private": true,
   "homepage": "https://dihya.app",
   "repository": {
@@ -18,7 +18,9 @@
     "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
     "audit": "npm audit",
     "coverage": "react-scripts test --coverage",
-    "docs": "npx jsdoc -c jsdoc.json"
+    "docs": "npx jsdoc -c jsdoc.json",
+    "i18n:extract": "i18next-scanner --config i18n.scanner.config.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -27,7 +29,10 @@
     "@tailwindcss/typography": "^0.5.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "i18next": "^23.10.0",
+    "react-i18next": "^13.2.2",
+    "axios": "^1.6.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
@@ -37,7 +42,9 @@
     "eslint-plugin-react": "^7.34.1",
     "jest": "^29.7.0",
     "jsdoc": "^4.0.2",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "husky": "^9.0.11",
+    "i18next-scanner": "^6.5.2"
   },
   "browserslist": [
     ">0.2%",
@@ -47,6 +54,8 @@
   "keywords": [
     "dihya",
     "frontend",
+    "no-code",
+    "low-code",
     "génération",
     "sécurité",
     "rgpd",
@@ -54,7 +63,14 @@
     "extensible",
     "robuste",
     "documentation",
-    "seo"
+    "seo",
+    "multilingue",
+    "amazigh",
+    "blockchain",
+    "devops",
+    "ia",
+    "template",
+    "plugin"
   ],
   "engines": {
     "node": ">=18.0.0",

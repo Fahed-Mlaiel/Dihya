@@ -1,0 +1,184 @@
+{
+  "template": "legal",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "case_number",
+      "type": "string",
+      "label": {
+        "fr": "Numéro de dossier",
+        "en": "Case Number",
+        "ar": "رقم القضية",
+        "tzr": "ⴰⵎⴰⵣⴰⵍ ⵏ ⴰⴷⴷⴰⴹ",
+        "es": "Número de caso",
+        "de": "Aktenzeichen",
+        "zh": "案件编号",
+        "ja": "事件番号",
+        "ko": "사건 번호",
+        "nl": "Zaaknummer",
+        "he": "מספר תיק",
+        "fa": "شماره پرونده",
+        "hi": "मामला संख्या"
+      }
+    },
+    {
+      "name": "client_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom du client",
+        "en": "Client Name",
+        "ar": "اسم العميل",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre del cliente",
+        "de": "Kundenname",
+        "zh": "客户姓名",
+        "ja": "依頼人名",
+        "ko": "고객 이름",
+        "nl": "Klantnaam",
+        "he": "שם הלקוח",
+        "fa": "نام مشتری",
+        "hi": "ग्राहक का नाम"
+      }
+    },
+    {
+      "name": "lawyer_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom de l'avocat",
+        "en": "Lawyer Name",
+        "ar": "اسم المحامي",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre del abogado",
+        "de": "Anwaltname",
+        "zh": "律师姓名",
+        "ja": "弁護士名",
+        "ko": "변호사 이름",
+        "nl": "Advocaatnaam",
+        "he": "שם עורך הדין",
+        "fa": "نام وکیل",
+        "hi": "वकील का नाम"
+      }
+    },
+    {
+      "name": "hearing_date",
+      "type": "string",
+      "label": {
+        "fr": "Date d'audience",
+        "en": "Hearing Date",
+        "ar": "تاريخ الجلسة",
+        "tzr": "ⴰⵙⴳⴰⴷ ⵏ ⴰⵙⵉⴷⴰⵡ",
+        "es": "Fecha de audiencia",
+        "de": "Verhandlungstermin",
+        "zh": "听证日期",
+        "ja": "審理日",
+        "ko": "심리 날짜",
+        "nl": "Zittingsdatum",
+        "he": "תאריך הדיון",
+        "fa": "تاریخ جلسه",
+        "hi": "सुनवाई की तिथि"
+      }
+    },
+    {
+      "name": "court",
+      "type": "string",
+      "label": {
+        "fr": "Tribunal",
+        "en": "Court",
+        "ar": "المحكمة",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Tribunal",
+        "de": "Gericht",
+        "zh": "法院",
+        "ja": "裁判所",
+        "ko": "법원",
+        "nl": "Rechtbank",
+        "he": "בית משפט",
+        "fa": "دادگاه",
+        "hi": "अदालत"
+      }
+    },
+    {
+      "name": "verdict",
+      "type": "string",
+      "label": {
+        "fr": "Verdict",
+        "en": "Verdict",
+        "ar": "الحكم",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Veredicto",
+        "de": "Urteil",
+        "zh": "判决",
+        "ja": "判決",
+        "ko": "판결",
+        "nl": "Vonnis",
+        "he": "פסק דין",
+        "fa": "حکم",
+        "hi": "निर्णय"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de dossier juridique multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant legal case template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج ملف قانوني متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de expediente legal multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme Rechtsfall-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的法律案件模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の法的案件テンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 법률 사건 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme juridische casustemplate, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית תיק משפטי רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب پرونده حقوقی چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन कानूनी केस टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "case_number": "2025-00123",
+      "client_name": "Sophie Martin",
+      "lawyer_name": "Me. Benyahia",
+      "hearing_date": "2025-06-15",
+      "court": "Tribunal de Paris",
+      "verdict": "Jugement en faveur du client."
+    }
+  }
+}

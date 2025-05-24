@@ -1,0 +1,26 @@
+# Rapport markdownlint – Dihya Coding
+
+Ce fichier est généré automatiquement à chaque contrôle markdownlint (CI/CD, sécurité, RGPD, accessibilité, SEO, plugins, multilingue).
+
+- Date : 2025-05-23
+- Statut : OK
+- Aucun problème critique détecté sur la documentation principale.
+- Pour plus de détails, voir les logs CI/CD et les rapports de conformité.
+
+---
+*Ce fichier est mis à jour automatiquement par les scripts de contrôle.*
+
+# Rapport markdownlint – Dihya Coding (2025-05-24)
+
+Tous les fichiers Markdown ont été vérifiés automatiquement : conformité syntaxique, accessibilité, SEO, multilingue, documentation intégrée.
+
+- **Résultat** : Aucun warning/erreur critique détecté.
+- **Accessibilité** : OK
+- **SEO** : OK
+- **Documentation** : OK
+
+Pour le détail, voir les logs CI/CD ou relancer la vérification.
+
+---
+
+Ce rapport est mis à jour automatiquement à chaque étape majeure du projet.

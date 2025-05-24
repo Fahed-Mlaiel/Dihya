@@ -1,0 +1,184 @@
+{
+  "template": "hr",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "employee_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom de l'employé",
+        "en": "Employee Name",
+        "ar": "اسم الموظف",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre del empleado",
+        "de": "Mitarbeitername",
+        "zh": "员工姓名",
+        "ja": "従業員名",
+        "ko": "직원 이름",
+        "nl": "Werknemersnaam",
+        "he": "שם העובד",
+        "fa": "نام کارمند",
+        "hi": "कर्मचारी का नाम"
+      }
+    },
+    {
+      "name": "position",
+      "type": "string",
+      "label": {
+        "fr": "Poste",
+        "en": "Position",
+        "ar": "المنصب",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Puesto",
+        "de": "Position",
+        "zh": "职位",
+        "ja": "役職",
+        "ko": "직위",
+        "nl": "Functie",
+        "he": "תפקיד",
+        "fa": "سمت",
+        "hi": "पद"
+      }
+    },
+    {
+      "name": "department",
+      "type": "string",
+      "label": {
+        "fr": "Département",
+        "en": "Department",
+        "ar": "القسم",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Departamento",
+        "de": "Abteilung",
+        "zh": "部门",
+        "ja": "部署",
+        "ko": "부서",
+        "nl": "Afdeling",
+        "he": "מחלקה",
+        "fa": "دپارتمان",
+        "hi": "विभाग"
+      }
+    },
+    {
+      "name": "hire_date",
+      "type": "string",
+      "label": {
+        "fr": "Date d'embauche",
+        "en": "Hire Date",
+        "ar": "تاريخ التوظيف",
+        "tzr": "ⴰⵙⴳⴰⴷ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Fecha de contratación",
+        "de": "Einstellungsdatum",
+        "zh": "入职日期",
+        "ja": "雇用日",
+        "ko": "입사일",
+        "nl": "Datum indiensttreding",
+        "he": "תאריך העסקה",
+        "fa": "تاریخ استخدام",
+        "hi": "नियुक्ति तिथि"
+      }
+    },
+    {
+      "name": "contract_type",
+      "type": "string",
+      "label": {
+        "fr": "Type de contrat",
+        "en": "Contract Type",
+        "ar": "نوع العقد",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Tipo de contrato",
+        "de": "Vertragsart",
+        "zh": "合同类型",
+        "ja": "契約種別",
+        "ko": "계약 유형",
+        "nl": "Contracttype",
+        "he": "סוג חוזה",
+        "fa": "نوع قرارداد",
+        "hi": "अनुबंध का प्रकार"
+      }
+    },
+    {
+      "name": "manager",
+      "type": "string",
+      "label": {
+        "fr": "Manager",
+        "en": "Manager",
+        "ar": "المدير",
+        "tzr": "ⴰⵙⵉⵏⴰⵡⴰⵏ",
+        "es": "Gerente",
+        "de": "Manager",
+        "zh": "经理",
+        "ja": "マネージャー",
+        "ko": "매니저",
+        "nl": "Manager",
+        "he": "מנהל",
+        "fa": "مدیر",
+        "hi": "प्रबंधक"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de fiche employé RH multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant HR employee sheet template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج بطاقة موظف موارد بشرية متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de ficha de empleado de RRHH multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme HR-Mitarbeiterblatt-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的人力资源员工表模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の人事従業員シートテンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 HR 직원 시트 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme HR-werknemerssheet-template, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית גיליון עובד HR רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب برگه کارمند منابع انسانی چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन HR कर्मचारी शीट टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "employee_name": "Fatima Zahra",
+      "position": "Développeuse IA",
+      "department": "R&D",
+      "hire_date": "2024-09-01",
+      "contract_type": "CDI",
+      "manager": "Mme. Bensalem"
+    }
+  }
+}

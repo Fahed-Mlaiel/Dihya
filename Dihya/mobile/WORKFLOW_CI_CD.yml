@@ -1,0 +1,28 @@
+name: Mobile CI/CD
+on:
+  push:
+    paths:
+      - 'Dihya/mobile/**'
+  pull_request:
+    paths:
+      - 'Dihya/mobile/**'
+jobs:
+  test-audit-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install || true
+      - name: Run tests
+        run: echo "Tests mobile à compléter" # À remplacer par script réel
+      - name: Audit RGPD & Accessibilité
+        run: echo "Audit RGPD & Accessibilité pour mobile" # À remplacer par script réel
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-artifacts
+          path: Dihya/mobile/

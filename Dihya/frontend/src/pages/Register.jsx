@@ -7,6 +7,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MainLayout from '../layout/MainLayout';
+import { User, Mail, Lock, Loader2, ShieldCheck } from "lucide-react";
 
 /**
  * Page d’inscription utilisateur.
@@ -18,6 +19,7 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
   const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   /**
    * Gère la soumission du formulaire d’inscription.
@@ -28,11 +30,11 @@ export default function Register() {
     setStatus(null);
 
     if (!hasConsent()) {
-      setStatus({ type: 'error', message: t('rgpd.consent_required') });
+      setStatus({ type: 'error', message: t('rgpd.consent_required') || "Consentement RGPD requis." });
       return;
     }
     if (!validateEmail(email)) {
-      setStatus({ type: 'error', message: t('forms.invalid_email') });
+      setStatus({ type: 'error', message: t('forms.invalid_email') || "Email invalide." });
       return;
     }
     if (!password || password.length < 6) {
@@ -45,14 +47,13 @@ export default function Register() {
     }
 
     try {
-      // Simulation d’inscription (à remplacer par l’intégration réelle)
+      setLoading(true);
       await fakeRegister({ email, password });
       logRegisterEvent('register_success', {
         email: anonymizeEmail(email),
         timestamp: new Date().toISOString()
       });
-      // Stockage utilisateur simulé (à remplacer par la vraie logique)
-      window.localStorage.setItem('current_user', JSON.stringify({ id: email, role: 'user', createdAt: new Date().toLocaleDateString() }));
+      window.localStorage.setItem('current_user', JSON.stringify({ id: email, email, role: 'user', createdAt: new Date().toLocaleDateString() }));
       setStatus({ type: 'success', message: t('messages.register_success') || 'Inscription réussie.' });
       setEmail('');
       setPassword('');
@@ -64,19 +65,29 @@ export default function Register() {
         error: err.message,
         timestamp: new Date().toISOString()
       });
-      setStatus({ type: 'error', message: t('messages.error_occurred') });
+      setStatus({ type: 'error', message: t('messages.error_occurred') || "Erreur lors de l'inscription." });
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <MainLayout title={t('navigation.register')} description={t('app.description')}>
-      <section className="register-section" aria-labelledby="register-title">
-        <h1 id="register-title">{t('navigation.register')}</h1>
-        <form onSubmit={handleSubmit} aria-describedby="register-desc">
+      <section className="w-full max-w-md mx-auto bg-white/90 rounded-xl shadow-lg p-8 mt-12 mb-16 border border-gray-100 flex flex-col items-center" aria-labelledby="register-title">
+        <div className="flex items-center gap-3 mb-4">
+          <User className="w-8 h-8 text-yellow-500" />
+          <h1 id="register-title" className="text-2xl font-bold text-gray-900 tracking-wide">
+            {t('navigation.register') || "Inscription"}
+          </h1>
+        </div>
+        <form onSubmit={handleSubmit} aria-describedby="register-desc" className="w-full flex flex-col gap-5">
           <div id="register-desc" className="sr-only">
             {t('app.description')}
           </div>
-          <label htmlFor="email">{t('forms.email')}</label>
+          <label htmlFor="email" className="font-semibold text-gray-700 flex items-center gap-2">
+            <Mail className="w-4 h-4 text-yellow-500" />
+            {t('forms.email') || "Email"}
+          </label>
           <input
             id="email"
             name="email"
@@ -86,9 +97,14 @@ export default function Register() {
             required
             autoComplete="username"
             aria-required="true"
+            className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 outline-none transition"
+            placeholder="exemple@email.com"
           />
 
-          <label htmlFor="password">{t('forms.password')}</label>
+          <label htmlFor="password" className="font-semibold text-gray-700 flex items-center gap-2">
+            <Lock className="w-4 h-4 text-yellow-500" />
+            {t('forms.password') || "Mot de passe"}
+          </label>
           <input
             id="password"
             name="password"
@@ -99,9 +115,14 @@ export default function Register() {
             minLength={6}
             autoComplete="new-password"
             aria-required="true"
+            className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 outline-none transition"
+            placeholder="••••••"
           />
 
-          <label htmlFor="confirm">{t('forms.confirm_password') || 'Confirmer le mot de passe'}</label>
+          <label htmlFor="confirm" className="font-semibold text-gray-700 flex items-center gap-2">
+            <Lock className="w-4 h-4 text-yellow-500" />
+            {t('forms.confirm_password') || 'Confirmer le mot de passe'}
+          </label>
           <input
             id="confirm"
             name="confirm"
@@ -112,19 +133,44 @@ export default function Register() {
             minLength={6}
             autoComplete="new-password"
             aria-required="true"
+            className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 outline-none transition"
+            placeholder="••••••"
           />
 
-          <button type="submit">{t('navigation.register')}</button>
+          <button
+            type="submit"
+            disabled={loading}
+            className="mt-2 px-6 py-2 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold shadow transition flex items-center justify-center gap-2"
+          >
+            {loading && <Loader2 className="animate-spin w-5 h-5" />}
+            {t('navigation.register') || "Inscription"}
+          </button>
         </form>
         {status && (
           <div
-            className={`status-message ${status.type}`}
+            className={`mt-6 px-4 py-3 rounded-lg text-sm font-medium flex items-center gap-2 ${
+              status.type === 'error'
+                ? 'bg-red-100 text-red-700'
+                : 'bg-green-100 text-green-700'
+            }`}
             role={status.type === 'error' ? 'alert' : 'status'}
             tabIndex={-1}
           >
+            <ShieldCheck className="w-5 h-5" />
             {status.message}
           </div>
         )}
+        <div className="mt-8 text-xs text-gray-400 text-center">
+          <span>
+            <a href="/docs/contributing" className="underline hover:text-yellow-600">
+              Contribuer au projet
+            </a>
+            {" • "}
+            <a href="/docs/ajouter_metier" className="underline hover:text-yellow-600">
+              Ajouter un métier
+            </a>
+          </span>
+        </div>
       </section>
     </MainLayout>
   );
@@ -137,7 +183,6 @@ export default function Register() {
  */
 async function fakeRegister(params) {
   await new Promise((r) => setTimeout(r, 350));
-  // Simule un succès, peut lever une erreur pour tester les cas d’échec
 }
 
 /**

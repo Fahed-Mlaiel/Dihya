@@ -1,0 +1,184 @@
+{
+  "template": "finance",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "account_holder",
+      "type": "string",
+      "label": {
+        "fr": "Titulaire du compte",
+        "en": "Account Holder",
+        "ar": "صاحب الحساب",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Titular de la cuenta",
+        "de": "Kontoinhaber",
+        "zh": "账户持有人",
+        "ja": "口座名義人",
+        "ko": "계좌 소유자",
+        "nl": "Rekeninghouder",
+        "he": "בעל החשבון",
+        "fa": "دارنده حساب",
+        "hi": "खाता धारक"
+      }
+    },
+    {
+      "name": "account_number",
+      "type": "string",
+      "label": {
+        "fr": "Numéro de compte",
+        "en": "Account Number",
+        "ar": "رقم الحساب",
+        "tzr": "ⴰⵎⴰⵣⴰⵍ ⵏ ⴰⴷⴷⴰⴹ",
+        "es": "Número de cuenta",
+        "de": "Kontonummer",
+        "zh": "账号",
+        "ja": "口座番号",
+        "ko": "계좌 번호",
+        "nl": "Rekeningnummer",
+        "he": "מספר חשבון",
+        "fa": "شماره حساب",
+        "hi": "खाता संख्या"
+      }
+    },
+    {
+      "name": "transaction_date",
+      "type": "string",
+      "label": {
+        "fr": "Date de transaction",
+        "en": "Transaction Date",
+        "ar": "تاريخ المعاملة",
+        "tzr": "ⴰⵙⴳⴰⴷ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Fecha de transacción",
+        "de": "Transaktionsdatum",
+        "zh": "交易日期",
+        "ja": "取引日",
+        "ko": "거래일",
+        "nl": "Transactiedatum",
+        "he": "תאריך עסקה",
+        "fa": "تاریخ تراکنش",
+        "hi": "लेन-देन तिथि"
+      }
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "label": {
+        "fr": "Montant",
+        "en": "Amount",
+        "ar": "المبلغ",
+        "tzr": "ⴰⵙⵉⵏⴰⵡ",
+        "es": "Monto",
+        "de": "Betrag",
+        "zh": "金额",
+        "ja": "金額",
+        "ko": "금액",
+        "nl": "Bedrag",
+        "he": "סכום",
+        "fa": "مبلغ",
+        "hi": "राशि"
+      }
+    },
+    {
+      "name": "transaction_type",
+      "type": "string",
+      "label": {
+        "fr": "Type de transaction",
+        "en": "Transaction Type",
+        "ar": "نوع المعاملة",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Tipo de transacción",
+        "de": "Transaktionstyp",
+        "zh": "交易类型",
+        "ja": "取引種別",
+        "ko": "거래 유형",
+        "nl": "Transactietype",
+        "he": "סוג עסקה",
+        "fa": "نوع تراکنش",
+        "hi": "लेन-देन का प्रकार"
+      }
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "label": {
+        "fr": "Devise",
+        "en": "Currency",
+        "ar": "العملة",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Moneda",
+        "de": "Währung",
+        "zh": "货币",
+        "ja": "通貨",
+        "ko": "통화",
+        "nl": "Valuta",
+        "he": "מטבע",
+        "fa": "ارز",
+        "hi": "मुद्रा"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de fiche transaction financière multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant financial transaction sheet template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج بطاقة معاملة مالية متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de ficha de transacción financiera multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme Finanztransaktionsblatt-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的金融交易表模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の金融取引シートテンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 금융 거래 시트 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme financiële transactiesheet-template, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית גיליון עסקה פיננסית רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب برگه تراکنش مالی چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन वित्तीय लेन-देन शीट टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "account_holder": "Karim El Idrissi",
+      "account_number": "FR7612345678901234567890123",
+      "transaction_date": "2025-05-21",
+      "amount": 2500.75,
+      "transaction_type": "Virement",
+      "currency": "EUR"
+    }
+  }
+}

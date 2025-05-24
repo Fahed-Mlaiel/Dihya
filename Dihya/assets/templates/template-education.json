@@ -1,0 +1,184 @@
+{
+  "template": "education",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "student_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom de l'élève",
+        "en": "Student Name",
+        "ar": "اسم الطالب",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre del estudiante",
+        "de": "Schülername",
+        "zh": "学生姓名",
+        "ja": "生徒名",
+        "ko": "학생 이름",
+        "nl": "Studentnaam",
+        "he": "שם התלמיד",
+        "fa": "نام دانش‌آموز",
+        "hi": "छात्र का नाम"
+      }
+    },
+    {
+      "name": "grade",
+      "type": "string",
+      "label": {
+        "fr": "Classe",
+        "en": "Grade",
+        "ar": "الصف",
+        "tzr": "ⴰⵙⵉⵏⴰⵡ",
+        "es": "Grado",
+        "de": "Klasse",
+        "zh": "年级",
+        "ja": "学年",
+        "ko": "학년",
+        "nl": "Klas",
+        "he": "כיתה",
+        "fa": "پایه",
+        "hi": "कक्षा"
+      }
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "label": {
+        "fr": "Matière",
+        "en": "Subject",
+        "ar": "المادة",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Asignatura",
+        "de": "Fach",
+        "zh": "科目",
+        "ja": "科目",
+        "ko": "과목",
+        "nl": "Vak",
+        "he": "מקצוע",
+        "fa": "موضوع",
+        "hi": "विषय"
+      }
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "label": {
+        "fr": "Note",
+        "en": "Score",
+        "ar": "النقطة",
+        "tzr": "ⴰⵙⵉⵏⴰⵡ",
+        "es": "Nota",
+        "de": "Note",
+        "zh": "分数",
+        "ja": "点数",
+        "ko": "점수",
+        "nl": "Score",
+        "he": "ציון",
+        "fa": "نمره",
+        "hi": "अंक"
+      }
+    },
+    {
+      "name": "teacher",
+      "type": "string",
+      "label": {
+        "fr": "Enseignant",
+        "en": "Teacher",
+        "ar": "المعلم",
+        "tzr": "ⴰⵙⵉⵏⴰⵡⴰⵏ",
+        "es": "Profesor",
+        "de": "Lehrer",
+        "zh": "教师",
+        "ja": "教師",
+        "ko": "교사",
+        "nl": "Leraar",
+        "he": "מורה",
+        "fa": "معلم",
+        "hi": "शिक्षक"
+      }
+    },
+    {
+      "name": "comments",
+      "type": "string",
+      "label": {
+        "fr": "Commentaires",
+        "en": "Comments",
+        "ar": "ملاحظات",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Comentarios",
+        "de": "Bemerkungen",
+        "zh": "评语",
+        "ja": "コメント",
+        "ko": "코멘트",
+        "nl": "Opmerkingen",
+        "he": "הערות",
+        "fa": "توضیحات",
+        "hi": "टिप्पणी"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de bulletin scolaire multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant school report template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج كشف نقاط مدرسي متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de boletín escolar multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme Schulzeugnis-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的成绩单模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の成績表テンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 성적표 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme schoolrapporttemplate, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית גיליון ציונים רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب کارنامه چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन स्कूल रिपोर्ट टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "student_name": "Alice Dupont",
+      "grade": "5ème",
+      "subject": "Mathématiques",
+      "score": 18,
+      "teacher": "Mme Martin",
+      "comments": "Excellent travail, participation active."
+    }
+  }
+}

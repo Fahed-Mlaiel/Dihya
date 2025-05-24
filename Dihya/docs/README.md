@@ -1,7 +1,12 @@
-# Documentation – Dihya Coding
+# README – Dihya Docs
 
-Ce dossier contient la documentation technique et utilisateur de la plateforme Dihya Coding.  
-Elle respecte le cahier des charges : sécurité, modularité, multistack, multilingue, bonnes pratiques, extensibilité et accessibilité.
+Ce dossier contient la documentation technique, fonctionnelle, API, guides, FAQ, onboarding, multilingue, accessibilité, sécurité, etc.
+
+- Structure claire, multilingue, exhaustive, versionnée
+- Guides, API, FAQ, onboarding, changelogs, i18n, accessibilité
+- Contribution, extension, personnalisation
+
+Voir [../../README.md](../../README.md), [../README.md](../README.md)
 
 ---
 
@@ -43,7 +48,7 @@ Elle respecte le cahier des charges : sécurité, modularité, multistack, mul
 
 ## Licence
 
-Documentation open-source sous licence AGPL.  
+Documentation open-source sous licence AGPL.
 Voir le fichier `LICENSE` à la racine du projet.
 
 ---

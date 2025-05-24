@@ -1,0 +1,18 @@
+{
+  "defaultEngine": "mixtral",
+  "supportedLanguages": [
+    "fr",
+    "en",
+    "ar",
+    "tzr"
+  ],
+  "maxTokens": 2048,
+  "temperature": 0.7,
+  "fallback": {
+    "mixtral": true,
+    "llama": true,
+    "mistral": true
+  },
+  "audit": true,
+  "rgpd": true
+}

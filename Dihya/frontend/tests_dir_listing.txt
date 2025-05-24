@@ -1,0 +1,1892 @@
+tests/:
+total 28K
+-rw-rw-rw-  1 codespace codespace  381 May 21 23:11 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 e2e
+drwxrwxrwx+ 3 codespace codespace 4.0K May 23 03:13 integration
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 performance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 securite
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw-  1 codespace codespace  113 May 21 23:11 test_sample.js
+drwxrwxrwx+ 3 codespace codespace 4.0K May 23 03:14 unit
+
+tests/e2e:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 10:22 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+tests/integration:
+total 4.0K
+-rw-rw-rw-  1 codespace codespace    0 May 20 10:22 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 23 03:13 __pycache__
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_integration.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_integration_frontend.py
+
+tests/integration/__pycache__:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 176 May 23 03:13 test_integration_frontend.cpython-312-pytest-8.3.5.pyc
+
+tests/performance:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 10:17 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+tests/securite:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 10:22 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 policy.md
+
+tests/unit:
+total 4.0K
+-rw-rw-rw-  1 codespace codespace    0 May 20 10:22 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 23 03:14 __pycache__
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_unit.py
+
+tests/unit/__pycache__:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 153 May 23 03:14 test_unit.cpython-312-pytest-8.3.5.pyc
+src/:
+total 144K
+-rw-rw-rw-   1 codespace codespace  11K May 18 22:44 App.js
+-rw-rw-rw-   1 codespace codespace    0 May 19 01:29 README.md
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 analytics
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 api
+drwxrwxrwx+  4 codespace codespace 4.0K May 20 13:28 assets
+drwxrwxrwx+  3 codespace codespace 4.0K May 18 07:47 backup
+drwxrwxrwx+  5 codespace codespace 4.0K May 20 13:28 branding
+drwxrwxrwx+  3 codespace codespace 4.0K May 23 01:48 components
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 constants
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 contexts
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 design
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 features
+drwxrwxrwx+ 20 codespace codespace 4.0K May 20 12:40 generation
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 guards
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 hooks
+drwxrwxrwx+  3 codespace codespace 4.0K May 18 07:47 i18n
+-rw-rw-rw-   1 codespace codespace 1.9K May 18 22:47 index.js
+drwxrwxrwx+  5 codespace codespace 4.0K May 20 13:28 infra
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 layout
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 19:51 logs
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 mail
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 15:31 metiers_docs
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 middleware
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 monitoring
+drwxrwxrwx+  2 codespace codespace 4.0K May 23 01:48 pages
+drwxrwxrwx+  7 codespace codespace 4.0K May 20 13:28 plugins
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 preview
+drwxrwxrwx+  6 codespace codespace 4.0K May 20 13:28 scripts
+drwxrwxrwx+  3 codespace codespace 4.0K May 20 13:28 securite
+drwxrwxrwx+  3 codespace codespace 4.0K May 18 07:47 seo
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 services
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 styles
+drwxrwxrwx+  5 codespace codespace 4.0K May 20 13:28 tests
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 utils
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 voice
+
+src/analytics:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.0K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 07:47 trackEvent.js
+
+src/api:
+total 36K
+-rw-rw-rw- 1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 1.6K May 18 07:47 analytics.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 api.js
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 auth.js
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 backup.js
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 07:47 generate.js
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 preview.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 project.js
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 seo.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 voice.js
+
+src/assets:
+total 16K
+-rw-rw-rw-  1 codespace codespace 1.8K May 19 01:29 README.md
+-rw-rw-rw-  1 codespace codespace 1.2K May 22 01:02 assets.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 icons
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 images
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 index.js
+
+src/assets/icons:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 1.7K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 index.js
+
+src/assets/images:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 1.9K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 index.js
+
+src/backup:
+total 24K
+-rw-rw-rw-  1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw-  1 codespace codespace 3.4K May 18 07:47 autoBackup.js
+-rw-rw-rw-  1 codespace codespace 3.4K May 18 07:47 githubBackup.js
+-rw-rw-rw-  1 codespace codespace 3.8K May 18 07:47 localBackup.js
+-rw-rw-rw-  1 codespace codespace 3.4K May 18 07:47 notionBackup.js
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+
+src/backup/tests:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 test_backup.js
+
+src/branding:
+total 20K
+-rw-rw-rw-  1 codespace codespace 2.7K May 18 07:47 Branding.js
+-rw-rw-rw-  1 codespace codespace 2.4K May 19 01:29 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 assets
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 branding.js
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 themes
+
+src/branding/assets:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 1.3K May 22 01:02 assets.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 index.js
+
+src/branding/tests:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 1.8K May 18 07:47 test_branding.js
+
+src/branding/themes:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 amazigh.js
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 modern.js
+
+src/components:
+total 84K
+-rw-rw-rw-   1 codespace codespace 6.5K May 18 07:47 ChatAssistant.jsx
+-rw-rw-rw-   1 codespace codespace 6.0K May 23 04:32 DashboardGlobal.jsx
+-rw-rw-rw-   1 codespace codespace 4.3K May 18 07:47 Footer.jsx
+-rw-rw-rw-   1 codespace codespace 3.8K May 18 20:39 ImportTemplate.jsx
+-rw-rw-rw-   1 codespace codespace 2.9K May 18 07:47 LanguageSwitcher.jsx
+-rw-rw-rw-   1 codespace codespace 7.7K May 18 20:40 Marketplace.jsx
+-rw-rw-rw-   1 codespace codespace 3.6K May 18 07:47 Navbar.jsx
+-rw-rw-rw-   1 codespace codespace 6.0K May 18 07:47 ProjectCard.jsx
+-rw-rw-rw-   1 codespace codespace 2.7K May 19 01:29 README.md
+-rw-rw-rw-   1 codespace codespace 3.5K May 18 07:47 SEO.jsx
+-rw-rw-rw-   1 codespace codespace 3.8K May 18 07:47 Sidebar.jsx
+-rw-rw-rw-   1 codespace codespace 3.1K May 18 07:47 ThemeProvider.jsx
+-rw-rw-rw-   1 codespace codespace 2.6K May 18 07:47 ThemeSwitcher.jsx
+-rw-rw-rw-   1 codespace codespace 4.7K May 18 07:47 VoiceInput.jsx
+drwxrwxrwx+ 54 codespace codespace 4.0K May 20 13:12 metiers
+
+src/components/metiers:
+total 212K
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 3d
+-rw-rw-rw-  1 codespace codespace   10 May 20 13:12 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 administration_publique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 agriculture
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 arts
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 assurance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 automobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 banque_finance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 beaute
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 blockchain
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 btp
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 construction
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 crypto
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 culture
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 ecommerce
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 education
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 energie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 environnement
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 gamer
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 health
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 hotellerie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 immobilier
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:17 index.js
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 industrie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 intelligence_artificielle
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 it_devops
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 journalisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 juridique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 logistique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 loisirs
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 manufacturing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 marketing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 medias
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 mobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 mode
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 preview
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 publicite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 recherche
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 ressources_humaines
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 restauration
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 sante
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 science
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 securite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 seo
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 services_personne
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 social
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 sport
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tourisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 transport
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 utils
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 validators
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 voice
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 voyage
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 vr_ar
+
+src/components/metiers/3d:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/administration_publique:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/agriculture:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/arts:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/assurance:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/automobile:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/banque_finance:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/beaute:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/blockchain:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/btp:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/construction:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/crypto:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/culture:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/ecommerce:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/education:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/energie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/environnement:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/gamer:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/health:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/hotellerie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/immobilier:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/industrie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/intelligence_artificielle:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/it_devops:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/journalisme:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/juridique:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/logistique:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/loisirs:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/manufacturing:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/marketing:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/medias:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/mobile:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/mode:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/preview:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/publicite:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/recherche:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/ressources_humaines:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/restauration:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/sante:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/science:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/securite:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 policy.md
+
+src/components/metiers/seo:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/services_personne:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/social:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/sport:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/tourisme:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/transport:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/utils:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 utils.js
+
+src/components/metiers/validators:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/voice:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/voyage:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/components/metiers/vr_ar:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:14 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 index.js
+
+src/constants:
+total 20K
+-rw-rw-rw- 1 codespace codespace 1.9K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 constants.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:18 metiersConfig.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:17 metiersRoutes.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:17 metiers_config.py
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 roles.js
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 routes.js
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 stacks.js
+-rw-rw-rw- 1 codespace codespace 1.9K May 18 07:47 themes.js
+
+src/contexts:
+total 16K
+-rw-rw-rw- 1 codespace codespace 4.1K May 18 07:47 AuthContext.js
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 LanguageContext.js
+-rw-rw-rw- 1 codespace codespace 2.1K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 context.js
+
+src/design:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 7.8K May 19 04:34 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 index.js
+
+src/features:
+total 40K
+-rw-rw-rw- 1 codespace codespace 2.4K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 ai.js
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 auth.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 feature.js
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 generation.js
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 notifications.js
+-rw-rw-rw- 1 codespace codespace 4.6K May 18 07:47 pluginManager.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 plugins.js
+-rw-rw-rw- 1 codespace codespace 6.4K May 18 07:47 templateManager.js
+
+src/generation:
+total 84K
+-rw-rw-rw-   1 codespace codespace 2.9K May 19 01:29 README.md
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 ai
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 blueprints
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 branding
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 devops
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 docs
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 fallbacks
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 12:29 fields
+-rw-rw-rw-   1 codespace codespace 4.2K May 18 07:47 generateProject.js
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 i18n
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 infra
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 mobile
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 preview
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 securite
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 seo
+drwxrwxrwx+ 56 codespace codespace 4.0K May 20 12:42 templates
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 tests
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 13:28 utils
+drwxrwxrwx+  2 codespace codespace 4.0K May 20 12:40 validators
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 voice
+
+src/generation/ai:
+total 32K
+-rw-rw-rw- 1 codespace codespace 2.5K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 ai.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 ai.py
+-rw-rw-rw- 1 codespace codespace 2.9K May 18 07:47 assistant.js
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 fallbackGeneric.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackLlama.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackMistral.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackMixtral.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 quotaDetector.js
+-rw-rw-rw- 1 codespace codespace 4.0K May 18 07:47 quotaManager.js
+
+src/generation/blueprints:
+total 52K
+-rw-rw-rw- 1 codespace codespace 2.5K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 backendApi.js
+-rw-rw-rw- 1 codespace codespace 5.4K May 18 07:47 blockchain.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 devops.js
+-rw-rw-rw- 1 codespace codespace 4.1K May 18 07:47 iaScript.js
+-rw-rw-rw- 1 codespace codespace 4.2K May 18 07:47 mobileApp.js
+-rw-rw-rw- 1 codespace codespace 4.1K May 18 07:47 plugin.js
+-rw-rw-rw- 1 codespace codespace 4.2K May 18 07:47 webApp.js
+
+src/generation/branding:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.0K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 amazighTheme.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 branding.js
+-rw-rw-rw- 1 codespace codespace 4.7K May 18 07:47 modernTheme.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 03:15 template.js
+
+src/generation/devops:
+total 28K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 5.7K May 18 07:47 dockerGen.js
+-rw-rw-rw- 1 codespace codespace 6.7K May 18 07:47 k8sGen.js
+-rw-rw-rw- 1 codespace codespace 4.4K May 18 07:47 terraformGen.js
+
+src/generation/docs:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 compatibility.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 overview.md
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 securite.md
+-rw-rw-rw- 1 codespace codespace 3.0K May 18 07:47 seo.md
+-rw-rw-rw- 1 codespace codespace 3.3K May 18 07:47 structure.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 03:15 template.js
+
+src/generation/fallbacks:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackLlama.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackMistral.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 fallbackMixtral.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 quotaDetector.js
+
+src/generation/fields:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 02:46 customFieldTemplate.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 02:46 dateFieldTemplate.js
+-rw-rw-rw- 1 codespace codespace 3.7K May 18 07:47 fieldTypes.js
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 fieldValidators.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 02:46 numberFieldTemplate.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 02:46 selectFieldTemplate.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 02:46 textFieldTemplate.js
+
+src/generation/i18n:
+total 16K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 autoTranslate.js
+-rw-rw-rw- 1 codespace codespace 4.3K May 18 07:47 dialectSupport.js
+
+src/generation/infra:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 dwebBackup.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 infra.md
+-rw-rw-rw- 1 codespace codespace 4.3K May 18 07:47 ipfsBackup.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 03:15 template.js
+
+src/generation/mobile:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 flutterGen.js
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 reactNativeGen.js
+
+src/generation/preview:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.0K May 18 07:47 previewManager.js
+
+src/generation/securite:
+total 24K
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.3K May 18 07:47 antiDDoS.js
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 corsConfig.js
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 07:47 headersConfig.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 policy.md
+-rw-rw-rw- 1 codespace codespace 3.3K May 18 07:47 rateLimit.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 validation.js
+
+src/generation/seo:
+total 16K
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 lighthouse.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 seoConfig.js
+-rw-rw-rw- 1 codespace codespace 2.9K May 18 07:47 seoUtils.js
+
+src/generation/templates:
+total 220K
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 3d
+-rw-rw-rw-  1 codespace codespace 3.7K May 18 07:47 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 administration_publique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 agriculture
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 arts
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 assurance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 automobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 banque_finance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 beaute
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 blockchain
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 btp
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 construction
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 crypto
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 culture
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 03:15 devops
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 ecommerce
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 education
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 energie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 environnement
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 gamer
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 health
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 hotellerie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 03:19 i18n
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 immobilier
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 industrie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 intelligence_artificielle
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 it_devops
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 journalisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 juridique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 logistique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 loisirs
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 manufacturing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 marketing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 medias
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 mobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 mode
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 preview
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 publicite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 recherche
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 ressources_humaines
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 restauration
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 sante
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 science
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 securite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 seo
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 services_personne
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 social
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 sport
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 tourisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 transport
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 utils
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 validators
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 voice
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 voyage
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:31 vr_ar
+
+src/generation/templates/3d:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:04 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:04 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_3d.js
+
+src/generation/templates/administration_publique:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_administration_publique.js
+
+src/generation/templates/agriculture:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_agriculture.js
+
+src/generation/templates/arts:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_arts.js
+
+src/generation/templates/assurance:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_assurance.js
+
+src/generation/templates/automobile:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:03 README.md
+-rw-rw-rw- 1 codespace codespace 1021 May 23 05:03 policy.md
+-rw-rw-rw- 1 codespace codespace 2.7K May 23 05:04 template.js
+-rw-rw-rw- 1 codespace codespace 1.6K May 23 05:04 test_automobile.js
+
+src/generation/templates/banque_finance:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_banque_finance.js
+
+src/generation/templates/beaute:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_beaute.js
+
+src/generation/templates/blockchain:
+total 16K
+-rw-rw-rw- 1 codespace codespace 2.3K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 1.1K May 23 05:07 policy.md
+-rw-rw-rw- 1 codespace codespace 2.7K May 23 05:07 template.js
+-rw-rw-rw- 1 codespace codespace 1.6K May 23 05:07 test_blockchain.js
+
+src/generation/templates/btp:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_btp.js
+
+src/generation/templates/construction:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_construction.js
+
+src/generation/templates/crypto:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_crypto.js
+
+src/generation/templates/culture:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_culture.js
+
+src/generation/templates/devops:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 2.4K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 09:41 template.js
+
+src/generation/templates/ecommerce:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.6K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 4.2K May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 12:58 test_ecommerce.js
+
+src/generation/templates/education:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.6K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 4.1K May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 12:58 test_education.js
+
+src/generation/templates/energie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_energie.js
+
+src/generation/templates/environnement:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_environnement.js
+
+src/generation/templates/gamer:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:13 README.md
+-rw-rw-rw- 1 codespace codespace 1022 May 23 05:13 policy.md
+-rw-rw-rw- 1 codespace codespace 2.8K May 23 05:14 template.js
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:13 test_gamer.js
+
+src/generation/templates/health:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.5K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 4.6K May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 12:58 test_health.js
+
+src/generation/templates/hotellerie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_hotellerie.js
+
+src/generation/templates/i18n:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+
+src/generation/templates/immobilier:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_immobilier.js
+
+src/generation/templates/industrie:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_industrie.js
+
+src/generation/templates/intelligence_artificielle:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_intelligence_artificielle.js
+
+src/generation/templates/it_devops:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_it_devops.js
+
+src/generation/templates/journalisme:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:15 README.md
+-rw-rw-rw- 1 codespace codespace 1.1K May 23 05:15 policy.md
+-rw-rw-rw- 1 codespace codespace 2.9K May 23 05:15 template.js
+-rw-rw-rw- 1 codespace codespace 1.6K May 23 05:15 test_journalisme.js
+
+src/generation/templates/juridique:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_juridique.js
+
+src/generation/templates/logistique:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.7K May 23 05:01 README.md
+-rw-rw-rw- 1 codespace codespace 1.1K May 23 05:01 policy.md
+-rw-rw-rw- 1 codespace codespace 2.7K May 23 05:02 template.js
+-rw-rw-rw- 1 codespace codespace 1.6K May 23 05:02 test_logistique.js
+
+src/generation/templates/loisirs:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_loisirs.js
+
+src/generation/templates/manufacturing:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:12 README.md
+-rw-rw-rw- 1 codespace codespace 1014 May 23 05:12 policy.md
+-rw-rw-rw- 1 codespace codespace 2.8K May 23 05:12 template.js
+-rw-rw-rw- 1 codespace codespace 1.6K May 23 05:12 test_manufacturing.js
+
+src/generation/templates/marketing:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_marketing.js
+
+src/generation/templates/medias:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_medias.js
+
+src/generation/templates/mobile:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_mobile.js
+
+src/generation/templates/mode:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:05 README.md
+-rw-rw-rw- 1 codespace codespace 1012 May 23 05:05 policy.md
+-rw-rw-rw- 1 codespace codespace 2.6K May 23 05:06 template.js
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:05 test_mode.js
+
+src/generation/templates/preview:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_preview.js
+
+src/generation/templates/publicite:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_publicite.js
+
+src/generation/templates/recherche:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_recherche.js
+
+src/generation/templates/ressources_humaines:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_ressources_humaines.js
+
+src/generation/templates/restauration:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_restauration.js
+
+src/generation/templates/sante:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:04 README.md
+-rw-rw-rw- 1 codespace codespace 1021 May 23 05:04 policy.md
+-rw-rw-rw- 1 codespace codespace 2.6K May 23 05:05 template.js
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:05 test_sante.js
+
+src/generation/templates/science:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_science.js
+
+src/generation/templates/securite:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:08 README.md
+-rw-rw-rw- 1 codespace codespace 1.1K May 23 05:09 policy.md
+-rw-rw-rw- 1 codespace codespace 2.7K May 23 05:10 template.js
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:09 test_securite.js
+
+src/generation/templates/seo:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_seo.js
+
+src/generation/templates/services_personne:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_services_personne.js
+
+src/generation/templates/social:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.6K May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 4.7K May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 test_social.js
+
+src/generation/templates/sport:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_sport.js
+
+src/generation/templates/tourisme:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_tourisme.js
+
+src/generation/templates/transport:
+total 16K
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:02 README.md
+-rw-rw-rw- 1 codespace codespace 1010 May 23 05:02 policy.md
+-rw-rw-rw- 1 codespace codespace 2.6K May 23 05:03 template.js
+-rw-rw-rw- 1 codespace codespace 1.5K May 23 05:03 test_transport.js
+
+src/generation/templates/utils:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 __init__.py
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_utils.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 utils.js
+
+src/generation/templates/validators:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 __init__.py
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_validators.js
+
+src/generation/templates/voice:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_voice.js
+
+src/generation/templates/voyage:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 09:41 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_voyage.js
+
+src/generation/templates/vr_ar:
+total 0
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:04 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:22 policy.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 11:04 template.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 15:31 test_vr_ar.js
+
+src/generation/tests:
+total 76K
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 03:15 template.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:04 test_3d.js
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 test_ai.js
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 test_blockchain.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 test_blueprints.js
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 test_branding.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 test_devops.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 test_ecommerce.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 test_education.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 test_generateProject.js
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 test_i18n.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 test_infra.js
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 test_mobile.js
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 test_preview.js
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 test_securite.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 test_seo.js
+-rw-rw-rw- 1 codespace codespace 4.0K May 18 07:47 test_social.js
+-rw-rw-rw- 1 codespace codespace 2.9K May 18 07:47 test_utils.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 test_validators.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 test_voice.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:04 test_vr_ar.js
+
+src/generation/utils:
+total 32K
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 4.7K May 18 07:47 compatibility.js
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 generationUtils.js
+-rw-rw-rw- 1 codespace codespace 5.4K May 18 07:47 securiteAuto.js
+-rw-rw-rw- 1 codespace codespace 4.8K May 18 07:47 seoAuto.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 utils.js
+
+src/generation/validators:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 5.0K May 18 07:47 securiteValidators.js
+-rw-rw-rw- 1 codespace codespace 5.3K May 18 07:47 seoValidators.js
+
+src/generation/voice:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.5K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 speechToTextGPT.js
+
+src/guards:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.7K May 18 07:47 AdminGuard.js
+-rw-rw-rw- 1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 RouteGuard.js
+
+src/hooks:
+total 20K
+-rw-rw-rw- 1 codespace codespace 2.4K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 useAI.js
+-rw-rw-rw- 1 codespace codespace 4.2K May 18 07:47 useAuth.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 useTheme.js
+
+src/i18n:
+total 12K
+-rw-rw-rw-  1 codespace codespace 2.5K May 19 01:29 README.md
+-rw-rw-rw-  1 codespace codespace 2.8K May 18 07:47 index.js
+drwxrwxrwx+ 6 codespace codespace 4.0K May 18 07:47 locales
+
+src/i18n/locales:
+total 24K
+-rw-rw-rw-  1 codespace codespace 2.4K May 18 07:47 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 19 01:31 ar
+drwxrwxrwx+ 2 codespace codespace 4.0K May 19 01:31 ber
+-rw-rw-rw-  1 codespace codespace 2.0K May 18 07:47 dialectes.json
+drwxrwxrwx+ 2 codespace codespace 4.0K May 19 01:31 en
+drwxrwxrwx+ 2 codespace codespace 4.0K May 19 01:31 fr
+
+src/i18n/locales/ar:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace    0 May 19 01:31 README.md
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 translation.json
+
+src/i18n/locales/ber:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace    0 May 19 01:31 README.md
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 translation.json
+
+src/i18n/locales/en:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace    0 May 19 01:31 README.md
+-rw-rw-rw- 1 codespace codespace 2.1K May 18 07:47 translation.json
+
+src/i18n/locales/fr:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace    0 May 19 01:31 README.md
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 translation.json
+
+src/infra:
+total 16K
+-rw-rw-rw-  1 codespace codespace 2.5K May 19 01:29 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 dweb
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 infra.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 ipfs
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+
+src/infra/dweb:
+total 16K
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 autoBackupDWeb.js
+-rw-rw-rw- 1 codespace codespace 4.6K May 18 07:47 dwebService.js
+
+src/infra/ipfs:
+total 16K
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 autoBackupIPFS.js
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 ipfsService.js
+
+src/infra/tests:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.5K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 3.1K May 18 07:47 test_infra.js
+
+src/layout:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 3.9K May 23 04:32 MainLayout.jsx
+-rw-rw-rw- 1 codespace codespace 2.3K May 19 01:29 README.md
+
+src/logs:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 2.1K May 19 01:29 README.md
+
+src/mail:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 mail.js
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 sendMail.js
+
+src/metiers_docs:
+total 344K
+-rw-rw-rw- 1 codespace codespace    0 May 20 11:04 3DCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 3dCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 AdministrationPubliqueCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 AgricultureCard.md
+-rw-rw-rw- 1 codespace codespace 4.6K May 19 03:51 ArtsCard.md
+-rw-rw-rw- 1 codespace codespace 5.0K May 19 03:52 AssuranceCard.md
+-rw-rw-rw- 1 codespace codespace 4.3K May 19 03:53 AutomobileCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 BanqueFinanceCard.md
+-rw-rw-rw- 1 codespace codespace 5.2K May 19 03:54 BeauteCard.md
+-rw-rw-rw- 1 codespace codespace 5.3K May 19 03:55 BlockchainCard.md
+-rw-rw-rw- 1 codespace codespace 5.4K May 19 03:56 BtpCard.md
+-rw-rw-rw- 1 codespace codespace 5.6K May 19 03:57 ConstructionCard.md
+-rw-rw-rw- 1 codespace codespace 5.0K May 19 03:58 CryptoCard.md
+-rw-rw-rw- 1 codespace codespace 5.4K May 19 03:59 CultureCard.md
+-rw-rw-rw- 1 codespace codespace 5.5K May 19 04:00 EcommerceCard.md
+-rw-rw-rw- 1 codespace codespace 5.9K May 19 04:01 EducationCard.md
+-rw-rw-rw- 1 codespace codespace 5.4K May 19 04:02 EnergieCard.md
+-rw-rw-rw- 1 codespace codespace 5.7K May 19 04:03 EnvironnementCard.md
+-rw-rw-rw- 1 codespace codespace 5.7K May 19 04:04 FinanceCard.md
+-rw-rw-rw- 1 codespace codespace 5.5K May 19 04:05 GamerCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 HealthCard.md
+-rw-rw-rw- 1 codespace codespace 5.9K May 19 04:06 HotellerieCard.md
+-rw-rw-rw- 1 codespace codespace 5.8K May 19 04:07 IaCard.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 19 04:07 ImmobilierCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 19 04:08 IndustrieCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:31 IntelligenceArtificielleCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 19 04:10 Intelligence_artificielleCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 ItDevopsCard.md
+-rw-rw-rw- 1 codespace codespace 5.7K May 20 15:22 It_devopsCard.md
+-rw-rw-rw- 1 codespace codespace 6.0K May 20 15:22 JournalismeCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 20 15:22 JuridiqueCard.md
+-rw-rw-rw- 1 codespace codespace 6.2K May 20 15:22 LogistiqueCard.md
+-rw-rw-rw- 1 codespace codespace 5.7K May 20 15:22 LoisirsCard.md
+-rw-rw-rw- 1 codespace codespace 6.5K May 20 15:22 ManufacturingCard.md
+-rw-rw-rw- 1 codespace codespace 6.2K May 20 15:22 MarketingCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 20 15:22 MediasCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 MobileCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 20 15:22 ModeCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 PreviewCard.md
+-rw-rw-rw- 1 codespace codespace 6.2K May 20 15:22 PubliciteCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 19 04:33 README.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 20 15:22 RechercheCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 RessourcesHumainesCard.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 19 04:21 Ressources_humainesCard.md
+-rw-rw-rw- 1 codespace codespace 6.4K May 20 15:22 RestaurationCard.md
+-rw-rw-rw- 1 codespace codespace 6.5K May 20 15:22 SanteCard.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 20 15:22 ScienceCard.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 20 15:22 SecuriteCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 SeoCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 ServicesPersonneCard.md
+-rw-rw-rw- 1 codespace codespace 6.4K May 19 04:26 Services_personneCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 20 15:22 SocialCard.md
+-rw-rw-rw- 1 codespace codespace 6.1K May 20 15:22 SportCard.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 20 15:22 TourismeCard.md
+-rw-rw-rw- 1 codespace codespace 6.5K May 20 15:22 TransportCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 UtilsCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 ValidatorsCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 VoiceCard.md
+-rw-rw-rw- 1 codespace codespace 6.2K May 20 15:22 VoyageCard.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 15:22 VrArCard.md
+
+src/middleware:
+total 24K
+-rw-rw-rw- 1 codespace codespace 2.3K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 withAuth.js
+-rw-rw-rw- 1 codespace codespace 3.7K May 18 07:47 withCors.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 withErrorBoundary.js
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 withRateLimit.js
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 withRole.js
+
+src/monitoring:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.0K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 monitoring.md
+-rw-rw-rw- 1 codespace codespace 3.7K May 18 07:47 performance.js
+-rw-rw-rw- 1 codespace codespace 3.0K May 18 07:47 securite.js
+
+src/pages:
+total 72K
+-rw-rw-rw- 1 codespace codespace 7.0K May 18 20:47 Generate.jsx
+-rw-rw-rw- 1 codespace codespace 6.0K May 23 04:32 Home.jsx
+-rw-rw-rw- 1 codespace codespace 7.3K May 18 20:49 Login.jsx
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 20:50 NotFound.jsx
+-rw-rw-rw- 1 codespace codespace 6.7K May 18 20:51 Preview.jsx
+-rw-rw-rw- 1 codespace codespace 8.6K May 18 20:52 Profile.jsx
+-rw-rw-rw- 1 codespace codespace 4.1K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 8.5K May 18 20:53 Register.jsx
+-rw-rw-rw- 1 codespace codespace  142 May 23 04:32 dashboard-global.jsx
+
+src/plugins:
+total 24K
+-rw-rw-rw-  1 codespace codespace 2.1K May 19 01:29 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 analytics
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 cms
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 plugin.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 plugin.py
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 stripe
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 templates
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+
+src/plugins/analytics:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.1K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.0K May 18 07:47 analyticsPlugin.js
+
+src/plugins/cms:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 5.2K May 18 07:47 cmsPlugin.js
+
+src/plugins/stripe:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.1K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 5.4K May 18 07:47 stripePlugin.js
+
+src/plugins/templates:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.4K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 6.3K May 18 07:47 generationTemplate.js
+
+src/plugins/tests:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 1.9K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 test_plugins.js
+
+src/preview:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 PreviewFrame.jsx
+-rw-rw-rw- 1 codespace codespace 2.0K May 19 01:29 README.md
+
+src/scripts:
+total 20K
+-rw-rw-rw-  1 codespace codespace 2.4K May 19 01:29 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 ai
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 blockchain
+drwxrwxrwx+ 2 codespace codespace 4.0K May 18 07:47 devops
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 main.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 main.py
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+
+src/scripts/ai:
+total 36K
+-rw-rw-rw- 1 codespace codespace 2.5K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 ai.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 ai.py
+-rw-rw-rw- 1 codespace codespace 4.2K May 18 07:47 gpt_fallback.js
+-rw-rw-rw- 1 codespace codespace 4.2K May 18 07:47 llama_fallback.js
+-rw-rw-rw- 1 codespace codespace 4.3K May 18 07:47 mixtral_fallback.js
+-rw-rw-rw- 1 codespace codespace 4.3K May 18 07:47 quotaDetector.js
+
+src/scripts/blockchain:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.6K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 4.0K May 18 07:47 solidityGen.js
+
+src/scripts/devops:
+total 28K
+-rw-rw-rw- 1 codespace codespace 2.3K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 4.1K May 18 07:47 dockerGen.js
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 k8sGen.js
+-rw-rw-rw- 1 codespace codespace 4.6K May 18 07:47 terraformGen.js
+
+src/scripts/tests:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.0K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 3.2K May 18 07:47 test_scripts.js
+
+src/securite:
+total 20K
+-rw-rw-rw-  1 codespace codespace 2.4K May 19 01:29 README.md
+-rw-rw-rw-  1 codespace codespace 3.1K May 18 07:47 corsConfig.js
+-rw-rw-rw-  1 codespace codespace 3.1K May 18 07:47 headersConfig.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 policy.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+-rw-rw-rw-  1 codespace codespace 3.4K May 18 07:47 validation.js
+
+src/securite/tests:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 2.3K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+
+src/seo:
+total 16K
+-rw-rw-rw-  1 codespace codespace 2.4K May 19 01:29 README.md
+-rw-rw-rw-  1 codespace codespace 3.6K May 18 07:47 seoConfig.js
+-rw-rw-rw-  1 codespace codespace 3.7K May 18 07:47 seoUtils.js
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:28 tests
+
+src/seo/tests:
+total 12K
+-rw-rw-rw- 1 codespace codespace 2.2K May 18 07:47 README.md
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw- 1 codespace codespace 6.1K May 18 07:47 test_seo.js
+
+src/services:
+total 64K
+-rw-rw-rw- 1 codespace codespace 3.1K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.8K May 18 07:47 aiService.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 analyticsService.js
+-rw-rw-rw- 1 codespace codespace 5.9K May 18 07:47 authService.js
+-rw-rw-rw- 1 codespace codespace 5.3K May 18 07:47 backupService.js
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 generationService.js
+-rw-rw-rw- 1 codespace codespace 3.9K May 18 07:47 mailService.js
+-rw-rw-rw- 1 codespace codespace 3.7K May 18 07:47 monitoringService.js
+-rw-rw-rw- 1 codespace codespace 4.5K May 18 07:47 notificationService.js
+-rw-rw-rw- 1 codespace codespace 4.7K May 18 07:47 seoService.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 service.js
+-rw-rw-rw- 1 codespace codespace 4.0K May 18 07:47 voiceService.js
+
+src/styles:
+total 24K
+-rw-rw-rw- 1 codespace codespace 2.5K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 5.4K May 18 20:57 global.css
+-rw-rw-rw- 1 codespace codespace 2.6K May 18 20:58 tailwind.config.js
+-rw-rw-rw- 1 codespace codespace 4.7K May 18 20:59 themes.css
+
+src/tests:
+total 40K
+-rw-rw-rw-   1 codespace codespace 4.8K May 18 22:39 App.test.jsx
+-rw-rw-rw-   1 codespace codespace 3.3K May 19 01:29 README.md
+-rw-rw-rw-   1 codespace codespace 6.0K May 18 22:39 auth.test.js
+drwxrwxrwx+  2 codespace codespace 4.0K May 18 07:47 e2e
+-rw-rw-rw-   1 codespace codespace 5.5K May 18 22:40 generation.test.js
+drwxrwxrwx+ 55 codespace codespace 4.0K May 23 03:13 integration
+-rw-rw-rw-   1 codespace codespace    0 May 20 13:28 test.js
+-rw-rw-rw-   1 codespace codespace    0 May 20 13:28 test.py
+-rw-rw-rw-   1 codespace codespace    0 May 20 11:18 test_coherence_metiers.js
+drwxrwxrwx+  3 codespace codespace 4.0K May 23 03:14 unit
+
+src/tests/e2e:
+total 12K
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 22:35 README.md
+-rw-rw-rw- 1 codespace codespace 6.2K May 18 22:34 generation.e2e.js
+
+src/tests/integration:
+total 224K
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 3d
+-rw-rw-rw-  1 codespace codespace 3.3K May 18 22:36 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 23 03:13 __pycache__
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 administration_publique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 agriculture
+-rw-rw-rw-  1 codespace codespace 5.3K May 18 22:35 api.integration.js
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 arts
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 assurance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 automobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 banque_finance
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 beaute
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 blockchain
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 btp
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 construction
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 crypto
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 culture
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 ecommerce
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 education
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 energie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 environnement
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 gamer
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 health
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 hotellerie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 immobilier
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 industrie
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 13:12 intelligence_artificielle
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 it_devops
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 journalisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 juridique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 logistique
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 loisirs
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 manufacturing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 marketing
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 medias
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 mobile
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 mode
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 preview
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 publicite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 recherche
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 ressources_humaines
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 restauration
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 sante
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 science
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 securite
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 seo
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 services_personne
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 social
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 sport
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_integration.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_integration_src.py
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 tourisme
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 transport
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 utils
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 validators
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 voice
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 voyage
+drwxrwxrwx+ 2 codespace codespace 4.0K May 20 15:22 vr_ar
+
+src/tests/integration/3d:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 5 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_3d.js
+
+src/tests/integration/__pycache__:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 175 May 23 03:13 test_integration_src.cpython-312-pytest-8.3.5.pyc
+
+src/tests/integration/administration_publique:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 26 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_administration_publique.js
+
+src/tests/integration/agriculture:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 14 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_agriculture.js
+
+src/tests/integration/arts:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 7 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_arts.js
+
+src/tests/integration/assurance:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_assurance.js
+
+src/tests/integration/automobile:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_automobile.js
+
+src/tests/integration/banque_finance:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 17 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_banque_finance.js
+
+src/tests/integration/beaute:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_beaute.js
+
+src/tests/integration/blockchain:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_blockchain.js
+
+src/tests/integration/btp:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 6 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_btp.js
+
+src/tests/integration/construction:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 15 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_construction.js
+
+src/tests/integration/crypto:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_crypto.js
+
+src/tests/integration/culture:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 10 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_culture.js
+
+src/tests/integration/ecommerce:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_ecommerce.js
+
+src/tests/integration/education:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_education.js
+
+src/tests/integration/energie:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 10 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_energie.js
+
+src/tests/integration/environnement:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 16 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_environnement.js
+
+src/tests/integration/gamer:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_gamer.js
+
+src/tests/integration/health:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_health.js
+
+src/tests/integration/hotellerie:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_hotellerie.js
+
+src/tests/integration/immobilier:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_immobilier.js
+
+src/tests/integration/industrie:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_industrie.js
+
+src/tests/integration/intelligence_artificielle:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 28 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_intelligence_artificielle.js
+
+src/tests/integration/it_devops:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_it_devops.js
+
+src/tests/integration/journalisme:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 14 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_journalisme.js
+
+src/tests/integration/juridique:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_juridique.js
+
+src/tests/integration/logistique:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_logistique.js
+
+src/tests/integration/loisirs:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 10 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_loisirs.js
+
+src/tests/integration/manufacturing:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 16 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_manufacturing.js
+
+src/tests/integration/marketing:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_marketing.js
+
+src/tests/integration/medias:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_medias.js
+
+src/tests/integration/mobile:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_mobile.js
+
+src/tests/integration/mode:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 7 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_mode.js
+
+src/tests/integration/preview:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 10 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_preview.js
+
+src/tests/integration/publicite:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_publicite.js
+
+src/tests/integration/recherche:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_recherche.js
+
+src/tests/integration/ressources_humaines:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 22 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_ressources_humaines.js
+
+src/tests/integration/restauration:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 15 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_restauration.js
+
+src/tests/integration/sante:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_sante.js
+
+src/tests/integration/science:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 10 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_science.js
+
+src/tests/integration/securite:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 11 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 13:28 policy.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_securite.js
+
+src/tests/integration/seo:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 6 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_seo.js
+
+src/tests/integration/services_personne:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 20 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_services_personne.js
+
+src/tests/integration/social:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_social.js
+
+src/tests/integration/sport:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_sport.js
+
+src/tests/integration/tourisme:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 11 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_tourisme.js
+
+src/tests/integration/transport:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 12 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_transport.js
+
+src/tests/integration/utils:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_utils.js
+-rw-rw-rw- 1 codespace codespace 0 May 20 13:28 utils.js
+
+src/tests/integration/validators:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 13 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace  0 May 20 12:58 test_validators.js
+
+src/tests/integration/voice:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_voice.js
+
+src/tests/integration/voyage:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 9 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_voyage.js
+
+src/tests/integration/vr_ar:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 8 May 20 13:12 README.md
+-rw-rw-rw- 1 codespace codespace 0 May 20 12:58 test_vr_ar.js
+
+src/tests/unit:
+total 12K
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 3d.unit.js
+-rw-rw-rw-  1 codespace codespace 3.1K May 18 22:37 README.md
+drwxrwxrwx+ 2 codespace codespace 4.0K May 23 03:13 __pycache__
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 administration_publique.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 agriculture.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 arts.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 assurance.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 automobile.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 banque_finance.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 beaute.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 blockchain.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 btp.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 construction.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 crypto.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 culture.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 ecommerce.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 education.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 energie.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 environnement.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 gamer.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 health.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 hotellerie.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 immobilier.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 industrie.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 intelligence_artificielle.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 it_devops.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 journalisme.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 juridique.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 logistique.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 loisirs.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 manufacturing.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 marketing.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 medias.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 mobile.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 mode.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 preview.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 publicite.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 recherche.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 ressources_humaines.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 restauration.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 sante.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 science.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 securite.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 seo.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 services_personne.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 social.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 sport.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 13:28 test_unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 tourisme.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 transport.unit.js
+-rw-rw-rw-  1 codespace codespace 3.8K May 18 22:38 utils.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 validators.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 voice.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 voyage.unit.js
+-rw-rw-rw-  1 codespace codespace    0 May 20 11:13 vr_ar.unit.js
+
+src/tests/unit/__pycache__:
+total 4.0K
+-rw-rw-rw- 1 codespace codespace 157 May 23 03:13 test_unit.cpython-312-pytest-8.3.5.pyc
+
+src/utils:
+total 56K
+-rw-rw-rw- 1 codespace codespace 2.6K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.3K May 18 07:47 antiDDoS.js
+-rw-rw-rw- 1 codespace codespace 4.6K May 18 07:47 api.js
+-rw-rw-rw- 1 codespace codespace 4.6K May 18 07:47 dataExport.js
+-rw-rw-rw- 1 codespace codespace 3.5K May 18 07:47 dataPurge.js
+-rw-rw-rw- 1 codespace codespace 3.7K May 18 18:45 fallbackRouter.js
+-rw-rw-rw- 1 codespace codespace 3.0K May 18 07:47 headers.js
+-rw-rw-rw- 1 codespace codespace 2.8K May 18 07:47 originLogger.js
+-rw-rw-rw- 1 codespace codespace 3.4K May 18 07:47 rateLimiter.js
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 rgpd.js
+-rw-rw-rw- 1 codespace codespace 2.9K May 18 07:47 securite.js
+-rw-rw-rw- 1 codespace codespace    0 May 20 13:28 utils.js
+-rw-rw-rw- 1 codespace codespace 2.4K May 18 07:47 validators.js
+
+src/voice:
+total 8.0K
+-rw-rw-rw- 1 codespace codespace 2.2K May 19 01:29 README.md
+-rw-rw-rw- 1 codespace codespace 3.6K May 18 07:47 speechToText.js

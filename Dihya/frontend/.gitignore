@@ -1,24 +1,29 @@
-# .gitignore – Dihya Coding frontend
-# Garantit la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité, la robustesse et la documentation claire.
+# .gitignore – Dihya Coding frontend (version finale)
+# Garantit la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité, la robustesse, la souveraineté et une documentation claire.
+# Ce fichier est structuré pour répondre au cahier des charges et à la modularité multi-métiers.
 
-# Node modules et dépendances
+# === Dépendances Node.js & gestionnaires de paquets ===
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Fichiers d’environnement (jamais versionner de secrets)
+# === Fichiers d’environnement (jamais versionner de secrets ou variables sensibles) ===
 .env
 .env.local
 .env.*.local
 
-# Fichiers de logs locaux et historiques d’auditabilité
+# === Logs locaux, historiques d’auditabilité, traces RGPD ===
 *.log
 logs/
 *.history
 *.audit
+audit/
+audit-logs/
+*.trace
 
-# Fichiers temporaires, caches, outputs de build
+# === Fichiers temporaires, caches, outputs de build, coverage ===
 dist/
 build/
 .cache/
@@ -28,20 +33,33 @@ coverage/
 tmp/
 temp/
 *.tmp
+*.temp
 
-# Fichiers système/IDE
+# === Fichiers système/IDE, OS, workspace ===
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 *.swp
+*.sublime-workspace
+*.sublime-project
 
-# Fichiers générés par l’application (exports, backups, dumps)
+# === Fichiers générés par l’application (exports, backups, dumps, snapshots) ===
 exports/
 backups/
 *.bak
 *.export
 *.dump
+*.snapshot
 
-# RGPD : ne jamais versionner de données personnelles ou logs utilisateurs
-# Auditabilité : ce fichier est commenté pour conformité et traçabilité
+# === Fichiers de tests, mocks, artefacts CI/CD ===
+*.test.js.snap
+*.spec.js.snap
+jest/
+cypress/screenshots/
+cypress/videos/
+test-results/
+coverage-final.json
+
+# === RGPD : ne jamais versionner de données personnelles ou logs utilisateurs ===
+# === Auditabilité : ce fichier est commenté pour conformité, traçabilité et souveraineté numérique ===

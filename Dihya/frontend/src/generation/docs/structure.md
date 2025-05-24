@@ -1,91 +1,72 @@
-# 🗂️ Structure des modules – Dihya Coding
+# 🏗️ Structure – Dihya Coding
 
-Ce document décrit la structure, l’organisation et les conventions des dossiers et fichiers de génération Dihya Coding.  
-Chaque choix structurel vise : design moderne, robustesse, sécurité, conformité RGPD, auditabilité, extensibilité, SEO et documentation claire.
+Ce document décrit la structure recommandée des templates et blueprints générés par Dihya Coding.  
+Chaque structure vise : design moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse, SEO et documentation claire.
 
 ---
 
-## 📁 Arborescence recommandée
+## 🚀 Objectifs de la structure
+
+- **Organisation claire** : Faciliter la navigation, la compréhension et la maintenance des projets générés
+- **Extensibilité** : Permettre l’ajout de nouveaux modules, templates ou fonctionnalités sans rupture
+- **Sécurité & RGPD** : Structurer les dossiers pour isoler les données sensibles, logs, et garantir la conformité
+- **Auditabilité** : Permettre la traçabilité des modifications et l’audit des évolutions structurelles
+
+---
+
+## 📁 Structure type recommandée
 
 ```
-src/generation/
-│
-├── ai/                # Modules IA (assistant, fallback, quotas…)
-│   ├── assistant.js
-│   ├── fallbackLlama.js
-│   ├── fallbackMistral.js
-│   ├── fallbackMixtral.js
-│   ├── quotaDetector.js
-│   ├── quotaManager.js
-│   └── README.md
-│
-├── blockchain/        # Génération blockchain (smart contracts, wallets…)
-│   ├── solidityGen.js
-│   └── README.md
-│
-├── blueprints/        # Générateurs de blueprints (API, mobile, plugins…)
-│   ├── backendApi.js
-│   ├── blockchain.js
-│   ├── devops.js
-│   ├── iaScript.js
-│   ├── mobileApp.js
-│   ├── plugin.js
-│   ├── webApp.js
-│   └── README.md
-│
-├── branding/          # Thèmes graphiques et personnalisations UI
-│   ├── amazighTheme.js
-│   ├── modernTheme.js
-│   └── README.md
-│
-├── devops/            # Générateurs DevOps (Docker, k8s, Terraform…)
-│   ├── dockerGen.js
-│   ├── k8sGen.js
-│   ├── terraformGen.js
-│   └── README.md
-│
-└── docs/              # Documentation métier, sécurité, SEO, structure…
-    ├── compatibility.md
-    ├── security.md
-    ├── seo.md
-    ├── structure.md
-    └── README.md
+/generation/
+  ├── fields/         # Types de champs, validations, blueprints de formulaires
+  ├── i18n/           # Internationalisation, traductions, dialectes
+  ├── infra/          # Infrastructure, sauvegardes, restauration, logs
+  ├── mobile/         # Génération mobile (Flutter, React Native, etc.)
+  ├── preview/        # Prévisualisation, gestion des aperçus, logs
+  ├── security/       # Sécurité, rate limiting, CORS, headers, validation
+  ├── seo/            # SEO, audits Lighthouse, utils, configuration
+  └── templates/
+        ├── ai/           # Templates IA (assistants, fallback, quotas)
+        ├── blockchain/   # Templates blockchain (contrats, wallets, intégrations)
+        ├── branding/     # Templates branding (logos, palettes, guidelines)
+        ├── devops/       # Templates DevOps (CI/CD, Docker, monitoring, IaC)
+        └── docs/         # Documentation, guides, compatibilité, sécurité, SEO, structure
 ```
 
 ---
 
-## 🛡️ Principes de structuration
+## 🛡️ Bonnes pratiques de structuration
 
-- **Séparation claire des domaines** : IA, blockchain, DevOps, branding, blueprints, docs
-- **Modularité** : chaque fonctionnalité dans son propre fichier, API claire et typée
-- **Extensibilité** : ajout facile de nouveaux modules, thèmes ou blueprints
-- **Sécurité & RGPD** : validations, anonymisation, logs locaux, fonctions de purge
-- **Auditabilité** : chaque action sensible loguée localement, historique effaçable
-- **Documentation** : README et guides dans chaque dossier, docstring JSDoc dans le code
+- **Séparation des responsabilités** : Un dossier par domaine fonctionnel (sécurité, SEO, mobile, etc.)
+- **Nommage explicite** : Utiliser des noms clairs, cohérents et SEO-friendly pour les dossiers et fichiers
+- **Documentation intégrée** : Chaque dossier doit contenir un `README.md` et, si besoin, des guides spécifiques
+- **Logs & auditabilité** : Dossiers dédiés pour les logs locaux, avec fonctions de purge (RGPD)
+- **Extensibilité** : Prévoir des sous-dossiers pour de futurs modules ou intégrations
+- **Sécurité** : Isoler les configurations sensibles, valider les accès et anonymiser les logs
 
 ---
 
-## 📝 Bonnes pratiques de structuration
+## 📝 Exemple d’ajout d’un nouveau module
 
-- **Nommage explicite** : fichiers et fonctions nommés selon leur usage métier
-- **README dans chaque dossier** : synthèse, objectifs, structure, exemples d’utilisation
-- **Validation et sécurité** : chaque module valide ses entrées et anonymise ses logs
-- **Documentation claire** : docstring JSDoc, exemples, liens vers guides associés
-- **SEO & accessibilité** : structure de fichiers et dossiers pensée pour la clarté et la visibilité
+Pour ajouter un module de génération d’API GraphQL :
+
+1. Créer `/generation/graphql/`
+2. Ajouter `graphqlGen.js`, `README.md`, et éventuellement des sous-modules (validation, logs…)
+3. Documenter la structure et les bonnes pratiques dans `/generation/templates/docs/`
 
 ---
 
 ## 📚 Documentation associée
 
-- [README général](./README.md)
 - [Compatibilité](./compatibility.md)
-- [Sécurité & RGPD](./security.md)
-- [SEO & Accessibilité](./seo.md)
-- [Blueprints](../blueprints/README.md)
-- [DevOps](../devops/README.md)
-- [Branding](../branding/README.md)
-- [Cahier des charges Dihya Coding](../../../../docs/user_guide/README.md)
+- [Sécurité](./security.md)
+- [SEO](./seo.md)
+- [AI Templates](../ai/README.md)
+- [DevOps Templates](../devops/README.md)
+- [Blockchain Templates](../blockchain/README.md)
+- [Branding Templates](../branding/README.md)
+- [Cahier des charges Dihya Coding](../../../../../docs/user_guide/README.md)
 
 ---
 
-> **Dihya Coding : une structure claire, robuste, extensible et documentée pour chaque génération.**
+> **Dihya Coding : structure moderne, claire, évolutive et conforme RGPD pour chaque génération.**

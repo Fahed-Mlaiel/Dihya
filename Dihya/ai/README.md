@@ -1,72 +1,74 @@
-# Intelligence Artificielle – Dihya Coding
+"""
+Dihya AI – Point d'entrée module IA (Python)
+Ultra avancé, multilingue, souverain, extensible, sécurisé.
+Expose toutes les fonctions et configurations IA pour usage multi-stack (Flask, FastAPI, CLI, etc.).
+Prêt pour la production, la démo, la contribution.
 
-Ce dossier contient les ressources liées à l’intelligence artificielle pour la plateforme Dihya Coding.  
-Il respecte le cahier des charges : modularité, sécurité, bonnes pratiques, extensibilité, reproductibilité et documentation.
+@author: Dihya Team
+"""
 
----
+# README – Dihya AI Module
 
-## Fonctionnalités principales
+Ce module gère toutes les fonctionnalités d’intelligence artificielle de Dihya : génération de code, NLP, ML, fallback open source, intégration GPT/LLM, multilingue, sécurité, audit, tests, scripts, etc.
 
-- Modèles IA pour la génération de code, l’analyse, la recommandation, etc.
-- Notebooks de prototypage et d’expérimentation
-- Scripts d’entraînement, d’inférence et d’évaluation
-- Support multilingue et multi-dialectes
-- Sécurité et respect de la vie privée (données anonymisées, reproductibilité)
+- Exemples d’utilisation, API, scripts, tests
+- Sécurité, souveraineté, conformité RGPD
+- Contribution, extension, personnalisation
 
----
+Voir [../../README.md](../../README.md), [../README.md](../README.md)
 
-## Structure du dossier
+from ai import generate_ai_response, select_engine, SUPPORTED_LANGUAGES, DihyaAIConfig
 
-```
-ai/
-├── README.md
-├── models/         # Modèles entraînés, checkpoints, etc.
-├── notebooks/      # Notebooks Jupyter pour prototypage et expérimentation
-└── scripts/        # Scripts Python pour entraînement, inférence, évaluation
-```
+# Exemple d'intégration Flask (API REST)
+def create_flask_ai_blueprint():
+    from flask import Blueprint, request, jsonify
 
----
+    ai_bp = Blueprint('ai', __name__)
 
-## Bonnes pratiques
+    @ai_bp.route('/ai/generate', methods=['POST'])
+    def ai_generate():
+        data = request.get_json(force=True)
+        prompt = data.get('prompt')
+        lang = data.get('lang')
+        engine = data.get('engine')
+        user_id = getattr(request, 'user', None) and getattr(request.user, 'id', 'anonymous') or 'anonymous'
+        role = getattr(request, 'user', None) and getattr(request.user, 'role', 'user') or 'user'
+        try:
+            result = generate_ai_response(
+                prompt=prompt,
+                user_id=user_id,
+                lang=lang,
+                role=role,
+                engine=engine
+            )
+            return jsonify(result)
+        except Exception as e:
+            return jsonify({'error': str(e)}), 400
 
-- **Sécurité** : ne jamais stocker de données sensibles ou personnelles non anonymisées
-- **Reproductibilité** : documenter les dépendances, seeds, versions de modèles
-- **Documentation** : chaque notebook/script doit être commenté et expliquer son objectif
-- **Extensibilité** : organiser les modèles et scripts par tâche ou domaine
-- **Tests** : valider les performances avec des jeux de données de test
+    return ai_bp
 
----
+# Exemple d'utilisation CLI
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Dihya AI CLI – Génération IA souveraine, multilingue")
+    parser.add_argument('--prompt', type=str, required=True, help="Prompt utilisateur")
+    parser.add_argument('--user_id', type=str, default="cli-user", help="ID utilisateur")
+    parser.add_argument('--lang', type=str, choices=SUPPORTED_LANGUAGES, help="Langue cible")
+    parser.add_argument('--role', type=str, default="admin", help="Rôle utilisateur")
+    parser.add_argument('--engine', type=str, choices=['openai', 'mixtral', 'llama', 'mistral'], help="Moteur IA préféré")
+    args = parser.parse_args()
 
-## Exemples d’utilisation
+    try:
+        result = generate_ai_response(
+            prompt=args.prompt,
+            user_id=args.user_id,
+            lang=args.lang,
+            role=args.role,
+            engine=args.engine
+        )
+        print(f"[{result['engine']}] ({result['lang']}) {result['text']}")
+    except Exception as e:
+        print(f"Erreur IA: {e}")
 
-- Lancer un notebook d’expérimentation :
-  ```bash
-  cd ai/notebooks
-  jupyter notebook
-  ```
-- Entraîner un modèle :
-  ```bash
-  cd ai/scripts
-  python train_model.py
-  ```
-- Utiliser un modèle pour l’inférence :
-  ```bash
-  python infer.py --input data.json
-  ```
-
----
-
-## Contribution
-
-- Ajouter vos modèles dans `models/`, vos notebooks dans `notebooks/`, vos scripts dans `scripts/`
-- Documenter chaque ajout (README, docstring, commentaires)
-- Respecter la licence AGPL et la charte de sécurité du projet
-
----
-
-## Licence
-
-Projet open-source sous licence AGPL.  
-Voir le fichier `LICENSE` à la racine du projet.
-
----
+if __name__ == "__main__":
+    main()

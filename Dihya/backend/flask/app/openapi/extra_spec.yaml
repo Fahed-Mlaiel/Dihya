@@ -104,6 +104,38 @@ paths:
         "401":
           description: Authentification requise
 
+  /api/health/extra:
+    get:
+      summary: Healthcheck avancé (plugin)
+      description: Expose des métriques avancées, RGPD, audit, via plugin backend.
+      tags:
+        - Monitoring
+      responses:
+        '200':
+          description: Statut et métriques avancées
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  metrics:
+                    type: object
+                    properties:
+                      uptime:
+                        type: integer
+                      users_online:
+                        type: integer
+                      cpu:
+                        type: number
+                      ram:
+                        type: number
+                  rgpd:
+                    type: boolean
+                  audit:
+                    type: string
+
 components:
   securitySchemes:
     bearerAuth:

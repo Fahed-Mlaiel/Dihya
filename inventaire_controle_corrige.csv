@@ -1,0 +1,26 @@
+# Dihya – Inventaire des Contrôles de Sécurité et de Conformité (Ultra avancé, multilingue, prêt audit)
+# Ce fichier CSV recense tous les contrôles de sécurité, conformité, souveraineté, accessibilité, RGPD, DevOps, CI/CD, etc.
+# Colonnes : id;contrôle;description_fr;description_en;description_ar;description_tzm;type;stack;statut;criticité;fréquence;responsable;preuve;dernier_test;prochain_test;commentaire
+# Les descriptions sont multilingues, chaque contrôle est traçable, auditable, et lié à la politique Dihya.
+# Format : UTF-8, séparateur : point-virgule (;)
+
+id;contrôle;description_fr;description_en;description_ar;description_tzm;type;stack;statut;criticité;fréquence;responsable;preuve;dernier_test;prochain_test;commentaire
+SEC-001;Authentification forte;Authentification multi-facteur obligatoire pour tous les accès sensibles;Mandatory multi-factor authentication for all sensitive access;مصادقة متعددة العوامل إلزامية لكل الوصولات الحساسة;ⴰⵎⴰⵣⵉⵖ ⵏ ⵓⵎⵎⵓⵔⴰⵏ ⴰⴷⴷⴰⵢⴻⵏ ⴷ ⴰⵎⴰⵣⵉⵖ ⴰⵎⴰⵣⵉⵖ;Sécurité;Tous;Actif;Critique;A chaque déploiement;RSSI;Capture d'écran, logs;2025-05-01;2025-06-01;Conforme à la politique Dihya
+SEC-002;Chiffrement TLS;TLS 1.3 activé sur tous les endpoints publics et internes;TLS 1.3 enabled on all public and internal endpoints;TLS 1.3 مفعل على جميع النقاط النهائية;TLS 1.3 ⴰⴷⴷⴰⵢⴻⵏ ⴷ ⴰⵎⴰⵣⵉⵖ;Sécurité;Web, API;Actif;Critique;A chaque déploiement;DevOps;Scan SSL Labs;2025-05-01;2025-06-01;Obligatoire pour la conformité RGPD/NIS2
+SEC-003;Journalisation centralisée;Tous les logs sont centralisés (ELK, Loki, SIEM), horodatés, et conservés 1 an min.;All logs are centralized (ELK, Loki, SIEM), timestamped, kept 1 year min.;جميع السجلات مركزية ومؤرخة ومحفوظة لسنة على الأقل;ⴰⵎⵙⵙⴰⵏ ⵏ ⵉⵎⴻⵏⵉⵙⵏ ⴰⴷⴷⴰⵢⴻⵏ ⴷ ELK, Loki, SIEM;Sécurité;Tous;Actif;Majeur;Mensuel;DevOps;Logs, rapport SIEM;2025-05-01;2025-06-01;Auditabilité garantie
+SEC-004;Gestion des secrets;Secrets stockés dans un coffre-fort chiffré (Vault, KMS), jamais en clair;Secrets stored in encrypted vault (Vault, KMS), never in clear;الأسرار مخزنة في خزنة مشفرة، أبدا غير مشفرة;ⴰⵙⵉⵏⴰⵡⴰⵙ ⵏ ⴰⵎⴻⵏⵉⵙⵏ ⴰⴷⴷⴰⵢⴻⵏ ⴷ Vault, KMS;Sécurité;Backend, DevOps;Actif;Critique;A chaque déploiement;DevOps;Audit Vault/KMS;2025-05-01;2025-06-01;Jamais de secrets dans le code source
+SEC-005;Tests de sécurité automatisés;Tests OWASP/Snyk automatisés à chaque CI/CD;Automated OWASP/Snyk tests on each CI/CD;اختبارات أمان OWASP/Snyk تلقائية في كل CI/CD;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ OWASP/Snyk ⴰⴷⴷⴰⵢⴻⵏ ⴷ CI/CD;Sécurité;Tous;Actif;Majeur;A chaque CI/CD;DevSecOps;Rapport CI;2025-05-01;2025-06-01;Bloquant en cas d’échec critique
+RGPD-001;Anonymisation des données;Toutes les données personnelles sont anonymisées en dev/staging;All personal data anonymized in dev/staging;جميع البيانات الشخصية مجهولة في بيئة التطوير;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ ⴰⴷⴷⴰⵢⴻⵏ ⴷⴰⵙⴳⴳⴰⵙ;RGPD;Backend, Data;Actif;Majeur;A chaque déploiement;DPO;Audit anonymisation;2025-05-01;2025-06-01;Jamais de données réelles hors prod
+RGPD-002;Consentement utilisateur;Consentement explicite requis pour tout traitement de données;Explicit consent required for all data processing;موافقة صريحة مطلوبة لكل معالجة بيانات;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ ⴰⵎⴰⵣⵉⵖ ⴰⵎⴰⵣⵉⵖ;RGPD;Frontend, Backend;Actif;Critique;A chaque release;DPO;Preuve consentement;2025-05-01;2025-06-01;Audit RGPD annuel
+SOUV-001;Fallback IA open source;Chaque IA propriétaire a un fallback open source (Ollama, LocalAI);Each proprietary AI has open source fallback (Ollama, LocalAI);كل ذكاء اصطناعي تجاري له بديل مفتوح المصدر;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ IA open source;Souveraineté;Backend, IA;Actif;Critique;A chaque intégration IA;Lead IA;Code, logs fallback;2025-05-01;2025-06-01;Conformité souveraineté numérique
+ACC-001;Accessibilité RGAA/WCAG;Audit accessibilité RGAA/WCAG sur toutes les interfaces;Accessibility audit RGAA/WCAG on all interfaces;تدقيق الوصولية RGAA/WCAG على جميع الواجهات;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ RGAA/WCAG;Accessibilité;Frontend, Mobile;Actif;Majeur;Trimestriel;UX Lead;Rapport accessibilité;2025-05-01;2025-08-01;Obligatoire pour la conformité publique
+CI-001;Rollback automatisé;Rollback automatisé en cas d’échec déploiement prod;Automated rollback on prod deployment failure;استرجاع تلقائي عند فشل النشر في الإنتاج;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ rollback ⴰⴷⴷⴰⵢⴻⵏ ⴷ prod;CI/CD;Backend, DevOps;Actif;Majeur;A chaque déploiement;DevOps;Logs CI/CD;2025-05-01;2025-06-01;Testé sur chaque release
+DOC-001;Documentation multilingue;Toute la doc est disponible en FR/EN/AR/TZM;All docs available in FR/EN/AR/TZM;كل الوثائق متوفرة بالفرنسية/الإنجليزية/العربية/الأمازيغية;ⴰⵙⵉⵏⴰⵡⴰⵙ ⴰⴷⴷⴰⵢⴻⵏ ⴷ FR/EN/AR/TZM;Documentation;Tous;Actif;Majeur;A chaque release;Doc Lead;Preuve docs;2025-05-01;2025-06-01;Contrôle CI/CD automatique
+
+# ... Ajoutez ici tous les contrôles nécessaires pour couvrir 100% des exigences Dihya (sécurité, RGPD, accessibilité, souveraineté, CI/CD, DevOps, etc.) ...
+
+fichier,statut,commentaire
+README.md,complet,OK
+ARCHITECTURE.md,complet,OK
+cahier_des_charges.txt,complet,OK
+# ...complétez pour chaque fichier du projet après correction

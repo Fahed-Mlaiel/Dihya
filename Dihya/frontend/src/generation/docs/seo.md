@@ -1,62 +1,54 @@
-# 🌐 SEO & Accessibilité – Dihya Coding
+# 🌐 SEO – Dihya Coding
 
-Ce document présente les bonnes pratiques et mécanismes SEO (Search Engine Optimization) et d’accessibilité intégrés dans les modules de génération Dihya Coding.  
-Chaque fonctionnalité vise : visibilité optimale, accessibilité universelle, sécurité, conformité RGPD, auditabilité, extensibilité et documentation claire.
+Ce document présente les standards, bonnes pratiques et exigences SEO pour tous les templates et blueprints générés par Dihya Coding.  
+Chaque module et template vise : SEO moderne, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.
 
 ---
 
 ## 🚀 Objectifs SEO
 
-- Générer des applications, sites et blueprints optimisés pour le référencement naturel (SEO)
-- Garantir l’accessibilité numérique (a11y) pour tous les utilisateurs
-- Respecter la sécurité, la conformité RGPD et l’auditabilité dans chaque génération
+- **Référencement optimal** : Générer des pages et modules facilement indexables par les moteurs de recherche
+- **Accessibilité** : Respecter les standards d’accessibilité (a11y) pour tous les utilisateurs
+- **Conformité RGPD** : Respecter la vie privée, anonymiser les logs, obtenir le consentement utilisateur
+- **Auditabilité** : Permettre l’audit SEO via logs locaux, audits Lighthouse, rapports exportables
+- **Extensibilité** : Permettre l’ajout facile de nouvelles stratégies ou outils SEO
 
 ---
 
-## 🛡️ Bonnes pratiques SEO intégrées
+## 🛡️ Bonnes pratiques SEO
 
-- **Balises meta dynamiques**  
-  Génération automatique de balises `<title>`, `<meta name="description">`, `<meta property="og:*">` adaptées au contenu.
-- **Structure sémantique**  
-  Utilisation systématique de balises HTML5 sémantiques (`<header>`, `<main>`, `<nav>`, `<section>`, `<footer>`, etc.).
-- **URL propres et lisibles**  
-  Génération de routes et slugs optimisés pour le SEO et l’accessibilité.
-- **Performance**  
-  Optimisation du chargement (lazy loading, code splitting, images optimisées).
-- **Sitemap & robots.txt**  
-  Génération automatique de fichiers sitemap.xml et robots.txt pour chaque projet web.
-- **Accessibilité**  
-  Contrastes élevés, navigation clavier, ARIA, labels explicites, responsive design.
-- **SEO technique**  
-  Prise en charge des canonical links, hreflang, microdata/JSON-LD pour le rich content.
+- **Balises meta** : Génération automatique des balises title, description, keywords, canonical, robots, Open Graph, Twitter Cards
+- **Structure sémantique** : Utilisation correcte des balises HTML5 (header, nav, main, footer, article, section, etc.)
+- **URLs propres** : Génération de slugs SEO-friendly, URLs courtes et explicites
+- **Sitemap & robots.txt** : Génération automatique et mise à jour dynamique
+- **Accessibilité (a11y)** : Contraste, navigation clavier, aria-labels, textes alternatifs pour les images
+- **Performance** : Optimisation du temps de chargement, lazy loading, images optimisées
+- **Logs & auditabilité** : Historique local des audits SEO, logs effaçables (RGPD)
+- **Consentement** : Consentement explicite pour toute collecte ou analyse SEO avancée
 
 ---
 
-## 🔒 Sécurité & RGPD pour le SEO
-
-- **Aucune donnée personnelle dans les balises meta ou URLs**
-- **Consentement utilisateur pour tout tracking ou analytics**
-- **Logs SEO anonymisés et effaçables (droit à l’oubli)**
-- **Documentation claire sur la collecte et l’utilisation des données SEO**
-
----
-
-## 📝 Exemple de génération SEO-friendly
+## 📝 Exemples de SEO dans les templates
 
 ```js
-// Exemple de génération de meta tags dans un composant React
-export function SeoMeta({ title, description }) {
-  document.title = title;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute('content', description);
-  else {
-    const meta = document.createElement('meta');
-    meta.name = 'description';
-    meta.content = description;
-    document.head.appendChild(meta);
-  }
-  // ...autres balises SEO (og:title, og:description, etc.)
-}
+// Génération d’un slug SEO-friendly
+import { generateSlug } from '../../seo/seoUtils';
+const slug = generateSlug('Titre de ma page Géniale !');
+
+// Génération d’une meta description optimisée
+import { generateMetaDescription } from '../../seo/seoUtils';
+const desc = generateMetaDescription('Texte long à résumer pour la meta description...');
+
+// Configuration SEO complète pour une page
+import { getSeoConfig } from '../../seo/seoConfig';
+const seo = getSeoConfig({
+  title: 'Accueil – Dihya Coding',
+  description: 'Plateforme moderne, sécurisée et conforme RGPD pour la génération de code.',
+  canonical: 'https://dihya.app/',
+  keywords: ['génération', 'code', 'sécurité', 'RGPD'],
+  lang: 'fr',
+  og: { title: 'Dihya Coding', description: 'Génération moderne', image: '/img/og.png' }
+});
 ```
 
 ---
@@ -64,12 +56,13 @@ export function SeoMeta({ title, description }) {
 ## 📚 Documentation associée
 
 - [Compatibilité](./compatibility.md)
-- [Sécurité & RGPD](./security.md)
-- [Blueprints](../blueprints/README.md)
-- [DevOps](../devops/README.md)
-- [Branding](../branding/README.md)
-- [Cahier des charges Dihya Coding](../../../../docs/user_guide/README.md)
+- [Sécurité](./security.md)
+- [AI Templates](../ai/README.md)
+- [DevOps Templates](../devops/README.md)
+- [Blockchain Templates](../blockchain/README.md)
+- [Branding Templates](../branding/README.md)
+- [Cahier des charges Dihya Coding](../../../../../docs/user_guide/README.md)
 
 ---
 
-> **Dihya Coding : SEO, accessibilité, sécurité et conformité RGPD intégrées à chaque génération.**
+> **Dihya Coding : SEO moderne, sécurisé, accessible et conforme RGPD pour chaque génération.**

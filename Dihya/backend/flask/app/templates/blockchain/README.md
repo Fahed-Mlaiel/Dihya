@@ -1,8 +1,19 @@
+# Template Blockchain Backend – Dihya Coding
+
+Ce dossier regroupe le template blockchain backend : sécurité, RGPD, accessibilité, audit, CI/CD, multilingue, documentation, plugins, extensibilité.
+
+## Bonnes pratiques
+- Sécurité, validation, audit, logs, documentation, accessibilité, RGPD, CI/CD, extensibilité
+- Exemples d’utilisation, guides intégrés, multilingue, plugins
+
+---
+Production-ready, sécurisé, conforme, extensible, documenté, multilingue, CI/CD, RGPD, accessibilité.
+
 # Template Métier : Blockchain
 
 ## Présentation
 
-Ce template métier permet de générer un backend d’application pour le secteur **Blockchain** : gestion de smart contracts, portefeuilles, transactions, NFT, tokens, audit, etc.  
+Ce template métier permet de générer un backend d’application pour le secteur **Blockchain** : gestion de smart contracts, portefeuilles, transactions, NFT, tokens, audit, etc.
 Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
 
 ---
@@ -81,3 +92,4 @@ def deploy_contract():
     data = request.get_json()
     # Compilation, déploiement, log, notification...
     return jsonify({"message": "Smart contract déployé"}), 201
+```

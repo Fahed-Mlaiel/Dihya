@@ -1,0 +1,184 @@
+{
+  "template": "industry",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "factory_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom de l'usine",
+        "en": "Factory Name",
+        "ar": "اسم المصنع",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre de la fábrica",
+        "de": "Fabrikname",
+        "zh": "工厂名称",
+        "ja": "工場名",
+        "ko": "공장 이름",
+        "nl": "Fabrieksnaam",
+        "he": "שם המפעל",
+        "fa": "نام کارخانه",
+        "hi": "कारखाने का नाम"
+      }
+    },
+    {
+      "name": "production_date",
+      "type": "string",
+      "label": {
+        "fr": "Date de production",
+        "en": "Production Date",
+        "ar": "تاريخ الإنتاج",
+        "tzr": "ⴰⵙⴳⴰⴷ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Fecha de producción",
+        "de": "Produktionsdatum",
+        "zh": "生产日期",
+        "ja": "生産日",
+        "ko": "생산일",
+        "nl": "Productiedatum",
+        "he": "תאריך ייצור",
+        "fa": "تاریخ تولید",
+        "hi": "उत्पादन तिथि"
+      }
+    },
+    {
+      "name": "product_type",
+      "type": "string",
+      "label": {
+        "fr": "Type de produit",
+        "en": "Product Type",
+        "ar": "نوع المنتج",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Tipo de producto",
+        "de": "Produkttyp",
+        "zh": "产品类型",
+        "ja": "製品種別",
+        "ko": "제품 유형",
+        "nl": "Producttype",
+        "he": "סוג מוצר",
+        "fa": "نوع محصول",
+        "hi": "उत्पाद प्रकार"
+      }
+    },
+    {
+      "name": "quantity",
+      "type": "number",
+      "label": {
+        "fr": "Quantité",
+        "en": "Quantity",
+        "ar": "الكمية",
+        "tzr": "ⴰⵙⵉⵏⴰⵡ",
+        "es": "Cantidad",
+        "de": "Menge",
+        "zh": "数量",
+        "ja": "数量",
+        "ko": "수량",
+        "nl": "Hoeveelheid",
+        "he": "כמות",
+        "fa": "تعداد",
+        "hi": "मात्रा"
+      }
+    },
+    {
+      "name": "quality_check",
+      "type": "string",
+      "label": {
+        "fr": "Contrôle qualité",
+        "en": "Quality Check",
+        "ar": "فحص الجودة",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵙⵉⴷⴰⵡ",
+        "es": "Control de calidad",
+        "de": "Qualitätskontrolle",
+        "zh": "质量检查",
+        "ja": "品質検査",
+        "ko": "품질 검사",
+        "nl": "Kwaliteitscontrole",
+        "he": "בדיקת איכות",
+        "fa": "کنترل کیفیت",
+        "hi": "गुणवत्ता जांच"
+      }
+    },
+    {
+      "name": "supervisor",
+      "type": "string",
+      "label": {
+        "fr": "Superviseur",
+        "en": "Supervisor",
+        "ar": "المشرف",
+        "tzr": "ⴰⵙⵉⵏⴰⵡⴰⵏ",
+        "es": "Supervisor",
+        "de": "Vorgesetzter",
+        "zh": "主管",
+        "ja": "監督者",
+        "ko": "감독자",
+        "nl": "Toezichthouder",
+        "he": "מפקח",
+        "fa": "سرپرست",
+        "hi": "पर्यवेक्षक"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de fiche production industrielle multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant industrial production sheet template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج بطاقة إنتاج صناعي متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de ficha de producción industrial multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme Produktionsblatt-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的工业生产表模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の工業生産シートテンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 산업 생산 시트 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme industriële productiesheet-template, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית גיליון ייצור תעשייתי רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب برگه تولید صنعتی چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन औद्योगिक उत्पादन शीट टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "factory_name": "Usine Dihya Nord",
+      "production_date": "2025-05-20",
+      "product_type": "Composant électronique",
+      "quantity": 12000,
+      "quality_check": "Conforme",
+      "supervisor": "M. El Amrani"
+    }
+  }
+}

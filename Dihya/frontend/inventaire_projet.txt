@@ -1,0 +1,1211 @@
+Inventaire du projet Dihya (généré le Fri May 23 07:08:21 UTC 2025)
+------------------------------------------------
+.
+├── .env
+├── .env.example
+├── .env.production
+├── .env.test
+├── .envrc
+├── .envrc.example
+├── .gitignore
+├── CHANGELOG.md
+├── README.md
+├── TASKS.md
+├── assets
+│   ├── README.md
+│   └── index.js
+├── docs
+│   ├── API_REFERENCE.md
+│   ├── DEPLOYMENT.md
+│   ├── FAQ.md
+│   ├── README.md
+│   ├── TEST_STRATEGY.md
+│   ├── overview.md
+│   ├── securite_AUDIT.md
+│   └── user_guide
+│       ├── README.md
+│       ├── guide_ar.md
+│       ├── guide_en.md
+│       └── guide_fr.md
+├── inventaire_projet.txt
+├── last_coherence_output.txt
+├── last_controle_output.txt
+├── last_markdownlint_output.txt
+├── last_pytest_output.txt
+├── package-lock.json
+├── package.json
+├── plugins
+│   ├── README.md
+│   ├── index.js
+│   └── main.py
+├── postcss.config.js
+├── public
+│   ├── Dihya_backend_dashboard_global.html
+│   ├── README.md
+│   ├── assets
+│   │   ├── README.md
+│   │   ├── assets.md
+│   │   └── index.js
+│   ├── index.html
+│   ├── manifest.json
+│   ├── public.md
+│   ├── robots.txt
+│   └── sitemap.xml
+├── routes.md
+├── scripts
+│   ├── README.md
+│   ├── index.js
+│   ├── main.js
+│   └── main.py
+├── securite.md
+├── specs
+│   ├── ACCESSIBILITY_SPEC.md
+│   ├── README.md
+│   └── SECURITY_SPEC.md
+├── src
+│   ├── App.js
+│   ├── README.md
+│   ├── analytics
+│   │   ├── README.md
+│   │   └── trackEvent.js
+│   ├── api
+│   │   ├── README.md
+│   │   ├── analytics.js
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── backup.js
+│   │   ├── generate.js
+│   │   ├── preview.js
+│   │   ├── project.js
+│   │   ├── seo.js
+│   │   └── voice.js
+│   ├── assets
+│   │   ├── README.md
+│   │   ├── assets.md
+│   │   ├── icons
+│   │   │   ├── README.md
+│   │   │   └── index.js
+│   │   ├── images
+│   │   │   ├── README.md
+│   │   │   └── index.js
+│   │   └── index.js
+│   ├── backup
+│   │   ├── README.md
+│   │   ├── autoBackup.js
+│   │   ├── githubBackup.js
+│   │   ├── localBackup.js
+│   │   ├── notionBackup.js
+│   │   └── tests
+│   │       ├── README.md
+│   │       ├── test.js
+│   │       ├── test.py
+│   │       └── test_backup.js
+│   ├── branding
+│   │   ├── Branding.js
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   ├── README.md
+│   │   │   ├── assets.md
+│   │   │   └── index.js
+│   │   ├── branding.js
+│   │   ├── tests
+│   │   │   ├── README.md
+│   │   │   ├── test.js
+│   │   │   ├── test.py
+│   │   │   └── test_branding.js
+│   │   └── themes
+│   │       ├── README.md
+│   │       ├── amazigh.js
+│   │       └── modern.js
+│   ├── components
+│   │   ├── ChatAssistant.jsx
+│   │   ├── DashboardGlobal.jsx
+│   │   ├── Footer.jsx
+│   │   ├── ImportTemplate.jsx
+│   │   ├── LanguageSwitcher.jsx
+│   │   ├── Marketplace.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProjectCard.jsx
+│   │   ├── README.md
+│   │   ├── SEO.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── ThemeProvider.jsx
+│   │   ├── ThemeSwitcher.jsx
+│   │   ├── VoiceInput.jsx
+│   │   └── metiers
+│   │       ├── 3d
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── README.md
+│   │       ├── administration_publique
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── agriculture
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── arts
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── assurance
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── automobile
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── banque_finance
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── beaute
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── blockchain
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── btp
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── construction
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── crypto
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── culture
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── ecommerce
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── education
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── energie
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── environnement
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── gamer
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── health
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── hotellerie
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── immobilier
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── index.js
+│   │       ├── industrie
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── intelligence_artificielle
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── it_devops
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── journalisme
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── juridique
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── logistique
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── loisirs
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── manufacturing
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── marketing
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── medias
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── mobile
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── mode
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── preview
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── publicite
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── recherche
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── ressources_humaines
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── restauration
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── sante
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── science
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── securite
+│   │       │   ├── README.md
+│   │       │   └── policy.md
+│   │       ├── seo
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── services_personne
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── social
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── sport
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── tourisme
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── transport
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── utils
+│   │       │   ├── README.md
+│   │       │   └── utils.js
+│   │       ├── validators
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── voice
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       ├── voyage
+│   │       │   ├── README.md
+│   │       │   └── index.js
+│   │       └── vr_ar
+│   │           ├── README.md
+│   │           └── index.js
+│   ├── constants
+│   │   ├── README.md
+│   │   ├── constants.js
+│   │   ├── metiersConfig.js
+│   │   ├── metiersRoutes.js
+│   │   ├── metiers_config.py
+│   │   ├── roles.js
+│   │   ├── routes.js
+│   │   ├── stacks.js
+│   │   └── themes.js
+│   ├── contexts
+│   │   ├── AuthContext.js
+│   │   ├── LanguageContext.js
+│   │   ├── README.md
+│   │   └── context.js
+│   ├── design
+│   │   ├── README.md
+│   │   └── index.js
+│   ├── features
+│   │   ├── README.md
+│   │   ├── ai.js
+│   │   ├── auth.js
+│   │   ├── feature.js
+│   │   ├── generation.js
+│   │   ├── notifications.js
+│   │   ├── pluginManager.js
+│   │   ├── plugins.js
+│   │   └── templateManager.js
+│   ├── generation
+│   │   ├── README.md
+│   │   ├── ai
+│   │   │   ├── README.md
+│   │   │   ├── ai.js
+│   │   │   ├── ai.py
+│   │   │   ├── assistant.js
+│   │   │   ├── fallbackGeneric.js
+│   │   │   ├── fallbackLlama.js
+│   │   │   ├── fallbackMistral.js
+│   │   │   ├── fallbackMixtral.js
+│   │   │   ├── quotaDetector.js
+│   │   │   └── quotaManager.js
+│   │   ├── blueprints
+│   │   │   ├── README.md
+│   │   │   ├── backendApi.js
+│   │   │   ├── blockchain.js
+│   │   │   ├── devops.js
+│   │   │   ├── iaScript.js
+│   │   │   ├── mobileApp.js
+│   │   │   ├── plugin.js
+│   │   │   └── webApp.js
+│   │   ├── branding
+│   │   │   ├── README.md
+│   │   │   ├── amazighTheme.js
+│   │   │   ├── branding.js
+│   │   │   ├── modernTheme.js
+│   │   │   └── template.js
+│   │   ├── devops
+│   │   │   ├── README.md
+│   │   │   ├── dockerGen.js
+│   │   │   ├── k8sGen.js
+│   │   │   └── terraformGen.js
+│   │   ├── docs
+│   │   │   ├── README.md
+│   │   │   ├── compatibility.md
+│   │   │   ├── overview.md
+│   │   │   ├── securite.md
+│   │   │   ├── seo.md
+│   │   │   ├── structure.md
+│   │   │   └── template.js
+│   │   ├── fallbacks
+│   │   │   ├── README.md
+│   │   │   ├── fallbackLlama.js
+│   │   │   ├── fallbackMistral.js
+│   │   │   ├── fallbackMixtral.js
+│   │   │   └── quotaDetector.js
+│   │   ├── fields
+│   │   │   ├── README.md
+│   │   │   ├── customFieldTemplate.js
+│   │   │   ├── dateFieldTemplate.js
+│   │   │   ├── fieldTypes.js
+│   │   │   ├── fieldValidators.js
+│   │   │   ├── numberFieldTemplate.js
+│   │   │   ├── selectFieldTemplate.js
+│   │   │   └── textFieldTemplate.js
+│   │   ├── generateProject.js
+│   │   ├── i18n
+│   │   │   ├── README.md
+│   │   │   ├── autoTranslate.js
+│   │   │   └── dialectSupport.js
+│   │   ├── infra
+│   │   │   ├── README.md
+│   │   │   ├── dwebBackup.js
+│   │   │   ├── infra.md
+│   │   │   ├── ipfsBackup.js
+│   │   │   └── template.js
+│   │   ├── mobile
+│   │   │   ├── README.md
+│   │   │   ├── flutterGen.js
+│   │   │   └── reactNativeGen.js
+│   │   ├── preview
+│   │   │   ├── README.md
+│   │   │   └── previewManager.js
+│   │   ├── securite
+│   │   │   ├── README.md
+│   │   │   ├── antiDDoS.js
+│   │   │   ├── corsConfig.js
+│   │   │   ├── headersConfig.js
+│   │   │   ├── policy.md
+│   │   │   ├── rateLimit.js
+│   │   │   └── validation.js
+│   │   ├── seo
+│   │   │   ├── README.md
+│   │   │   ├── lighthouse.js
+│   │   │   ├── seoConfig.js
+│   │   │   └── seoUtils.js
+│   │   ├── templates
+│   │   │   ├── 3d
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_3d.js
+│   │   │   ├── README.md
+│   │   │   ├── administration_publique
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_administration_publique.js
+│   │   │   ├── agriculture
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_agriculture.js
+│   │   │   ├── arts
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_arts.js
+│   │   │   ├── assurance
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_assurance.js
+│   │   │   ├── automobile
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_automobile.js
+│   │   │   ├── banque_finance
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_banque_finance.js
+│   │   │   ├── beaute
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_beaute.js
+│   │   │   ├── blockchain
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_blockchain.js
+│   │   │   ├── btp
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_btp.js
+│   │   │   ├── construction
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_construction.js
+│   │   │   ├── crypto
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_crypto.js
+│   │   │   ├── culture
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_culture.js
+│   │   │   ├── devops
+│   │   │   │   ├── README.md
+│   │   │   │   └── template.js
+│   │   │   ├── ecommerce
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_ecommerce.js
+│   │   │   ├── education
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_education.js
+│   │   │   ├── energie
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_energie.js
+│   │   │   ├── environnement
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_environnement.js
+│   │   │   ├── gamer
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_gamer.js
+│   │   │   ├── health
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_health.js
+│   │   │   ├── hotellerie
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_hotellerie.js
+│   │   │   ├── i18n
+│   │   │   │   ├── README.md
+│   │   │   │   └── template.js
+│   │   │   ├── immobilier
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_immobilier.js
+│   │   │   ├── industrie
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_industrie.js
+│   │   │   ├── intelligence_artificielle
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_intelligence_artificielle.js
+│   │   │   ├── it_devops
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_it_devops.js
+│   │   │   ├── journalisme
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_journalisme.js
+│   │   │   ├── juridique
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_juridique.js
+│   │   │   ├── logistique
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_logistique.js
+│   │   │   ├── loisirs
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_loisirs.js
+│   │   │   ├── manufacturing
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_manufacturing.js
+│   │   │   ├── marketing
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_marketing.js
+│   │   │   ├── medias
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_medias.js
+│   │   │   ├── mobile
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_mobile.js
+│   │   │   ├── mode
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_mode.js
+│   │   │   ├── preview
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_preview.js
+│   │   │   ├── publicite
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_publicite.js
+│   │   │   ├── recherche
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_recherche.js
+│   │   │   ├── ressources_humaines
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_ressources_humaines.js
+│   │   │   ├── restauration
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_restauration.js
+│   │   │   ├── sante
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_sante.js
+│   │   │   ├── science
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_science.js
+│   │   │   ├── securite
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_securite.js
+│   │   │   ├── seo
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_seo.js
+│   │   │   ├── services_personne
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_services_personne.js
+│   │   │   ├── social
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_social.js
+│   │   │   ├── sport
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_sport.js
+│   │   │   ├── tourisme
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_tourisme.js
+│   │   │   ├── transport
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_transport.js
+│   │   │   ├── utils
+│   │   │   │   ├── README.md
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   ├── test_utils.js
+│   │   │   │   └── utils.js
+│   │   │   ├── validators
+│   │   │   │   ├── README.md
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_validators.js
+│   │   │   ├── voice
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_voice.js
+│   │   │   ├── voyage
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   ├── template.js
+│   │   │   │   └── test_voyage.js
+│   │   │   └── vr_ar
+│   │   │       ├── README.md
+│   │   │       ├── policy.md
+│   │   │       ├── template.js
+│   │   │       └── test_vr_ar.js
+│   │   ├── tests
+│   │   │   ├── README.md
+│   │   │   ├── template.js
+│   │   │   ├── test.js
+│   │   │   ├── test.py
+│   │   │   ├── test_3d.js
+│   │   │   ├── test_ai.js
+│   │   │   ├── test_blockchain.js
+│   │   │   ├── test_blueprints.js
+│   │   │   ├── test_branding.js
+│   │   │   ├── test_devops.js
+│   │   │   ├── test_ecommerce.js
+│   │   │   ├── test_education.js
+│   │   │   ├── test_generateProject.js
+│   │   │   ├── test_i18n.js
+│   │   │   ├── test_infra.js
+│   │   │   ├── test_mobile.js
+│   │   │   ├── test_preview.js
+│   │   │   ├── test_securite.js
+│   │   │   ├── test_seo.js
+│   │   │   ├── test_social.js
+│   │   │   ├── test_utils.js
+│   │   │   ├── test_validators.js
+│   │   │   ├── test_voice.js
+│   │   │   └── test_vr_ar.js
+│   │   ├── utils
+│   │   │   ├── README.md
+│   │   │   ├── compatibility.js
+│   │   │   ├── generationUtils.js
+│   │   │   ├── securiteAuto.js
+│   │   │   ├── seoAuto.js
+│   │   │   └── utils.js
+│   │   ├── validators
+│   │   │   ├── README.md
+│   │   │   ├── securiteValidators.js
+│   │   │   └── seoValidators.js
+│   │   └── voice
+│   │       ├── README.md
+│   │       └── speechToTextGPT.js
+│   ├── guards
+│   │   ├── AdminGuard.js
+│   │   ├── README.md
+│   │   └── RouteGuard.js
+│   ├── hooks
+│   │   ├── README.md
+│   │   ├── useAI.js
+│   │   ├── useAuth.js
+│   │   └── useTheme.js
+│   ├── i18n
+│   │   ├── README.md
+│   │   ├── index.js
+│   │   └── locales
+│   │       ├── README.md
+│   │       ├── ar
+│   │       │   ├── README.md
+│   │       │   └── translation.json
+│   │       ├── ber
+│   │       │   ├── README.md
+│   │       │   └── translation.json
+│   │       ├── dialectes.json
+│   │       ├── en
+│   │       │   ├── README.md
+│   │       │   └── translation.json
+│   │       └── fr
+│   │           ├── README.md
+│   │           └── translation.json
+│   ├── index.js
+│   ├── infra
+│   │   ├── README.md
+│   │   ├── dweb
+│   │   │   ├── README.md
+│   │   │   ├── autoBackupDWeb.js
+│   │   │   └── dwebService.js
+│   │   ├── infra.md
+│   │   ├── ipfs
+│   │   │   ├── README.md
+│   │   │   ├── autoBackupIPFS.js
+│   │   │   └── ipfsService.js
+│   │   └── tests
+│   │       ├── README.md
+│   │       ├── test.js
+│   │       ├── test.py
+│   │       └── test_infra.js
+│   ├── layout
+│   │   ├── MainLayout.jsx
+│   │   └── README.md
+│   ├── logs
+│   │   └── README.md
+│   ├── mail
+│   │   ├── README.md
+│   │   ├── mail.js
+│   │   └── sendMail.js
+│   ├── metiers_docs
+│   │   ├── 3DCard.md
+│   │   ├── 3dCard.md
+│   │   ├── AdministrationPubliqueCard.md
+│   │   ├── AgricultureCard.md
+│   │   ├── ArtsCard.md
+│   │   ├── AssuranceCard.md
+│   │   ├── AutomobileCard.md
+│   │   ├── BanqueFinanceCard.md
+│   │   ├── BeauteCard.md
+│   │   ├── BlockchainCard.md
+│   │   ├── BtpCard.md
+│   │   ├── ConstructionCard.md
+│   │   ├── CryptoCard.md
+│   │   ├── CultureCard.md
+│   │   ├── EcommerceCard.md
+│   │   ├── EducationCard.md
+│   │   ├── EnergieCard.md
+│   │   ├── EnvironnementCard.md
+│   │   ├── FinanceCard.md
+│   │   ├── GamerCard.md
+│   │   ├── HealthCard.md
+│   │   ├── HotellerieCard.md
+│   │   ├── IaCard.md
+│   │   ├── ImmobilierCard.md
+│   │   ├── IndustrieCard.md
+│   │   ├── IntelligenceArtificielleCard.md
+│   │   ├── Intelligence_artificielleCard.md
+│   │   ├── ItDevopsCard.md
+│   │   ├── It_devopsCard.md
+│   │   ├── JournalismeCard.md
+│   │   ├── JuridiqueCard.md
+│   │   ├── LogistiqueCard.md
+│   │   ├── LoisirsCard.md
+│   │   ├── ManufacturingCard.md
+│   │   ├── MarketingCard.md
+│   │   ├── MediasCard.md
+│   │   ├── MobileCard.md
+│   │   ├── ModeCard.md
+│   │   ├── PreviewCard.md
+│   │   ├── PubliciteCard.md
+│   │   ├── README.md
+│   │   ├── RechercheCard.md
+│   │   ├── RessourcesHumainesCard.md
+│   │   ├── Ressources_humainesCard.md
+│   │   ├── RestaurationCard.md
+│   │   ├── SanteCard.md
+│   │   ├── ScienceCard.md
+│   │   ├── SecuriteCard.md
+│   │   ├── SeoCard.md
+│   │   ├── ServicesPersonneCard.md
+│   │   ├── Services_personneCard.md
+│   │   ├── SocialCard.md
+│   │   ├── SportCard.md
+│   │   ├── TourismeCard.md
+│   │   ├── TransportCard.md
+│   │   ├── UtilsCard.md
+│   │   ├── ValidatorsCard.md
+│   │   ├── VoiceCard.md
+│   │   ├── VoyageCard.md
+│   │   └── VrArCard.md
+│   ├── middleware
+│   │   ├── README.md
+│   │   ├── withAuth.js
+│   │   ├── withCors.js
+│   │   ├── withErrorBoundary.js
+│   │   ├── withRateLimit.js
+│   │   └── withRole.js
+│   ├── monitoring
+│   │   ├── README.md
+│   │   ├── monitoring.md
+│   │   ├── performance.js
+│   │   └── securite.js
+│   ├── pages
+│   │   ├── Generate.jsx
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── NotFound.jsx
+│   │   ├── Preview.jsx
+│   │   ├── Profile.jsx
+│   │   ├── README.md
+│   │   ├── Register.jsx
+│   │   └── dashboard-global.jsx
+│   ├── plugins
+│   │   ├── README.md
+│   │   ├── analytics
+│   │   │   ├── README.md
+│   │   │   └── analyticsPlugin.js
+│   │   ├── cms
+│   │   │   ├── README.md
+│   │   │   └── cmsPlugin.js
+│   │   ├── plugin.js
+│   │   ├── plugin.py
+│   │   ├── stripe
+│   │   │   ├── README.md
+│   │   │   └── stripePlugin.js
+│   │   ├── templates
+│   │   │   ├── README.md
+│   │   │   └── generationTemplate.js
+│   │   └── tests
+│   │       ├── README.md
+│   │       ├── test.js
+│   │       ├── test.py
+│   │       └── test_plugins.js
+│   ├── preview
+│   │   ├── PreviewFrame.jsx
+│   │   └── README.md
+│   ├── scripts
+│   │   ├── README.md
+│   │   ├── ai
+│   │   │   ├── README.md
+│   │   │   ├── ai.js
+│   │   │   ├── ai.py
+│   │   │   ├── gpt_fallback.js
+│   │   │   ├── llama_fallback.js
+│   │   │   ├── mixtral_fallback.js
+│   │   │   └── quotaDetector.js
+│   │   ├── blockchain
+│   │   │   ├── README.md
+│   │   │   └── solidityGen.js
+│   │   ├── devops
+│   │   │   ├── README.md
+│   │   │   ├── dockerGen.js
+│   │   │   ├── k8sGen.js
+│   │   │   └── terraformGen.js
+│   │   ├── main.js
+│   │   ├── main.py
+│   │   └── tests
+│   │       ├── README.md
+│   │       ├── test.js
+│   │       ├── test.py
+│   │       └── test_scripts.js
+│   ├── securite
+│   │   ├── README.md
+│   │   ├── corsConfig.js
+│   │   ├── headersConfig.js
+│   │   ├── policy.md
+│   │   ├── tests
+│   │   │   ├── README.md
+│   │   │   ├── test.js
+│   │   │   └── test.py
+│   │   └── validation.js
+│   ├── seo
+│   │   ├── README.md
+│   │   ├── seoConfig.js
+│   │   ├── seoUtils.js
+│   │   └── tests
+│   │       ├── README.md
+│   │       ├── test.js
+│   │       ├── test.py
+│   │       └── test_seo.js
+│   ├── services
+│   │   ├── README.md
+│   │   ├── aiService.js
+│   │   ├── analyticsService.js
+│   │   ├── authService.js
+│   │   ├── backupService.js
+│   │   ├── generationService.js
+│   │   ├── mailService.js
+│   │   ├── monitoringService.js
+│   │   ├── notificationService.js
+│   │   ├── seoService.js
+│   │   ├── service.js
+│   │   └── voiceService.js
+│   ├── styles
+│   │   ├── README.md
+│   │   ├── global.css
+│   │   ├── tailwind.config.js
+│   │   └── themes.css
+│   ├── tests
+│   │   ├── App.test.jsx
+│   │   ├── README.md
+│   │   ├── auth.test.js
+│   │   ├── e2e
+│   │   │   ├── README.md
+│   │   │   └── generation.e2e.js
+│   │   ├── generation.test.js
+│   │   ├── integration
+│   │   │   ├── 3d
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_3d.js
+│   │   │   ├── README.md
+│   │   │   ├── administration_publique
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_administration_publique.js
+│   │   │   ├── agriculture
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_agriculture.js
+│   │   │   ├── api.integration.js
+│   │   │   ├── arts
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_arts.js
+│   │   │   ├── assurance
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_assurance.js
+│   │   │   ├── automobile
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_automobile.js
+│   │   │   ├── banque_finance
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_banque_finance.js
+│   │   │   ├── beaute
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_beaute.js
+│   │   │   ├── blockchain
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_blockchain.js
+│   │   │   ├── btp
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_btp.js
+│   │   │   ├── construction
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_construction.js
+│   │   │   ├── crypto
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_crypto.js
+│   │   │   ├── culture
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_culture.js
+│   │   │   ├── ecommerce
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_ecommerce.js
+│   │   │   ├── education
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_education.js
+│   │   │   ├── energie
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_energie.js
+│   │   │   ├── environnement
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_environnement.js
+│   │   │   ├── gamer
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_gamer.js
+│   │   │   ├── health
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_health.js
+│   │   │   ├── hotellerie
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_hotellerie.js
+│   │   │   ├── immobilier
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_immobilier.js
+│   │   │   ├── industrie
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_industrie.js
+│   │   │   ├── intelligence_artificielle
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_intelligence_artificielle.js
+│   │   │   ├── it_devops
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_it_devops.js
+│   │   │   ├── journalisme
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_journalisme.js
+│   │   │   ├── juridique
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_juridique.js
+│   │   │   ├── logistique
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_logistique.js
+│   │   │   ├── loisirs
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_loisirs.js
+│   │   │   ├── manufacturing
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_manufacturing.js
+│   │   │   ├── marketing
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_marketing.js
+│   │   │   ├── medias
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_medias.js
+│   │   │   ├── mobile
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_mobile.js
+│   │   │   ├── mode
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_mode.js
+│   │   │   ├── preview
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_preview.js
+│   │   │   ├── publicite
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_publicite.js
+│   │   │   ├── recherche
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_recherche.js
+│   │   │   ├── ressources_humaines
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_ressources_humaines.js
+│   │   │   ├── restauration
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_restauration.js
+│   │   │   ├── sante
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_sante.js
+│   │   │   ├── science
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_science.js
+│   │   │   ├── securite
+│   │   │   │   ├── README.md
+│   │   │   │   ├── policy.md
+│   │   │   │   └── test_securite.js
+│   │   │   ├── seo
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_seo.js
+│   │   │   ├── services_personne
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_services_personne.js
+│   │   │   ├── social
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_social.js
+│   │   │   ├── sport
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_sport.js
+│   │   │   ├── test_integration.js
+│   │   │   ├── test_integration_src.py
+│   │   │   ├── tourisme
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_tourisme.js
+│   │   │   ├── transport
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_transport.js
+│   │   │   ├── utils
+│   │   │   │   ├── README.md
+│   │   │   │   ├── test_utils.js
+│   │   │   │   └── utils.js
+│   │   │   ├── validators
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_validators.js
+│   │   │   ├── voice
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_voice.js
+│   │   │   ├── voyage
+│   │   │   │   ├── README.md
+│   │   │   │   └── test_voyage.js
+│   │   │   └── vr_ar
+│   │   │       ├── README.md
+│   │   │       └── test_vr_ar.js
+│   │   ├── test.js
+│   │   ├── test.py
+│   │   ├── test_coherence_metiers.js
+│   │   └── unit
+│   │       ├── 3d.unit.js
+│   │       ├── README.md
+│   │       ├── administration_publique.unit.js
+│   │       ├── agriculture.unit.js
+│   │       ├── arts.unit.js
+│   │       ├── assurance.unit.js
+│   │       ├── automobile.unit.js
+│   │       ├── banque_finance.unit.js
+│   │       ├── beaute.unit.js
+│   │       ├── blockchain.unit.js
+│   │       ├── btp.unit.js
+│   │       ├── construction.unit.js
+│   │       ├── crypto.unit.js
+│   │       ├── culture.unit.js
+│   │       ├── ecommerce.unit.js
+│   │       ├── education.unit.js
+│   │       ├── energie.unit.js
+│   │       ├── environnement.unit.js
+│   │       ├── gamer.unit.js
+│   │       ├── health.unit.js
+│   │       ├── hotellerie.unit.js
+│   │       ├── immobilier.unit.js
+│   │       ├── industrie.unit.js
+│   │       ├── intelligence_artificielle.unit.js
+│   │       ├── it_devops.unit.js
+│   │       ├── journalisme.unit.js
+│   │       ├── juridique.unit.js
+│   │       ├── logistique.unit.js
+│   │       ├── loisirs.unit.js
+│   │       ├── manufacturing.unit.js
+│   │       ├── marketing.unit.js
+│   │       ├── medias.unit.js
+│   │       ├── mobile.unit.js
+│   │       ├── mode.unit.js
+│   │       ├── preview.unit.js
+│   │       ├── publicite.unit.js
+│   │       ├── recherche.unit.js
+│   │       ├── ressources_humaines.unit.js
+│   │       ├── restauration.unit.js
+│   │       ├── sante.unit.js
+│   │       ├── science.unit.js
+│   │       ├── securite.unit.js
+│   │       ├── seo.unit.js
+│   │       ├── services_personne.unit.js
+│   │       ├── social.unit.js
+│   │       ├── sport.unit.js
+│   │       ├── test_unit.js
+│   │       ├── tourisme.unit.js
+│   │       ├── transport.unit.js
+│   │       ├── utils.unit.js
+│   │       ├── validators.unit.js
+│   │       ├── voice.unit.js
+│   │       ├── voyage.unit.js
+│   │       └── vr_ar.unit.js
+│   ├── utils
+│   │   ├── README.md
+│   │   ├── antiDDoS.js
+│   │   ├── api.js
+│   │   ├── dataExport.js
+│   │   ├── dataPurge.js
+│   │   ├── fallbackRouter.js
+│   │   ├── headers.js
+│   │   ├── originLogger.js
+│   │   ├── rateLimiter.js
+│   │   ├── rgpd.js
+│   │   ├── securite.js
+│   │   ├── utils.js
+│   │   └── validators.js
+│   └── voice
+│       ├── README.md
+│       └── speechToText.js
+├── tailwind.config.js
+└── tests
+    ├── README.md
+    ├── e2e
+    │   ├── README.md
+    │   └── index.js
+    ├── integration
+    │   ├── README.md
+    │   ├── test_integration.js
+    │   └── test_integration_frontend.py
+    ├── performance
+    │   ├── README.md
+    │   └── index.js
+    ├── securite
+    │   ├── README.md
+    │   └── policy.md
+    ├── test.js
+    ├── test.py
+    ├── test_sample.js
+    └── unit
+        ├── README.md
+        ├── test_unit.js
+        └── test_unit.py
+
+252 directories, 954 files

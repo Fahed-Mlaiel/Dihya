@@ -1,0 +1,35 @@
+name: Onboarding CI/CD
+on:
+  push:
+    paths:
+      - 'Dihya/scripts/onboarding_*'
+  pull_request:
+    paths:
+      - 'Dihya/scripts/onboarding_*'
+jobs:
+  test-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Python deps
+        run: pip install flask requests
+      - name: Install Node deps
+        run: npm install axios yargs express
+      - name: Run Python backend
+        run: nohup python3 Dihya/scripts/onboarding_backend.py &
+      - name: Run Node backend
+        run: nohup node Dihya/scripts/onboarding_backend.js &
+      - name: Wait for servers
+        run: sleep 5
+      - name: Run tests Python
+        run: python3 Dihya/scripts/test_onboarding.py
+      - name: Run tests Node.js
+        run: node Dihya/scripts/test_onboarding.js

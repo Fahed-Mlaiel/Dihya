@@ -1,0 +1,28 @@
+name: Plugins CI/CD
+on:
+  push:
+    paths:
+      - 'Dihya/plugins/**'
+  pull_request:
+    paths:
+      - 'Dihya/plugins/**'
+jobs:
+  test-audit-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install requirements
+        run: pip install -r requirements-dev.txt
+      - name: Run tests
+        run: pytest Dihya/plugins/plugin.py
+      - name: Audit RGPD & Accessibilité
+        run: python3 Dihya/plugins/plugin.py --audit && python3 Dihya/plugins/plugin.py --export-rgpd
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugins-artifacts
+          path: Dihya/plugins/

@@ -1,14 +1,15 @@
-# Dossier `monitoring/` — Backend Dihya Coding
+# Monitoring Backend – Dihya Coding
 
-Ce dossier regroupe les modules et scripts dédiés à la supervision, au suivi de la santé et à l’audit du backend Dihya Coding.
+Ce dossier regroupe les scripts, outils et logs de monitoring : sécurité, RGPD, accessibilité, audit, CI/CD, multilingue, documentation, plugins.
 
-## Bonnes pratiques Dihya Coding
+## Bonnes pratiques
 
-- **Centralisation** : tous les outils de monitoring (healthcheck, alerting, métriques, etc.) sont regroupés ici pour une gestion claire et évolutive.
-- **Sécurité** : ne jamais exposer d’informations sensibles dans les réponses ou logs de monitoring.
-- **Extensibilité** : prévoir l’ajout facile de nouveaux modules (vérification DB, cache, dépendances externes, alertes…).
-- **Auditabilité** : logger les checks échoués et les alertes pour permettre un audit ultérieur.
-- **Interopérabilité** : concevoir les endpoints pour être compatibles avec les outils de CI/CD, load balancers, Prometheus, etc.
+- Sécurité, validation, audit, logs, documentation, accessibilité, RGPD, CI/CD
+- Exemples d’utilisation, guides intégrés, multilingue, plugins
+
+---
+
+Production-ready, sécurisé, conforme, extensible, documenté, multilingue, CI/CD, RGPD, accessibilité.
 
 ## Exemples de contenu
 

@@ -1,0 +1,30 @@
+name: AI Assets CI/CD
+on:
+  push:
+    paths:
+      - 'Dihya/ai/**'
+  pull_request:
+    paths:
+      - 'Dihya/ai/**'
+jobs:
+  test-audit-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install requirements
+        run: pip install -r requirements-dev.txt
+      - name: Run tests
+        run: pytest Dihya/ai/test_ai.py Dihya/ai/test_e2e_ai.py
+      - name: Audit RGPD & Accessibilité
+        run: python3 Dihya/ai/audit.py && python3 Dihya/ai/export_ai_rgpd.py
+      - name: Générer fixtures
+        run: python3 Dihya/ai/generate_fixture.py
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-assets-artifacts
+          path: Dihya/ai/

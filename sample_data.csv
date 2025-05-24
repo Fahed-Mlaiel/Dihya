@@ -1,0 +1,18 @@
+# Dihya – Exemple de données métiers multilingues, souveraines, prêtes à l’emploi
+# - Structure compatible import/export, tests, démo, CI/CD, fallback IA open source
+# - Champs multilingues (fr, en, ar, tzm), rôles, sécurité, accessibilité, RGPD
+# - Zéro fail, zéro warning, prêt production/démo/contribution
+
+id,nom_fr,nom_en,nom_ar,nom_tzm,role,permissions,rgpd_consent,accessibility_level,sovereignty,created_at
+1,DevOps,DevOps,ديفوبس,DevOps,devops,"deploy;monitor;rollback;manage-secrets",oui,AA,oui,2025-05-20T10:00:00Z
+2,Développeur Frontend,Frontend Developer,مطور الواجهة,Frontend,frontend,"ui:edit;i18n:manage;a11y:test",oui,AAA,oui,2025-05-20T10:01:00Z
+3,Data Privacy Officer,Data Privacy Officer,مسؤول حماية البيانات,DPO,dpo,"rgpd:audit;dpi:manage;notify:cnil",oui,AA,oui,2025-05-20T10:02:00Z
+4,Utilisateur,User,مستخدم,User,user,"app:use",oui,AA,oui,2025-05-20T10:03:00Z
+5,Admin,Admin,مشرف عام,Admin,admin,"*",oui,AAA,oui,2025-05-20T10:04:00Z
+6,QA/Accessibilité,QA/Accessibility,ضمان الجودة/إتاحة,QA,qa,"test:run;a11y:audit;report:issue",oui,AAA,oui,2025-05-20T10:05:00Z
+7,Product Owner,Product Owner,مالك المنتج,PO,po,"doc:edit;roadmap:manage;consent:manage",oui,AA,oui,2025-05-20T10:06:00Z
+
+# 🇫🇷 Ce fichier est un exemple de données métiers multilingues, souverain, RGPD-ready.
+# 🇬🇧 This file is a multilingual, sovereign, RGPD-ready business data sample.
+# 🇦🇪 هذا الملف مثال بيانات مهنية متعددة اللغات، سيادي، متوافق مع RGPD.
+# ⵣ Agi afaylu d amedya n yisefka n umetti, amatu, RGPD-ready, multi-langue.

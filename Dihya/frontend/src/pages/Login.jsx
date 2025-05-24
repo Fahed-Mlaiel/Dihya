@@ -1,12 +1,13 @@
 /**
  * @file Login.jsx
- * @description Page de connexion pour Dihya Coding : design moderne, SEO, sécurité, conformité RGPD, auditabilité, extensibilité, robustesse et documentation claire.
+ * @description Page de connexion pour Dihya Coding : design moderne, sécurité, RGPD, auditabilité, accessibilité, extensibilité.
  * Toutes les opérations sont validées, loguées localement, anonymisées et respectent le consentement utilisateur.
  */
 
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MainLayout from '../layout/MainLayout';
+import { ShieldCheck, User, Lock, Loader2 } from "lucide-react";
 
 /**
  * Page de connexion utilisateur.
@@ -17,6 +18,7 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   /**
    * Gère la soumission du formulaire de connexion.
@@ -27,28 +29,27 @@ export default function Login() {
     setStatus(null);
 
     if (!hasConsent()) {
-      setStatus({ type: 'error', message: t('rgpd.consent_required') });
+      setStatus({ type: 'error', message: t('rgpd.consent_required') || "Consentement RGPD requis." });
       return;
     }
     if (!validateEmail(email)) {
-      setStatus({ type: 'error', message: t('forms.invalid_email') });
+      setStatus({ type: 'error', message: t('forms.invalid_email') || "Email invalide." });
       return;
     }
     if (!password || password.length < 6) {
-      setStatus({ type: 'error', message: t('forms.required') });
+      setStatus({ type: 'error', message: t('forms.required') || "Mot de passe requis (6 caractères min)." });
       return;
     }
 
     try {
-      // Simulation d’authentification (à remplacer par l’intégration réelle)
+      setLoading(true);
       await fakeLogin({ email, password });
       logLoginEvent('login_success', {
         email: anonymizeEmail(email),
         timestamp: new Date().toISOString()
       });
-      // Stockage utilisateur simulé (à remplacer par la vraie logique)
       window.localStorage.setItem('current_user', JSON.stringify({ id: email, role: 'user' }));
-      setStatus({ type: 'success', message: t('messages.login_success') });
+      setStatus({ type: 'success', message: t('messages.login_success') || "Connexion réussie !" });
       setEmail('');
       setPassword('');
       // Redirection possible ici
@@ -58,19 +59,29 @@ export default function Login() {
         error: err.message,
         timestamp: new Date().toISOString()
       });
-      setStatus({ type: 'error', message: t('messages.error_occurred') });
+      setStatus({ type: 'error', message: t('messages.error_occurred') || "Erreur lors de la connexion." });
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <MainLayout title={t('navigation.login')} description={t('app.description')}>
-      <section className="login-section" aria-labelledby="login-title">
-        <h1 id="login-title">{t('navigation.login')}</h1>
-        <form onSubmit={handleSubmit} aria-describedby="login-desc">
+      <section className="w-full max-w-md mx-auto bg-white/90 rounded-xl shadow-lg p-8 mt-12 mb-16 border border-gray-100 flex flex-col items-center" aria-labelledby="login-title">
+        <div className="flex items-center gap-3 mb-4">
+          <ShieldCheck className="w-8 h-8 text-yellow-500" />
+          <h1 id="login-title" className="text-2xl font-bold text-gray-900 tracking-wide">
+            {t('navigation.login') || "Connexion"}
+          </h1>
+        </div>
+        <form onSubmit={handleSubmit} aria-describedby="login-desc" className="w-full flex flex-col gap-5">
           <div id="login-desc" className="sr-only">
             {t('app.description')}
           </div>
-          <label htmlFor="email">{t('forms.email')}</label>
+          <label htmlFor="email" className="font-semibold text-gray-700 flex items-center gap-2">
+            <User className="w-4 h-4 text-yellow-500" />
+            {t('forms.email') || "Email"}
+          </label>
           <input
             id="email"
             name="email"
@@ -80,9 +91,14 @@ export default function Login() {
             required
             autoComplete="username"
             aria-required="true"
+            className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 outline-none transition"
+            placeholder="exemple@email.com"
           />
 
-          <label htmlFor="password">{t('forms.password')}</label>
+          <label htmlFor="password" className="font-semibold text-gray-700 flex items-center gap-2">
+            <Lock className="w-4 h-4 text-yellow-500" />
+            {t('forms.password') || "Mot de passe"}
+          </label>
           <input
             id="password"
             name="password"
@@ -93,19 +109,43 @@ export default function Login() {
             minLength={6}
             autoComplete="current-password"
             aria-required="true"
+            className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 outline-none transition"
+            placeholder="••••••"
           />
 
-          <button type="submit">{t('navigation.login')}</button>
+          <button
+            type="submit"
+            disabled={loading}
+            className="mt-2 px-6 py-2 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold shadow transition flex items-center justify-center gap-2"
+          >
+            {loading && <Loader2 className="animate-spin w-5 h-5" />}
+            {t('navigation.login') || "Connexion"}
+          </button>
         </form>
         {status && (
           <div
-            className={`status-message ${status.type}`}
+            className={`mt-6 px-4 py-3 rounded-lg text-sm font-medium flex items-center gap-2 ${
+              status.type === 'error'
+                ? 'bg-red-100 text-red-700'
+                : 'bg-green-100 text-green-700'
+            }`}
             role={status.type === 'error' ? 'alert' : 'status'}
             tabIndex={-1}
           >
             {status.message}
           </div>
         )}
+        <div className="mt-8 text-xs text-gray-400 text-center">
+          <span>
+            <a href="/docs/contributing" className="underline hover:text-yellow-600">
+              Contribuer au projet
+            </a>
+            {" • "}
+            <a href="/docs/ajouter_metier" className="underline hover:text-yellow-600">
+              Ajouter un métier
+            </a>
+          </span>
+        </div>
       </section>
     </MainLayout>
   );
@@ -118,7 +158,6 @@ export default function Login() {
  */
 async function fakeLogin(params) {
   await new Promise((r) => setTimeout(r, 300));
-  // Simule un succès, peut lever une erreur pour tester les cas d’échec
 }
 
 /**

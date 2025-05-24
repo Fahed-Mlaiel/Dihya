@@ -21,11 +21,43 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ---
 
-## Additional Terms (optional, project-specific):
+## 🌍 Multilingue | Multilingual | متعدد اللغات | ⵜⴰⵎⴰⵣⵉⵖⵜ
+
+- **fr** : Ce projet est sous licence AGPL v3 pour garantir la souveraineté, la transparence, l’ouverture et la contribution de tous.
+- **en** : This project is licensed under AGPL v3 to ensure sovereignty, transparency, openness, and contribution for all.
+- **ar** : هذا المشروع مرخص بموجب AGPL v3 لضمان السيادة والشفافية والانفتاح والمساهمة للجميع.
+- **tzr** : ⴰⵙⵉⵏⴰⵡ ⴰⴷⴷⵔⴰⵏ AGPL v3 ⴷ ⵉⵙⴻⵏⴻⵏ ⵏ ⵙⵓⴼⴻⵏⴰⵡⴻⵜ، ⵜⴰⵏⴰⵡⴰⵙⵜ، ⴰⵏⴼⴰⵜⴻⵏ ⴷ ⴰⵙⵉⵏⴰⵡ.
+
+---
+
+## Additional Terms (project-specific):
 
 - The name, logo, and branding "Dihya Coding" are protected as trademarks and may not be used without written permission from the project maintainers.
-- Please refer to the documentation for guidelines on contributions and code origin transparency.
+- Toute contribution doit respecter la charte graphique, la souveraineté numérique et la transparence sur l’origine du code généré.
+- Please refer to the documentation for guidelines on contributions, code origin transparency, and open governance.
+- Toute utilisation commerciale ou SaaS doit mentionner la licence AGPL et la souveraineté du projet Dihya Coding.
+- Pour toute question juridique, contactez : legal@dihya.coding
 
 ---
 
 Full license text: https://www.gnu.org/licenses/agpl-3.0.txt
+
+---
+
+## 🛡️ Souveraineté, sécurité & conformité
+
+- Ce projet garantit l’auditabilité, la traçabilité, la conformité RGPD, la sécurité et la transparence de tout le code et des assets générés.
+- Aucun secret, donnée personnelle ou tracking propriétaire ne doit être inclus dans le code ou les assets.
+- Les contributions sont soumises à validation par les responsables sécurité et souveraineté du projet.
+
+---
+
+**Dihya Coding** – Souveraineté, ouverture, innovation pour tous.
+
+---
+
+# Licence AGPL v3 – Dihya
+
+Ce module est sous licence AGPL v3. Voir le fichier LICENSE à la racine pour les détails et la conformité.
+
+Copyright (c) 2025 Dihya Coding

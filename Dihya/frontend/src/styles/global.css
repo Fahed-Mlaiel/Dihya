@@ -1,23 +1,21 @@
 /**
  * @file global.css
  * @description Styles globaux pour Dihya Coding : design moderne, accessibilité, SEO, sécurité, conformité RGPD, extensibilité, robustesse et documentation claire.
- * Respecte les bonnes pratiques CSS, responsive, dark/light, contrastes, focus, animations accessibles.
+ * Respecte les bonnes pratiques CSS, responsive, dark/light, contrastes, focus, animations accessibles, branding amazigh-tech.
  */
 
-/* Reset CSS moderne */
+/* --- RESET CSS MODERNE --- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -33,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* --- BASE --- */
 body {
   line-height: 1.5;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -41,9 +40,10 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Dark mode support */
+/* --- DARK MODE --- */
 @media (prefers-color-scheme: dark) {
   body {
     background: #181a1b;
@@ -51,24 +51,25 @@ body {
   }
 }
 
-/* Liens accessibles et visibles */
+/* --- LIENS --- */
 a {
   color: #2563eb;
   text-decoration: underline;
   transition: color 0.2s;
 }
 a:hover, a:focus {
-  color: #1e40af;
-  outline: 2px solid #2563eb;
+  color: #f59e42;
+  outline: 2px solid #facc15;
   outline-offset: 2px;
 }
 
-/* Titres */
+/* --- TITRES --- */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
   color: #18181b;
+  letter-spacing: 0.01em;
 }
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6 {
@@ -76,33 +77,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Paragraphes et textes */
+/* --- PARAGRAPHES ET TEXTES --- */
 p, ul, ol, li, blockquote {
   margin-bottom: 1em;
   font-size: 1rem;
 }
 
-/* Boutons accessibles */
+/* --- BOUTONS --- */
 button, input[type="submit"], .btn {
-  background: #2563eb;
-  color: #fff;
+  background: linear-gradient(90deg, #facc15 0%, #f59e42 100%);
+  color: #18181b;
   border: none;
-  border-radius: 0.375em;
-  padding: 0.5em 1.2em;
+  border-radius: 0.5em;
+  padding: 0.6em 1.5em;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(250, 204, 21, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 button:focus, .btn:focus {
   outline: 2px solid #facc15;
   outline-offset: 2px;
 }
 button:hover, .btn:hover {
-  background: #1e40af;
+  background: linear-gradient(90deg, #f59e42 0%, #facc15 100%);
+  color: #222;
 }
 
-/* Formulaires */
+/* --- FORMULAIRES --- */
 input, textarea, select {
   font-family: inherit;
   font-size: 1rem;
@@ -112,11 +115,12 @@ input, textarea, select {
   margin-bottom: 1em;
   background: #fff;
   color: #222;
-  transition: border 0.2s;
+  transition: border 0.2s, background 0.2s;
 }
 input:focus, textarea:focus, select:focus {
-  border-color: #2563eb;
+  border-color: #facc15;
   outline: none;
+  background: #fef9c3;
 }
 @media (prefers-color-scheme: dark) {
   input, textarea, select {
@@ -124,9 +128,12 @@ input:focus, textarea:focus, select:focus {
     color: #f3f4f6;
     border-color: #374151;
   }
+  input:focus, textarea:focus, select:focus {
+    background: #3a2e13;
+  }
 }
 
-/* Tableaux */
+/* --- TABLEAUX --- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -150,20 +157,20 @@ th {
   }
 }
 
-/* Images responsives */
+/* --- IMAGES RESPONSIVES --- */
 img, svg, video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Accessibilité : focus visible */
+/* --- ACCESSIBILITÉ : FOCUS VISIBLE --- */
 :focus-visible {
   outline: 2px solid #facc15;
   outline-offset: 2px;
 }
 
-/* Animations accessibles */
+/* --- ANIMATIONS ACCESSIBLES --- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -173,9 +180,7 @@ img, svg, video {
   }
 }
 
-/* Sécurité : pas de overflow caché global, pas de user-select none global */
-
-/* Utilitaires */
+/* --- UTILITAIRES --- */
 .hidden {
   display: none !important;
 }
@@ -191,5 +196,54 @@ img, svg, video {
   border: 0 !important;
 }
 
-/* Documentation claire : commentaires pour chaque section */
-/* Extensible : ajoutez vos composants ou utilitaires ici */
+/* --- BADGES, LABELS, ALERTES --- */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.7em;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 600;
+  background: #fef9c3;
+  color: #a16207;
+  margin-right: 0.5em;
+}
+@media (prefers-color-scheme: dark) {
+  .badge {
+    background: #3a2e13;
+    color: #fde68a;
+  }
+}
+.alert {
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.alert-success {
+  background: #dcfce7;
+  color: #166534;
+}
+.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* --- AMAZIGH MOTIF (branding décoratif, extensible) --- */
+.amazigh-motif {
+  background: repeating-linear-gradient(
+    135deg,
+    #facc15,
+    #facc15 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  opacity: 0.08;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* --- EXTENSIBLE : ajoutez vos composants ou utilitaires ici --- */
+
+/* --- DOCUMENTATION : chaque section est commentée pour la contribution --- */

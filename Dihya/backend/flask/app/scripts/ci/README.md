@@ -1,37 +1,19 @@
-# Scripts CI/CD custom
+# Scripts CI/CD – Dihya Coding
 
-Ce dossier regroupe les scripts d’automatisation pour l’intégration continue (CI) et le déploiement continu (CD) du backend Dihya Coding.
+Ce dossier regroupe les scripts d’intégration et déploiement continus : sécurité, RGPD, accessibilité, CI/CD, multilingue, documentation, plugins.
 
-## Objectif
+## Bonnes pratiques
 
-- Centraliser les helpers pour les workflows GitHub Actions, la vérification de la qualité, les tests automatisés, le linting, la sécurité, etc.
-- Faciliter la maintenance et l’extension des pipelines CI/CD.
+- Sécurité, validation, audit, logs, documentation, accessibilité, RGPD, CI/CD
+- Exemples d’utilisation, guides intégrés, multilingue, plugins
 
-## Bonnes pratiques Dihya Coding
+## Exemples de scripts
 
-- **Sécurité** : ne jamais stocker de secrets ou credentials dans les scripts, utiliser les variables d’environnement GitHub Actions.
-- **Documentation** : chaque script doit être documenté (usage, paramètres, sécurité).
-- **Extensibilité** : prévoir l’ajout facile de nouveaux jobs ou outils d’automatisation.
-- **Validation** : valider les entrées/sorties des scripts pour éviter les erreurs en pipeline.
-- **Portabilité** : scripts compatibles Linux, usage de chemins relatifs, pas de dépendances propriétaires.
+- `ci_check.py`, `deploy.py`, `lint.py`, `test_runner.py`
 
-## Exemples de scripts à inclure
+---
 
-- `run_tests.sh` : lance les tests unitaires et d’intégration
-- `lint.sh` : vérifie la qualité du code (flake8, black, etc.)
-- `check_security.sh` : scan des dépendances et vulnérabilités
-- `build_and_deploy.sh` : build et déploiement automatisé (Docker, K8s, etc.)
-- `generate_coverage.sh` : génère le rapport de couverture de tests
-
-## Exemple d’utilisation dans un workflow GitHub Actions
-
-```yaml
-- name: Lint code
-  run: bash scripts/ci/lint.sh
-
-- name: Run tests
-  run: bash scripts/ci/run_tests.sh
-```
+Production-ready, sécurisé, conforme, extensible, documenté, multilingue, CI/CD, RGPD, accessibilité.
 
 ---
 

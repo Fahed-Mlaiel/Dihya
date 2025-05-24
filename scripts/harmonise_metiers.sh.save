@@ -1,0 +1,31 @@
+# (Füge den Skript-Inhalt ein
+# und speichere)
+chmod +x scripts/harmonise_metiers.sh
+./scripts/harmonise_metiers.sh
+
+# Script d’harmonisation avancé des métiers Dihya
+# Multilingue, sécurisé, modulaire, CI/CD ready
+set -euo pipefail
+LANG_DEFAULT="fr"
+
+msg() {
+  case "${LANG:-$LANG_DEFAULT}" in
+    fr) echo "$1" ;;
+    en) echo "$2" ;;
+    ar) echo "$3" ;;
+    amz) echo "$4" ;;
+    *) echo "$1" ;;
+  esac
+}
+
+msg "[FR] Harmonisation des métiers..." "[EN] Harmonizing jobs..." "[AR] جارٍ توحيد المهن..." "[AMZ] Aselkim n metiers..."
+
+# Correction des noms de fichiers Python
+find . -name '_init_.py' -exec bash -c 'git mv "$0" "${0%_init_.py}__init__.py" 2>/dev/null || mv "$0" "${0%_init_.py}__init__.py"' {} \;
+
+# Harmonisation des scripts métiers (exemple)
+python3 gen_doc_metiers.py
+python3 gen_readme_metiers.py
+
+msg "[FR] Harmonisation terminée." "[EN] Harmonization done." "[AR] تم التوحيد." "[AMZ] Aselkim yedles."
+

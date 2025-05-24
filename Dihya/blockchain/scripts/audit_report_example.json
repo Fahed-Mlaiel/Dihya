@@ -1,0 +1,23 @@
+{
+  "contract": "Project.sol",
+  "audit_date": "2025-05-22",
+  "auditor": "DihyaBot",
+  "findings": [
+    {
+      "type": "event",
+      "status": "ok",
+      "details": "Events defined"
+    },
+    {
+      "type": "permissions",
+      "status": "ok",
+      "details": "Owner/AccessControl used"
+    },
+    {
+      "type": "fallback",
+      "status": "ok",
+      "details": "No fallback function"
+    }
+  ],
+  "conclusion": "Contract compliant with Dihya security and RGPD requirements."
+}

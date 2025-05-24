@@ -1,34 +1,19 @@
-# Scripts de maintenance régulière
+# Scripts de maintenance régulière – Dihya Coding
 
-Ce dossier regroupe les scripts d’automatisation pour la maintenance régulière du backend Dihya Coding.
+Ce dossier regroupe les scripts d’automatisation pour la maintenance régulière : purge logs, rotation backups, nettoyage, intégrité, monitoring, reporting, RGPD, accessibilité, CI/CD.
 
-## Objectif
+## Bonnes pratiques
 
-- Assurer la stabilité, la sécurité et la performance de la plateforme par des tâches planifiées : purge de logs, rotation des backups, nettoyage des données temporaires, vérification de l’intégrité, etc.
-- Centraliser la documentation et l’exécution des opérations de maintenance.
+- Sécurité, validation, audit, logs, documentation, accessibilité, RGPD, CI/CD
+- Exemples d’utilisation, guides intégrés, multilingue, plugins
 
-## Bonnes pratiques Dihya Coding
+## Exemples de scripts
 
-- **Sécurité** : ne jamais supprimer de données critiques sans sauvegarde préalable.
-- **Documentation** : chaque script doit être documenté (usage, fréquence, sécurité).
-- **Auditabilité** : journaliser chaque opération de maintenance pour traçabilité.
-- **Validation** : valider les entrées/sorties pour éviter les erreurs destructrices.
-- **Extensibilité** : prévoir l’ajout facile de nouveaux scripts ou tâches planifiées.
-- **Portabilité** : scripts compatibles Linux, usage de chemins relatifs, pas de dépendances propriétaires.
+- `purge_logs.py`, `rotate_backups.py`, `cleanup_tmp.py`, `check_integrity.py`
 
-## Exemples de scripts à inclure
+---
 
-- `purge_logs.py` : suppression sécurisée des anciens logs
-- `rotate_backups.py` : rotation et archivage des sauvegardes
-- `cleanup_tmp.py` : nettoyage des fichiers temporaires
-- `check_integrity.py` : vérification de l’intégrité des données critiques
-
-## Exemple d’utilisation (cron ou CI/CD)
-
-```bash
-python scripts/maintenance/purge_logs.py
-python scripts/maintenance/rotate_backups.py
-```
+Production-ready, sécurisé, conforme, extensible, documenté, multilingue, CI/CD, RGPD, accessibilité.
 
 ---
 

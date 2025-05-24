@@ -1,6 +1,17 @@
-# CODEOWNERS – Dihya Coding
+# CODEOWNERS – Dihya
+
+*       @Allfallaga @core-team
+/Dihya/ai/    @ai-lead
+/Dihya/backend/   @backend-lead
+/Dihya/frontend/  @frontend-lead
+/Dihya/mobile/    @mobile-lead
+/Dihya/plugins/   @plugins-lead
+/Dihya/devops/    @devops-lead
+/Dihya/docs/      @doc-lead
+
 # Garantit la sécurité, la conformité RGPD, l’auditabilité, l’extensibilité, la robustesse et la documentation claire.
 # Chaque modification critique doit être validée par les responsables ci-dessous.
+# Multilingue | Souveraineté | Auditabilité | Production Ready
 
 # Propriétaires principaux du code (tous les dossiers et fichiers)
 *       @dihya-coding/core-team
@@ -8,11 +19,20 @@
 # Frontend (React, JS, CSS, tests, SEO, accessibilité)
 frontend/   @dihya-coding/frontend-leads
 
+# Backend (Flask, Node, Django, API, sécurité, tests)
+backend/    @dihya-coding/backend-leads
+
 # Mobile Flutter
 mobile/flutter/   @dihya-coding/mobile-flutter-leads
 
 # Mobile React Native
 mobile/react_native/   @dihya-coding/mobile-rn-leads
+
+# DevOps, CI/CD, scripts, Docker, Terraform
+devops/   @dihya-coding/devops-leads
+
+# Plugins & Marketplace
+plugins/   @dihya-coding/plugins-leads
 
 # Documentation, guides, cahier des charges
 docs/   @dihya-coding/docs-leads
@@ -21,4 +41,11 @@ docs/   @dihya-coding/docs-leads
 src/utils/security.js @dihya-coding/security-leads
 src/utils/rgpd.js     @dihya-coding/security-leads
 
+# Assets critiques (logos, branding, templates métiers)
+assets/logos/   @dihya-coding/branding-leads
+assets/icons/   @dihya-coding/branding-leads
+assets/templates/ @dihya-coding/branding-leads
+
 # Auditabilité : ce fichier est commenté pour conformité et traçabilité
+# Toute modification doit être validée par au moins 2 reviewers du scope concerné.
+# Pour toute question, contactez @dihya-coding/core-team.

@@ -4,8 +4,8 @@
  * Toutes les opérations sont validées, loguées localement, anonymisées et respectent le consentement utilisateur.
  */
 
-import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
@@ -49,6 +49,7 @@ export default function MainLayout({ children, title, description }) {
           <a href="/about">{t('navigation.about')}</a>
           <a href="/contact">{t('navigation.contact')}</a>
           <a href="/dashboard">{t('navigation.dashboard')}</a>
+          <a href="/dashboard-global">Dashboard Global</a>
         </nav>
       </header>
       <main id="main-content" tabIndex={-1} aria-live="polite">

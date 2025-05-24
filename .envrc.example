@@ -1,0 +1,118 @@
+# .envrc.example – Exemple de configuration direnv pour Dihya Coding
+#
+# Ce fichier sert de modèle pour la configuration locale des variables d’environnement.
+#
+# Sécurité : Ne jamais versionner ce fichier avec des secrets réels.
+# RGPD : Aucune donnée personnelle ne doit être stockée ici.
+# Accessibilité : Documenter chaque variable pour faciliter la maintenance.
+
+# Exemple :
+# export DATABASE_URL=postgresql://user:password@localhost:5432/dihya
+# export SECRET_KEY=dev-secret
+# ...
+
+# Pour la liste complète, voir la documentation interne.
+
+# --- Python/Flask ---
+export FLASK_ENV=development
+export FLASK_APP=Dihya/backend/flask/app/main.py
+export PYTHONPATH=$PWD/Dihya/backend/flask/app
+
+# --- Node.js/React ---
+export NODE_ENV=development
+
+# --- IA & Souveraineté ---
+export OPENAI_API_KEY='your-openai-key-here'
+export OPENAI_MODEL='gpt-4o'
+export MIXTRAL_ENABLED=1
+export LLAMA_ENABLED=1
+export MISTRAL_ENABLED=1
+
+# --- Multilingue ---
+export DIHYA_LANGUAGES='fr,en,ar,tzr'
+
+# --- Sécurité & Souveraineté ---
+export DIHYA_SOUVERAINETE=1
+export DIHYA_DEBUG=0
+export DIHYA_SECRET_KEY='change-me-in-prod'
+
+# --- DevOps & CI/CD ---
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+
+# --- Plugins & Marketplace ---
+export DIHYA_PLUGINS_PATH=$PWD/Dihya/plugins
+
+# --- Accessibilité & RGPD ---
+export DIHYA_ACCESSIBILITY=1
+export DIHYA_RGPD=1
+
+# --- PATH ---
+export PATH=$PWD/Dihya/scripts:$PATH
+
+# Chargement automatique des variables (direnv)
+layout python python3
+
+# --- Variables locales (à surcharger dans .envrc.local) ---
+# export OPENAI_API_KEY='sk-xxxxxxx'
+# export MIXTRAL_API_KEY='your-mixtral-key'
+# export MISTRAL_API_KEY='your-mistral-key'
+
+# --- Test, sandbox, mocks (optionnel) ---
+# export DIHYA_TEST_MODE=1
+# export DIHYA_MOCK_EMAIL='dev@dihya.local'
+# export DIHYA_MOCK_USER_ID='local-dev-user'
+
+# Sécurité : ne jamais commiter de secrets réels, utiliser GitHub Actions secrets pour la prod.
+# Accessibilité : ce fichier est commenté et documenté pour tous les profils.
+# Multilingue : voir docs/devops pour les guides en fr, en, ar, amazigh.
+
+# --- Configuration supplémentaire pour exemple sécurisé, RGPD, multilingue, CI/CD-ready ---
+export SECRET_KEY=__EXAMPLE_SECRET_KEY__
+export DATABASE_URL=postgresql://dihya_example:__PASSWORD__@db:5432/dihya_example
+export JWT_SECRET=__JWT_EXAMPLE_SECRET__
+export CORS_ORIGINS=http://localhost:3000
+export ALLOWED_HOSTS=localhost
+export LOG_LEVEL=INFO
+export ENABLE_WAF=false
+export ENABLE_DDOS_PROTECTION=false
+export ENABLE_MONITORING=true
+export ENABLE_BACKUP=false
+export I18N_LANGS=fr,en,ar,ber,de,es,zh,ja,ko,nl,he,fa,hi
+export PLUGINS_ENABLED=security,rgpd,accessibility,seo,monitoring,ai_fallback
+# Pour la documentation complète, voir docs/API_REFERENCE.md
+
+# Beispiel für .envrc
+export ENV=development
+export DEBUG=1
+
+# Exemple de configuration pour direnv (ne pas utiliser en production)
+export SECRET_KEY=example_secret
+export DATABASE_URL=sqlite:///dihya_example.db
+export JWT_SECRET=example_jwt_secret
+export MAIL_SERVER=localhost
+export MAIL_PORT=1025
+export MAIL_USERNAME=example@example.com
+export MAIL_PASSWORD=example
+export CORS_ORIGINS=http://localhost:3000
+export BASE_URL=http://localhost:5000
+export ENV=example
+export DEBUG=True
+
+# .envrc.example
+# Exemple de configuration d’environnement pour Dihya Coding
+# À adapter selon l’environnement cible (dev, test, prod)
+
+export APP_ENV=example
+export APP_DEBUG=false
+export SECRET_KEY="example_secret_key"
+export DATABASE_URL="sqlite:///example.db"
+export JWT_SECRET="example_jwt_secret"
+export CORS_ORIGINS="*"
+export LOG_LEVEL=info
+export RBAC_ENABLED=true
+export MULTITENANCY=false
+export INTERNATIONALIZATION="fr,en,ar"
+# ...
+
+# Ce fichier sert de modèle pour la configuration locale ou CI/CD.

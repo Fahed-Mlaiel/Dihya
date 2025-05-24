@@ -1,0 +1,16 @@
+{
+  "name": "dihya-core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest --testMatch '**/tests/*.js' --testEnvironment=node --runInBand --verbose"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "supertest": "^7.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

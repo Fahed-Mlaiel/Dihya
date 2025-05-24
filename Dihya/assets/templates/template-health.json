@@ -1,0 +1,184 @@
+{
+  "template": "health",
+  "lang": [
+    "fr",
+    "en",
+    "ar",
+    "tzr",
+    "de",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "he",
+    "fa",
+    "hi",
+    "es"
+  ],
+  "fields": [
+    {
+      "name": "patient_name",
+      "type": "string",
+      "label": {
+        "fr": "Nom du patient",
+        "en": "Patient Name",
+        "ar": "اسم المريض",
+        "tzr": "ⵉⵎⴻⵏⴰⵡⴰⵏ",
+        "es": "Nombre del paciente",
+        "de": "Patientenname",
+        "zh": "病人姓名",
+        "ja": "患者名",
+        "ko": "환자 이름",
+        "nl": "Patiëntnaam",
+        "he": "שם המטופל",
+        "fa": "نام بیمار",
+        "hi": "रोगी का नाम"
+      }
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "label": {
+        "fr": "Âge",
+        "en": "Age",
+        "ar": "العمر",
+        "tzr": "ⴰⵙⴳⴰⴷ",
+        "es": "Edad",
+        "de": "Alter",
+        "zh": "年龄",
+        "ja": "年齢",
+        "ko": "나이",
+        "nl": "Leeftijd",
+        "he": "גיל",
+        "fa": "سن",
+        "hi": "आयु"
+      }
+    },
+    {
+      "name": "diagnosis",
+      "type": "string",
+      "label": {
+        "fr": "Diagnostic",
+        "en": "Diagnosis",
+        "ar": "التشخيص",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Diagnóstico",
+        "de": "Diagnose",
+        "zh": "诊断",
+        "ja": "診断",
+        "ko": "진단",
+        "nl": "Diagnose",
+        "he": "אבחנה",
+        "fa": "تشخیص",
+        "hi": "निदान"
+      }
+    },
+    {
+      "name": "treatment",
+      "type": "string",
+      "label": {
+        "fr": "Traitement",
+        "en": "Treatment",
+        "ar": "العلاج",
+        "tzr": "ⴰⵙⵉⵏⴰⵡ",
+        "es": "Tratamiento",
+        "de": "Behandlung",
+        "zh": "治疗",
+        "ja": "治療",
+        "ko": "치료",
+        "nl": "Behandeling",
+        "he": "טיפול",
+        "fa": "درمان",
+        "hi": "उपचार"
+      }
+    },
+    {
+      "name": "doctor",
+      "type": "string",
+      "label": {
+        "fr": "Médecin",
+        "en": "Doctor",
+        "ar": "الطبيب",
+        "tzr": "ⴰⵙⵉⵏⴰⵡⴰⵏ",
+        "es": "Médico",
+        "de": "Arzt",
+        "zh": "医生",
+        "ja": "医師",
+        "ko": "의사",
+        "nl": "Arts",
+        "he": "רופא",
+        "fa": "پزشک",
+        "hi": "चिकित्सक"
+      }
+    },
+    {
+      "name": "notes",
+      "type": "string",
+      "label": {
+        "fr": "Notes",
+        "en": "Notes",
+        "ar": "ملاحظات",
+        "tzr": "ⴰⵙⵉⴷⴰⵡ",
+        "es": "Notas",
+        "de": "Notizen",
+        "zh": "备注",
+        "ja": "ノート",
+        "ko": "노트",
+        "nl": "Notities",
+        "he": "הערות",
+        "fa": "یادداشت‌ها",
+        "hi": "टिप्पणियाँ"
+      }
+    }
+  ],
+  "description": {
+    "fr": "Template de dossier patient multilingue, accessible, RGPD, compatible REST/GraphQL, extensible plugins, SEO-ready, auditabilité, multitenancy.",
+    "en": "Multilingual, accessible, GDPR-compliant patient record template, REST/GraphQL-ready, extensible with plugins, SEO, audit, multitenancy.",
+    "ar": "نموذج ملف مريض متعدد اللغات، متوافق مع RGPD، قابل للتوسعة، متوافق مع REST/GraphQL، يدعم الإضافات، السيو، التدقيق، تعدد المستأجرين.",
+    "tzr": "ⴰⵎⵙⵙⴰⵡ ⵏ ⴰⵙⵉⴷⴰⵡ ⵏ ⵜⴰⵎⴰⵣⵉⵖⵜ ⴰⵎⴰⵣⵉⵖⴰⵏⵜ, RGPD, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "es": "Plantilla de expediente de paciente multilingüe, accesible, conforme a RGPD, extensible, REST/GraphQL, plugins, SEO, auditoría, multitenancy.",
+    "de": "Mehrsprachige, barrierefreie, DSGVO-konforme Patientendaten-Vorlage, REST/GraphQL, Plugins, SEO, Audit, Multitenancy.",
+    "zh": "多语言、无障碍、GDPR合规的病历模板，支持REST/GraphQL、插件、SEO、审计、多租户。",
+    "ja": "多言語対応、アクセシブル、GDPR準拠の患者記録テンプレート。REST/GraphQL、プラグイン、SEO、監査、マルチテナンシー対応。",
+    "ko": "다국어, 접근성, GDPR 준수 환자 기록 템플릿, REST/GraphQL, 플러그인, SEO, 감사, 멀티테넌시 지원.",
+    "nl": "Meertalige, toegankelijke, AVG-conforme patiëntendossier-template, REST/GraphQL, plugins, SEO, audit, multitenancy.",
+    "he": "תבנית תיק מטופל רב-לשונית, נגישה, תואמת GDPR, REST/GraphQL, תוספים, SEO, ביקורת, ריבוי דיירים.",
+    "fa": "قالب پرونده بیمار چندزبانه، دسترس‌پذیر، سازگار با GDPR، REST/GraphQL، افزونه‌ها، سئو، حسابرسی، چندمستاجری.",
+    "hi": "बहुभाषी, सुलभ, GDPR-अनुपालन रोगी रिकॉर्ड टेम्पलेट, REST/GraphQL, प्लगइन्स, SEO, ऑडिट, मल्टीटेनेन्सी।"
+  },
+  "meta": {
+    "version": "2.0.0",
+    "created": "2025-05-22",
+    "updated": "2025-05-22",
+    "author": "Dihya Coding Team",
+    "license": "CC-BY-4.0",
+    "rgpd": true,
+    "audit": true,
+    "seo": true,
+    "accessibility": true,
+    "multitenancy": true,
+    "plugins": true,
+    "ci_cd": true,
+    "test_coverage": "unit, integration, e2e, fixtures, mock",
+    "api": [
+      "REST",
+      "GraphQL"
+    ],
+    "security": [
+      "CORS",
+      "JWT",
+      "validation",
+      "audit",
+      "WAF",
+      "anti-DDOS"
+    ],
+    "example": {
+      "patient_name": "Mohamed Benali",
+      "age": 42,
+      "diagnosis": "Diabète de type 2",
+      "treatment": "Metformine 500mg",
+      "doctor": "Dr. Lahlou",
+      "notes": "Suivi trimestriel recommandé."
+    }
+  }
+}

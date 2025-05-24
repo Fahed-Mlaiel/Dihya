@@ -1,4 +1,9 @@
-# Architecture Technique – Dihya Coding
+# Architecture – Dihya
+
+- Description détaillée de l’architecture globale, modules, flux, sécurité, i18n, accessibilité, extensibilité
+- Diagrammes, exemples, bonnes pratiques
+
+Voir [ARCHITECTURE.md](../../ARCHITECTURE.md), [ARCHITECTURE_DIAGRAM.png](ARCHITECTURE_DIAGRAM.png)
 
 Ce document décrit l’architecture technique de la plateforme Dihya Coding, conforme au cahier des charges : sécurité, modularité, multistack, extensibilité, bonnes pratiques DevOps et multilingue.
 

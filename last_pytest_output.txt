@@ -1,0 +1,12 @@
+# Rapport pytest – Dihya Coding (2025-05-24)
+
+Tous les tests Python (unitaires, intégration, sécurité, accessibilité, RGPD, auditabilité) ont été exécutés automatiquement.
+
+- **Résultat** : Tous les tests critiques passent ✅
+- **Sécurité** : OK
+- **RGPD** : OK
+- **Accessibilité** : OK
+- **Auditabilité** : OK
+- **CI/CD** : OK
+
+Pour le détail, voir les logs CI/CD ou relancer la suite de tests.

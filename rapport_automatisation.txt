@@ -1,0 +1,5 @@
+✅ README.md conforme.
+✅ cahier_des_charges.txt conforme.
+✅ METIERS_OVERVIEW.md conforme.
+✅ ROLES_PERMISSIONS.md conforme.
+✅ ARCHITECTURE.md conforme.
