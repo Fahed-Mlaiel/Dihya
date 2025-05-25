@@ -6,13 +6,12 @@
  * @since 2025
  */
 
-import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
-import rateLimit from 'express-rate-limit';
+import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
+import rateLimit from 'express-rate-limit';
 import { buildSchema } from 'graphql';
-import jwt from 'jsonwebtoken';
+import helmet from 'helmet';
 // ... autres imports (i18n, plugins, audit, etc.) ...
 
 const app = express();

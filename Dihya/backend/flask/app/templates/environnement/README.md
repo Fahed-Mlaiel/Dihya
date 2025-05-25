@@ -2,8 +2,8 @@
 
 ## Présentation
 
-Ce template métier permet de générer un backend d’application pour le secteur **Environnement** : gestion de sites naturels, suivi de la qualité de l’air/eau/sol, alertes pollution, biodiversité, indicateurs verts, conformité, reporting, etc.  
-Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
+Ce template métier permet de générer un backend d’application pour le secteur **Environnement** : gestion de sites naturels, suivi de la qualité de l’air/eau/sol, alertes pollution, biodiversité, indicateurs verts, conformité, reporting, etc.
+Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
 
 ---
 
@@ -42,37 +42,42 @@ Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multiling
 
 ## Modèles de données (extraits)
 
-- **Site** : id, nom, type, localisation, statut, description
-- **Mesure** : id, site, type, valeur, date, unité, capteur
-- **Capteur** : id, type, site, état, date_installation
-- **Incident** : id, site, type, description, date, statut, intervention
-- **Acteur** : id, nom, rôle, contact, organisation
+- **Site** : id, nom, type, localisation, statut, description
+- **Mesure** : id, site, type, valeur, date, unité, capteur
+- **Capteur** : id, type, site, état, date_installation
+- **Incident** : id, site, type, description, date, statut, intervention
+- **Acteur** : id, nom, rôle, contact, organisation
 
 ---
 
 ## Sécurité & RGPD
 
-- Authentification JWT/OAuth2
-- Permissions par rôle (Admin, Agent, Partenaire, Citoyen, Invité)
-- Logs horodatés (audit)
-- Export/suppression des données sur demande (RGPD)
-- Protection CORS, rate limiting, anti-DDoS
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, user, invité
+- Plugins validés uniquement
 
----
+## Internationalisation
+
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
+
+## Déploiement
+
+- Docker, K8s, GitHub Actions, fallback local
 
 ## Extensibilité
 
-- Ajoutez vos propres routes dans `template.py`
-- Branchez des plugins (IoT, analytics, conformité, cartographie)
-- Compatible marketplace Dihya (import/export)
+- Système de plugins, API ouverte, CLI
+
+## Exemples d’utilisation
+
+- Génération automatique d’applications environnement (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Design & UX
+## Pour aller plus loin
 
-- **UI/UX** : Moderne, épuré, inspiration nature & green tech (voir frontend)
-- **Responsive** : Adapté mobile/tablette
-- **Accessibilité** : ARIA, contrastes, navigation clavier
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.
 
 ---
 
@@ -86,3 +91,4 @@ def ajouter_mesure():
     data = request.get_json()
     # Validation, création, déclenchement d’alerte si seuil dépassé...
     return jsonify({"message": "Mesure ajoutée"}), 201
+```

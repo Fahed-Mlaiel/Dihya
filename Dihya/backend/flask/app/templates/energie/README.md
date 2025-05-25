@@ -2,8 +2,8 @@
 
 ## Présentation
 
-Ce template métier permet de générer un backend d’application pour le secteur **Énergie** : gestion de sites de production, consommation, réseaux, maintenance, suivi environnemental, alertes, facturation, etc.  
-Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
+Ce template métier permet de générer un backend d’application pour le secteur **Énergie** : gestion de sites de production, consommation, réseaux, maintenance, suivi environnemental, alertes, facturation, etc.
+Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
 
 ---
 
@@ -45,49 +45,39 @@ Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multiling
 
 ## Modèles de données (extraits)
 
-- **Site** : id, nom, type, localisation, capacité, statut
-- **Consommation** : id, site, type, valeur, date, unité
-- **Équipement** : id, nom, type, site, état, maintenance
-- **Maintenance** : id, équipement, date, type, statut, technicien
-- **Client** : id, nom, contact, contrat, consommation
-- **Facture** : id, client, période, montant, statut, date
-- **Environnement** : id, site, indicateur, valeur, date
+- **Site** : id, nom, type, localisation, capacité, statut
+- **Consommation** : id, site, type, valeur, date, unité
+- **Équipement** : id, nom, type, site, état, maintenance
+- **Client** : id, nom, contact, contrat, statut
+- **Facture** : id, client, montant, date, statut
 
 ---
 
 ## Sécurité & RGPD
 
-- Authentification JWT/OAuth2
-- Permissions par rôle (Admin, Technicien, Client, Invité)
-- Logs horodatés (audit)
-- Export/suppression des données sur demande (RGPD)
-- Protection CORS, rate limiting, anti-DDoS
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, user, invité
+- Plugins validés uniquement
 
----
+## Internationalisation
+
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
+
+## Déploiement
+
+- Docker, K8s, GitHub Actions, fallback local
 
 ## Extensibilité
 
-- Ajoutez vos propres routes dans `template.py`
-- Branchez des plugins (IoT, analytics, paiement, conformité)
-- Compatible marketplace Dihya (import/export)
+- Système de plugins, API ouverte, CLI
+
+## Exemples d’utilisation
+
+- Génération automatique d’applications énergie (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Design & UX
+## Pour aller plus loin
 
-- **UI/UX** : Moderne, épuré, inspiration énergie verte (voir frontend)
-- **Responsive** : Adapté mobile/tablette
-- **Accessibilité** : ARIA, contrastes, navigation clavier
-
----
-
-## Exemple de logique métier (pseudo-code)
-
-```python
-# Ajouter une mesure de consommation
-@app.route('/api/consommation', methods=['POST'])
-@jwt_required()
-def ajouter_mesure():
-    data = request.get_json()
-    # Validation, création, notification seuil...
-    return jsonify({"message": "Mesure ajoutée"}), 201
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.

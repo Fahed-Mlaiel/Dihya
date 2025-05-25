@@ -16,7 +16,7 @@ class IndustrieTemplate(BusinessTemplate):
             i18n={
                 "fr": "Industrie",
                 "en": "Industry",
-                "tz": "ⵉⵏⴷⵓⵙⵜⵉⵔⵉ"
+                "tz": "ⵉⴷⵏⴷⵉⵔⵉ"
             }
         )
 

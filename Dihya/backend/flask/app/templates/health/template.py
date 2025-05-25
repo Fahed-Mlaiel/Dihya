@@ -16,7 +16,7 @@ class HealthTemplate(BusinessTemplate):
             i18n={
                 "fr": "Santé",
                 "en": "Health",
-                "tz": "ⵙⴰⵏⵜⴰ"
+                "tz": "ⵜⴰⵏⴷⴰⵢⵜ"
             }
         )
 
@@ -48,12 +48,13 @@ class HealthTemplate(BusinessTemplate):
         return [
             {"method": "GET", "endpoint": "/api/patients", "desc": "Liste des patients", "auth": "medecin/secretaire"},
             {"method": "POST", "endpoint": "/api/patients", "desc": "Créer un patient", "auth": "medecin/secretaire"},
-            {"method": "GET", "endpoint": "/api/rdv", "desc": "Liste des rendez-vous", "auth": "medecin/secretaire/patient"},
+            {"method": "GET", "endpoint": "/api/patients/<id>", "desc": "Récupérer un dossier patient", "auth": "medecin/secretaire"},
+            {"method": "PUT", "endpoint": "/api/patients/<id>", "desc": "Modifier un dossier patient", "auth": "medecin/secretaire"},
+            {"method": "GET", "endpoint": "/api/rdv", "desc": "Liste des rendez-vous", "auth": "medecin/secretaire"},
             {"method": "POST", "endpoint": "/api/rdv", "desc": "Prendre rendez-vous", "auth": "patient/secretaire"},
-            {"method": "GET", "endpoint": "/api/dossiers", "desc": "Dossiers médicaux", "auth": "medecin"},
-            {"method": "POST", "endpoint": "/api/prescriptions", "desc": "Créer prescription", "auth": "medecin"},
-            {"method": "GET", "endpoint": "/api/notifications", "desc": "Notifications utilisateur", "auth": "all"},
-            {"method": "POST", "endpoint": "/api/plugins", "desc": "Ajouter un plugin", "auth": "admin"}
+            {"method": "GET", "endpoint": "/api/notifications", "desc": "Notifications patient/soignant", "auth": "all"},
+            {"method": "POST", "endpoint": "/api/ordonnance", "desc": "Créer une ordonnance", "auth": "medecin"},
+            {"method": "GET", "endpoint": "/api/export", "desc": "Export dossiers/statistiques", "auth": "admin"}
         ]
 
     def generate_frontend(self, user_requirements: Dict[str, Any]) -> str:
@@ -116,6 +117,20 @@ def create_patient():
     # ...validation...
     return jsonify({"msg": "Patient créé", "data": data}), 201
 
+@app.route('/api/patients/<id>', methods=['GET'])
+@jwt_required()
+def get_patient(id):
+    # Récupérer un dossier patient (mock)
+    return jsonify({"id": id, "nom": "Doe", "prenom": "John", "historique": []})
+
+@app.route('/api/patients/<id>', methods=['PUT'])
+@jwt_required()
+def update_patient(id):
+    # Modifier un dossier patient
+    data = request.json
+    # ...validation...
+    return jsonify({"msg": "Dossier patient mis à jour", "data": data}), 200
+
 @app.route('/api/rdv', methods=['GET'])
 @jwt_required()
 def get_rdv():
@@ -130,32 +145,25 @@ def create_rdv():
     # ...validation...
     return jsonify({"msg": "RDV créé", "data": data}), 201
 
-@app.route('/api/dossiers', methods=['GET'])
-@jwt_required()
-def get_dossiers():
-    # Dossiers médicaux (mock)
-    return jsonify([{"id": 1, "patient": "John Doe", "notes": "RAS"}])
-
-@app.route('/api/prescriptions', methods=['POST'])
-@jwt_required()
-def create_prescription():
-    # Création prescription
-    data = request.json
-    # ...validation...
-    return jsonify({"msg": "Prescription créée", "data": data}), 201
-
 @app.route('/api/notifications', methods=['GET'])
 @jwt_required()
 def notifications():
     # Notifications utilisateur (mock)
     return jsonify([{"type": "rdv", "msg": "RDV demain à 10h"}])
 
-@app.route('/api/plugins', methods=['POST'])
+@app.route('/api/ordonnance', methods=['POST'])
 @jwt_required()
-def add_plugin():
-    # Ajout plugin (mock)
+def create_ordonnance():
+    # Création ordonnance
     data = request.json
-    return jsonify({"msg": "Plugin ajouté", "data": data}), 201
+    # ...validation...
+    return jsonify({"msg": "Ordonnance créée", "data": data}), 201
+
+@app.route('/api/export', methods=['GET'])
+@jwt_required()
+def export_data():
+    # Export dossiers/statistiques (mock)
+    return jsonify({"msg": "Données exportées", "format": "CSV/XLSX"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)

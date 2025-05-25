@@ -48,12 +48,12 @@ def ajouter_site():
 @energie_bp.route('/consommation', methods=['GET'])
 @jwt_required()
 def list_consommation():
-    """Suivi consommation/production (Admin/User)"""
+    """Liste des mesures de consommation/production (Admin/User)"""
     return jsonify(consommations), 200
 
 @energie_bp.route('/consommation', methods=['POST'])
 @jwt_required()
-def ajouter_mesure():
+def ajouter_consommation():
     """Ajouter une mesure de consommation/production (Admin)"""
     data = request.get_json()
     mesure = {
@@ -67,7 +67,7 @@ def ajouter_mesure():
     consommations.append(mesure)
     return jsonify({"message": "Mesure ajoutée", "mesure": mesure}), 201
 
-# --- ROUTES EQUIPEMENTS ---
+# --- ROUTES ÉQUIPEMENTS ---
 
 @energie_bp.route('/equipements', methods=['GET'])
 @jwt_required()
@@ -85,8 +85,8 @@ def ajouter_equipement():
         "nom": data.get("nom"),
         "type": data.get("type"),
         "site": data.get("site"),
-        "etat": data.get("etat", "en service"),
-        "maintenance": data.get("maintenance", [])
+        "etat": data.get("etat", "actif"),
+        "maintenance": data.get("maintenance", False)
     }
     equipements.append(equipement)
     return jsonify({"message": "Équipement ajouté", "equipement": equipement}), 201
@@ -104,16 +104,15 @@ def list_maintenance():
 def ajouter_maintenance():
     """Planifier une intervention de maintenance (Admin)"""
     data = request.get_json()
-    maintenance = {
+    intervention = {
         "id": len(maintenances) + 1,
         "equipement": data.get("equipement"),
         "date": data.get("date"),
         "type": data.get("type"),
-        "statut": data.get("statut", "planifiée"),
-        "technicien": data.get("technicien")
+        "statut": data.get("statut", "planifiée")
     }
-    maintenances.append(maintenance)
-    return jsonify({"message": "Intervention planifiée", "maintenance": maintenance}), 201
+    maintenances.append(intervention)
+    return jsonify({"message": "Intervention planifiée", "intervention": intervention}), 201
 
 # --- ROUTES CLIENTS ---
 
@@ -133,7 +132,7 @@ def ajouter_client():
         "nom": data.get("nom"),
         "contact": data.get("contact"),
         "contrat": data.get("contrat"),
-        "consommation": data.get("consommation", [])
+        "statut": data.get("statut", "actif")
     }
     clients.append(client)
     return jsonify({"message": "Client ajouté", "client": client}), 201
@@ -154,10 +153,9 @@ def ajouter_facture():
     facture = {
         "id": len(factures) + 1,
         "client": data.get("client"),
-        "periode": data.get("periode"),
         "montant": data.get("montant"),
-        "statut": data.get("statut", "en attente"),
-        "date": data.get("date")
+        "date": data.get("date"),
+        "statut": data.get("statut", "en attente")
     }
     factures.append(facture)
     return jsonify({"message": "Facture générée", "facture": facture}), 201
@@ -170,31 +168,17 @@ def list_environnement():
     """Indicateurs environnementaux (Admin/User)"""
     return jsonify(environnement), 200
 
-@energie_bp.route('/environnement', methods=['POST'])
-@jwt_required()
-def ajouter_indicateur():
-    """Ajouter un indicateur environnemental (Admin)"""
-    data = request.get_json()
-    indicateur = {
-        "id": len(environnement) + 1,
-        "site": data.get("site"),
-        "indicateur": data.get("indicateur"),
-        "valeur": data.get("valeur"),
-        "date": data.get("date")
-    }
-    environnement.append(indicateur)
-    return jsonify({"message": "Indicateur ajouté", "indicateur": indicateur}), 201
-
-# --- EXPORT SITES (CSV simulé) ---
+# --- EXPORT CSV/PDF (exemple) ---
 
 @energie_bp.route('/export/sites', methods=['GET'])
 @jwt_required()
 def export_sites():
-    """Exporter les sites (CSV simulé)"""
-    csv = "id,nom,type,localisation,capacite,statut\n"
-    for s in sites:
-        csv += f'{s["id"]},{s["nom"]},{s["type"]},{s["localisation"]},{s["capacite"]},{s["statut"]}\n'
-    return (csv, 200, {'Content-Type': 'text/csv'})
+    """Export des sites (Admin)"""
+    # Ici, on simule un export CSV
+    csv = "id,nom,type,localisation,capacite,statut\n" + "\n".join([
+        f"{s['id']},{s['nom']},{s['type']},{s['localisation']},{s['capacite']},{s['statut']}" for s in sites
+    ])
+    return csv, 200, {'Content-Type': 'text/csv'}
 
 # --- EXTENSIBILITÉ : Ajoutez ici vos routes métiers personnalisées ---
 

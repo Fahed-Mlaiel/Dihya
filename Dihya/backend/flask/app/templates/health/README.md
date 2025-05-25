@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Ce dossier contient le **template métier "Santé"** pour la génération automatique de projets santé/healthcare avec Dihya Coding. Ce template permet de créer des applications web/mobile ou des APIs backend adaptées au secteur médical : gestion de patients, dossiers médicaux, rendez-vous, téléconsultation, notifications, sécurité et conformité RGPD.
+Ce dossier contient le **template métier "Santé"** pour la génération automatique de projets santé/healthcare avec Dihya Coding. Ce template permet de créer des applications web/mobile ou des APIs backend adaptées au secteur médical : gestion de patients, dossiers médicaux, rendez-vous, téléconsultation, notifications, sécurité et conformité RGPD.
 
 ---
 
@@ -49,43 +49,42 @@ Ce dossier contient le **template métier "Santé"** pour la génération automa
 | POST    | `/api/health/patient`           | Créer un patient                            | Oui              | Médecin/Admin |
 | GET     | `/api/health/patient/:id`       | Récupérer un dossier patient                | Oui              | Médecin/Admin |
 | PUT     | `/api/health/patient/:id`       | Modifier un dossier patient                 | Oui              | Médecin/Admin |
-| DELETE  | `/api/health/patient/:id`       | Supprimer un patient (RGPD)                 | Oui              | Admin         |
-| POST    | `/api/health/appointment`       | Prendre rendez-vous                         | Oui              | Patient       |
-| GET     | `/api/health/appointment/:id`   | Détails d’un rendez-vous                    | Oui              | Patient/Médecin|
-| POST    | `/api/health/consultation`      | Démarrer une téléconsultation               | Oui              | Médecin       |
-| POST    | `/api/health/notify`            | Envoyer une notification santé              | Oui              | Médecin/Admin |
-| GET     | `/api/health/reporting`         | Statistiques et reporting                   | Oui              | Admin         |
+| GET     | `/api/health/rdv`               | Liste des rendez-vous                       | Oui              | Médecin/Secrétaire |
+| POST    | `/api/health/rdv`               | Prendre rendez-vous                         | Oui              | Patient/Secrétaire |
+| GET     | `/api/health/notifications`      | Notifications patient/soignant              | Oui              | Tous rôles    |
+| POST    | `/api/health/ordonnance`        | Créer une ordonnance                        | Oui              | Médecin       |
+| GET     | `/api/health/export`            | Export dossiers ou statistiques             | Oui              | Admin         |
 
 ---
 
-## Sécurité & conformité RGPD
+## Sécurité & RGPD
 
-- **Authentification JWT/OAuth** et gestion des rôles
-- **Chiffrement des données sensibles**
-- **Logs horodatés et auditables**
-- **Suppression/export des données patients sur demande**
-- **Validation stricte des entrées (schémas, types, formats)**
-- **Aucune donnée médicale dans les logs ou erreurs**
-- **Tests automatisés pour chaque route critique**
-- **Documentation claire pour chaque fonctionnalité**
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, médecin, secrétaire, patient, guest
+- Plugins validés uniquement
+
+## Internationalisation
+
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
+
+## Déploiement
+
+- Docker, K8s, GitHub Actions, fallback local
+
+## Extensibilité
+
+- Système de plugins, API ouverte, CLI
+
+## Exemples d’utilisation
+
+- Génération automatique d’applications santé (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Extensibilité & personnalisation
+## Pour aller plus loin
 
-- Ajout facile de modules santé (prescriptions, facturation, IA diagnostic…)
-- Thèmes UI/UX personnalisables (inspiration amazigh ou moderne)
-- Support multilingue et accessibilité renforcée
-- Plugins métiers : paiement, analytics, IA santé, etc.
-
----
-
-## Bonnes pratiques
-
-- **Docstrings** et typage sur chaque fonction/méthode
-- **Tests unitaires et d’intégration** pour chaque module
-- **Respect des conventions de nommage et de structure**
-- **Documentation claire et à jour**
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.
 
 ---
 

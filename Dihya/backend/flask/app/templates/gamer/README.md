@@ -48,33 +48,31 @@ Ce template métier "Gamer" fait partie de la plateforme **Dihya Coding**, la pr
 - **Classements** : MAJ temps réel selon résultats, badges automatiques
 - **Chat** : modération IA, anti-spam, support emojis
 - **Streaming** : intégration facile via URL, affichage responsive
-- **Sécurité** : validation stricte, CORS, headers, anti-DDoS, logs horodatés
 
 ---
 
-## Design UI/UX
+## Sécurité & RGPD
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, user, guest
+- Plugins validés uniquement
 
-- **Thème** : Modernité + héritage amazigh (couleurs, motifs, polices)
-- **Responsive** : Mobile, tablette, desktop
-- **Accessibilité** : Contrastes, navigation clavier, ARIA
-- **Customisation** : Thèmes, avatars, badges
+## Internationalisation
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
 
----
+## Déploiement
+- Docker, K8s, GitHub Actions, fallback local
 
 ## Extensibilité
+- Système de plugins, API ouverte, CLI
 
-- **Plugins** : Analytics, e-sport shop, badges, CMS, Stripe, etc.
-- **Templates** : Import/export JSON, YAML, JS
-- **Marketplace** : Contribution externe, notation, documentation
+## Exemples d’utilisation
+- Génération automatique d’applications gaming (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Déploiement & Souveraineté
-
-- **CI/CD** : GitHub Actions (tests, build, déploiement auto)
-- **Fallback** : Replit/Render si GitHub indisponible
-- **Hébergement décentralisé** : IPFS/DWeb (optionnel)
-- **Backup** : Notion API, GitHub, local
+## Pour aller plus loin
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.
 
 ---
 
@@ -83,16 +81,6 @@ Ce template métier "Gamer" fait partie de la plateforme **Dihya Coding**, la pr
 - **Ajout de métiers** : Étendre la classe `BusinessTemplate`
 - **Documentation claire** : Guide utilisateur, contribution, API
 - **Licence** : AGPL (open-source, souveraineté)
-
----
-
-## Exemple d’utilisation
-
-1. Décrivez votre projet gaming (texte ou vocal)
-2. Sélectionnez le template "Gamer"
-3. Personnalisez (modules, design, plugins)
-4. Générez le code (frontend + backend)
-5. Testez en live, partagez le lien, déployez en 1 clic
 
 ---
 

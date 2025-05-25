@@ -16,7 +16,7 @@ class HotellerieTemplate(BusinessTemplate):
             i18n={
                 "fr": "Hôtellerie",
                 "en": "Hospitality",
-                "tz": "ⵉⵙⴻⵏⴻⵏ"
+                "tz": "ⵉⵜⴻⵍⴻⵍⴻ"
             }
         )
 

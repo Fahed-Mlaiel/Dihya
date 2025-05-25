@@ -16,7 +16,7 @@ class ImmobilierTemplate(BusinessTemplate):
             i18n={
                 "fr": "Immobilier",
                 "en": "Real Estate",
-                "tz": "ⵉⵎⵎⵓⴱⵉⵍⵉⵔ"
+                "tz": "ⵉⵎⵎⵓⴱⵉⵔ"
             }
         )
 

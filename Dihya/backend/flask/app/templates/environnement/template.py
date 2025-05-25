@@ -1,5 +1,5 @@
 """
-Template Métier Dihya Coding
+Template Métier Dihya Coding – Environnement
 Ce fichier définit la structure de base pour un template métier extensible et personnalisable.
 Chaque template métier doit hériter de cette classe et implémenter les méthodes nécessaires.
 """
@@ -48,10 +48,14 @@ class BusinessTemplate:
         Retourne les paramètres de design par défaut (UI/UX, thèmes, responsive, etc.).
         """
         return {
-            "theme": "amazigh_modern",
+            "theme": "amazigh_modern_environnement",
             "responsive": True,
             "ui_framework": "tailwind",
-            "customizable": True
+            "customizable": True,
+            "primary_colors": ["#16a34a", "#fbbf24", "#10b981"],
+            "font": "Montserrat, Tifinagh, sans-serif",
+            "motifs": "amazigh",
+            "dark_mode": True
         }
 
     def get_roles(self) -> List[Dict[str, Any]]:

@@ -5,7 +5,7 @@
 set -euo pipefail
 LANG_DEFAULT="fr"
 LOGFILE="backup_$(date +%Y%m%d_%H%M%S).log"
-BACKUP_DIR="/backups/dihya/$(date +%Y-%m-%d)"
+BACKUP_DIR="/workspaces/Dihya/backups/$(date +%Y-%m-%d)"
 SRC_DIR="/workspaces/Dihya"
 
 # Multilingue (fr, en, ar, amz)
@@ -47,7 +47,7 @@ else
 fi
 
 # Nettoyage des backups anciens (>30j)
-find /backups/dihya/ -type d -mtime +30 -exec rm -rf {} +
+find /workspaces/Dihya/backups/ -type d -mtime +30 -exec rm -rf {} +
 
 # Notification (exemple : log, email, webhook)
 msg "[FR] Notification envoyée." "[EN] Notification sent." "[AR] تم إرسال الإشعار." "[AMZ] Izen yettwazen."

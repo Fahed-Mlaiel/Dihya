@@ -48,54 +48,34 @@ Ce template "Hôtellerie" fait partie de la plateforme **Dihya Coding**, solutio
 ## Logique Métier
 
 - **Réservations** : gestion calendrier, disponibilité, conflits, notifications automatiques
-- **Chambres** : gestion dynamique des tarifs, promotions, états (propre, occupée, maintenance)
-- **Clients** : historique, fidélité, préférences, avis
-- **Facturation** : génération PDF, paiement en ligne, suivi des règlements
-- **Sécurité** : validation stricte, CORS, headers, anti-DDoS, logs horodatés
+- **Chambres** : gestion des types, tarifs, maintenance
+- **Clients** : fidélité, historique, segmentation
+- **Facturation** : génération PDF, intégration paiement
 
 ---
 
-## Design UI/UX
+## Sécurité & RGPD
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, réceptionniste, client, guest
+- Plugins validés uniquement
 
-- **Thème** : Modernité + héritage amazigh (couleurs, motifs, polices)
-- **Responsive** : Mobile, tablette, desktop
-- **Accessibilité** : Contrastes, navigation clavier, ARIA
-- **Customisation** : Thèmes, logos, branding hôtel
+## Internationalisation
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
 
----
+## Déploiement
+- Docker, K8s, GitHub Actions, fallback local
 
 ## Extensibilité
+- Système de plugins, API ouverte, CLI
 
-- **Plugins** : CRM, housekeeping, channel manager, analytics, Stripe, custom
-- **Templates** : Import/export JSON, YAML, JS
-- **Marketplace** : Contribution externe, notation, documentation
-
----
-
-## Déploiement & Souveraineté
-
-- **CI/CD** : GitHub Actions (tests, build, déploiement auto)
-- **Fallback** : Replit/Render si GitHub indisponible
-- **Hébergement décentralisé** : IPFS/DWeb (optionnel)
-- **Backup** : Notion API, GitHub, local
+## Exemples d’utilisation
+- Génération automatique d’applications hôtelières (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Contribution
-
-- **Ajout de métiers** : Étendre la classe `BusinessTemplate`
-- **Documentation claire** : Guide utilisateur, contribution, API
-- **Licence** : AGPL (open-source, souveraineté)
-
----
-
-## Exemple d’utilisation
-
-1. Décrivez votre projet hôtelier (texte ou vocal)
-2. Sélectionnez le template "Hôtellerie"
-3. Personnalisez (modules, design, plugins)
-4. Générez le code (frontend + backend)
-5. Testez en live, partagez le lien, déployez en 1 clic
+## Pour aller plus loin
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.
 
 ---
 

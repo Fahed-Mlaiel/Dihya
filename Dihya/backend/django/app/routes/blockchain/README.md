@@ -156,6 +156,36 @@ Content-Type: application/json
 
 ---
 
+# Module Blockchain Dihya – Documentation Ultra Avancée
+
+## Présentation
+Ce module fournit une API REST/GraphQL ultra avancée pour la gestion de transactions blockchain, compatible web, mobile, plugins, RGPD, audit, multilingue, accessibilité, multitenant, CI/CD, souveraineté numérique.
+
+## Fonctionnalités principales
+- Transactions blockchain (CRUD, audit, logs, export RGPD, anonymisation)
+- Sécurité maximale (CORS, JWT, WAF, anti-DDOS, validation, audit)
+- Multilingue dynamique (fr, en, ar, de, zh, ja, ko, nl, he, fa, hi, es, amazigh)
+- Multitenant, gestion des rôles (admin, user, invité)
+- Plugins dynamiques, extensibles, auditables
+- Documentation intégrée, accessibilité, SEO backend
+- Prêt pour Docker, K8s, Codespaces, CI/CD, fallback local
+
+## Exemples d’utilisation
+- Génération de transactions blockchain pour la logistique, la santé, l’IA, la VR/AR…
+- Export RGPD, audit, anonymisation, logs structurés
+- Intégration avec plugins IA (LLaMA, Mixtral, Mistral)
+
+## Pour débutants et experts
+- Tutoriels, guides, exemples multilingues
+- API testable via Postman, Swagger, GraphQL
+- Sécurité, conformité, accessibilité garanties
+
+## Pour aller plus loin
+- Voir `template.py`, `example_plugin.py`, guides RGPD, audit, accessibilité, SEO, déploiement.
+- Contribution, extension, déploiement : tout est documenté, testé, prêt à l’emploi.
+
+---
+
 **Dihya Coding** – Blockchain souveraine, extensible, multilingue, prête pour la production, la démo et la contribution.
 
 ---

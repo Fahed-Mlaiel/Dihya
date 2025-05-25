@@ -48,54 +48,35 @@ Ce template "Industrie" fait partie de la plateforme **Dihya Coding**, solution 
 ## Logique Métier
 
 - **Équipements** : gestion cycle de vie, alertes maintenance, historique interventions
-- **Production** : suivi ordres, reporting temps réel, incidents, rendement
-- **Stocks** : gestion entrées/sorties, inventaire, seuils d’alerte
-- **Opérateurs** : gestion plannings, habilitations, suivi activité
-- **Sécurité** : validation stricte, CORS, headers, anti-DDoS, logs horodatés
+- **Production** : ordres, suivi, reporting, analyse KPI
+- **Stocks** : inventaire, entrées/sorties, alertes seuils
+- **Opérateurs** : gestion profils, habilitations, planning
+- **Dashboard** : KPI, incidents, alertes
 
 ---
 
-## Design UI/UX
+## Sécurité & RGPD
+- Authentification JWT, CORS, WAF, anti-DDOS, audit, anonymisation, export RGPD
+- Gestion des rôles : admin, manager, opérateur, guest
+- Plugins validés uniquement
 
-- **Thème** : Modernité + héritage amazigh (couleurs, motifs, polices)
-- **Responsive** : Mobile, tablette, desktop
-- **Accessibilité** : Contrastes, navigation clavier, ARIA
-- **Customisation** : Thèmes, logos, branding usine
+## Internationalisation
+- Support dynamique : fr, en, ar, amazigh, de, zh, ja, ko, nl, he, fa, hi, es
 
----
+## Déploiement
+- Docker, K8s, GitHub Actions, fallback local
 
 ## Extensibilité
+- Système de plugins, API ouverte, CLI
 
-- **Plugins** : MES, IoT, maintenance prédictive, analytics, custom
-- **Templates** : Import/export JSON, YAML, JS
-- **Marketplace** : Contribution externe, notation, documentation
-
----
-
-## Déploiement & Souveraineté
-
-- **CI/CD** : GitHub Actions (tests, build, déploiement auto)
-- **Fallback** : Replit/Render si GitHub indisponible
-- **Hébergement décentralisé** : IPFS/DWeb (optionnel)
-- **Backup** : Notion API, GitHub, local
+## Exemples d’utilisation
+- Génération automatique d’applications industrielles (web, mobile, scripts IA)
+- Intégration avec services IA open source (LLaMA, Mixtral, Mistral)
 
 ---
 
-## Contribution
-
-- **Ajout de métiers** : Étendre la classe `BusinessTemplate`
-- **Documentation claire** : Guide utilisateur, contribution, API
-- **Licence** : AGPL (open-source, souveraineté)
-
----
-
-## Exemple d’utilisation
-
-1. Décrivez votre projet industriel (texte ou vocal)
-2. Sélectionnez le template "Industrie"
-3. Personnalisez (modules, design, plugins)
-4. Générez le code (frontend + backend)
-5. Testez en live, partagez le lien, déployez en 1 clic
+## Pour aller plus loin
+- Voir la documentation métier, la politique de sécurité, les tests, et les scripts d’automatisation dans ce dossier.
 
 ---
 
