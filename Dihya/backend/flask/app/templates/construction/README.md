@@ -1,8 +1,11 @@
 # Template Métier : Construction
 
+**Ultra avancé, sécurisé, multilingue, extensible, RGPD, plugins, REST/GraphQL, audit, SEO, accessibilité, déploiement CI/CD, compatible Codespaces/Linux.**
+
+
 ## Présentation
 
-Ce template métier permet de générer un backend d’application pour le secteur **Construction** : gestion de projets, chantiers, équipes, matériels, fournisseurs, plannings, suivi financier, conformité, etc.  
+Ce template métier permet de générer un backend d’application pour le secteur **Construction** : gestion de projets, chantiers, équipes, matériels, fournisseurs, plannings, suivi financier, conformité, etc.
 Pensé pour la plateforme **Dihya Coding** : extensible, sécurisé, multilingue, prêt à l’emploi.
 
 ---

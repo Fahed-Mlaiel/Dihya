@@ -1,1 +1,4 @@
 2025-05-22 12:02:00 RGPD user=leila action=purge file=test_upload_ar.txt status=success
+2025-05-25 12:00:00 RGPD: user=admin, action=anonymize, status=success, tenant=default
+2025-05-25 12:01:00 RGPD: user=auditor, action=export, status=fail, tenant=demo
+# Log RGPD structuré, multilingue, pour Dihya

@@ -15,6 +15,8 @@ auth = Blueprint('auth', __name__)
 # Blueprint User (gestion des utilisateurs, rôles, profil, CRUD)
 user = Blueprint('user', __name__)
 
+from .generate import generate_bp
+
 # À compléter si de nouveaux modules de routes sont ajoutés (ex: admin, plugins, etc.)
 
 # Les fichiers main.py, auth.py, user.py doivent définir les routes

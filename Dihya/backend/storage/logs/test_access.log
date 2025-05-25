@@ -1,1 +1,4 @@
 2025-05-22 12:00:00 ACCESS user=alice file=test_upload_fr.txt action=upload
+2025-05-25 12:00:00 ACCESS GRANTED: user=admin, tenant=default, action=login, ip=192.168.1.1
+2025-05-25 12:01:00 ACCESS DENIED: user=guest, tenant=default, action=backup, ip=192.168.1.2
+# Log structuré d'accès, conforme RGPD, multilingue, pour Dihya

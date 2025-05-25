@@ -40,6 +40,8 @@ def create_app(config_object="config.Config"):
     app.register_blueprint(main_blueprint)
     app.register_blueprint(auth_blueprint, url_prefix="/api/auth")
     app.register_blueprint(user_blueprint, url_prefix="/api/users")
+    from .routes.generate import generate_bp
+    app.register_blueprint(generate_bp)
 
     # Headers de sécurité supplémentaires
     @app.after_request

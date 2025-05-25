@@ -1,1 +1,41 @@
-# arts
+# Tests d'intégration : Arts
+
+Ce dossier contient des tests d'intégration avancés pour les routes et modules liés aux arts dans Dihya.
+
+## Objectifs
+- Sécurité (CORS, JWT, WAF, anti-DDOS)
+- Internationalisation dynamique
+- Multitenancy, gestion des rôles
+- RGPD, auditabilité
+- Plugins et extensions spécifiques arts
+
+## Structure
+- `test_arts_routes.py` : tests API REST/GraphQL, sécurité, i18n, plugins
+- Fixtures, mocks, logs
+
+## Exécution
+```bash
+pytest --tb=short --maxfail=1
+```
+
+---
+
+# Integration tests: Arts
+
+This folder contains advanced integration tests for arts routes and modules in Dihya.
+
+## Goals
+- Security (CORS, JWT, WAF, anti-DDOS)
+- Dynamic i18n
+- Multitenancy, roles
+- GDPR, auditability
+- Arts plugins/extensions
+
+## Structure
+- `test_arts_routes.py`: API, security, i18n, plugins
+- Fixtures, mocks, logs
+
+## Run
+```bash
+pytest --tb=short --maxfail=1
+```

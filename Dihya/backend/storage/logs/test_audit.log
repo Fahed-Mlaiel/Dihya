@@ -1,1 +1,4 @@
 2025-05-22 12:01:00 AUDIT user=admin action=backup file=test_backup_fr.enc status=success
+2025-05-25 12:00:00 AUDIT: user=admin, action=export, status=success, tenant=default
+2025-05-25 12:01:00 AUDIT: user=auditor, action=import, status=fail, tenant=demo
+# Log d'audit structuré, multilingue, conforme RGPD, pour Dihya

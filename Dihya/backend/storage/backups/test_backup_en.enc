@@ -1,1 +1,4 @@
 This is a test encrypted backup (English) – Dihya
+# Test backup file for English (en)
+# Format: Encrypted, UTF-8, RGPD compliant
+# Usage: restore with Dihya backup script

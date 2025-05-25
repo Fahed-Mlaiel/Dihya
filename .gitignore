@@ -52,3 +52,4 @@ build/
 
 # Fichiers générés par l’application (exports, backups, dumps, snapshots)
 backups/
+dihya_backup.log
